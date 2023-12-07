@@ -69,7 +69,7 @@ public class Help : MewdekoModuleBase<HelpService>
     [Cmd, Aliases]
     public async Task Donate() =>
         await ctx.Channel.SendConfirmAsync(
-            "If you would like to support the project, here's how:\nKo-Fi: https://ko-fi.com/mewdeko\nI appreciate any donations as they will help improve Mewdeko for the better!").ConfigureAwait(false);
+            "If you would like to support the project, here's how:\nKo-Fi: https://playerduo.net/dcschuchu\nI appreciate any donations as they will help improve Mewdeko for the better!").ConfigureAwait(false);
 
     [Cmd, Aliases]
     public async Task Commands([Remainder] string? module = null)
@@ -147,7 +147,7 @@ public class Help : MewdekoModuleBase<HelpService>
                 .AddField(groups.Select(x => x.ElementAt(page).Key).FirstOrDefault(),
                     $"```css\n{string.Join("\n", transformed)}\n```")
                 .WithDescription(
-                    $"✅: You can use this command.\n❌: You cannot use this command.\n<:Nekoha_Oooo:866320687810740234>: If you need any help don't hesitate to join [The Support Server](https://discord.gg/mewdeko)\nDo `{prefix}h commandname` to see info on that command")
+                    $"<a:hgtt_tick1:1108615531717734473>: Bạn có thể dùng lệnh này .\n<a:hgtt_tick2:1182001369402593401>: Bạn không thể dùng lệnh này .\n<a:loading:1182337910998052946>: Nếu bạn cần giúp đỡ bất cứ điều gì [The Support Server](https://discord.gg/C3yyk7ebEz)\nNhập `{prefix}h commandname` để xem thông tin lệnh")
                 .WithOkColor();
         }
     }

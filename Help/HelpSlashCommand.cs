@@ -132,7 +132,7 @@ public class HelpSlashCommand : MewdekoSlashModuleBase<HelpService>
                 .AddField(groups.Select(x => x.ElementAt(page).Key).FirstOrDefault(),
                     $"```css\n{string.Join("\n", transformed)}\n```")
                 .WithDescription(
-                    $"<:Nekoha_Hmm:866320787865731093>: Your current prefix is {Format.Code(prefix)}\n✅: You can use this command.\n❌: You cannot use this command.\n<:Nekoha_Oooo:866320687810740234>: If you need any help don't hesitate to join [The Support Server](https://discord.gg/mewdeko)\nDo `{prefix}h commandname` to see info on that command")
+                    $"<:6891gwenlol:1182004603055779842>: Lệnh hiện tại của bạn là  {Format.Code(prefix)}\n <a:hgtt_tick1:1182001365925507122> : lệnh bạn có thể dùng .\n<a:hgtt_tick2:1182001369402593401>: Bạn không thể dùng lệnh này .\n<:neko_holy:1182004479466422382>: Nếu bạn cần giúp đỡ bất cứ điều gì [The Support Server](https://discord.gg/C3yyk7ebEz)\nNhập `{prefix}h commandname` để xem thông tin lệnh")
                 .WithOkColor();
         }
     }
@@ -143,7 +143,7 @@ public class HelpSlashCommand : MewdekoSlashModuleBase<HelpService>
             .AddField("Invite Link",
                 "[Click Here](https://discord.com/oauth2/authorize?client_id=752236274261426212&scope=bot&permissions=66186303&scope=bot%20applications.commands)")
             .AddField("Website/Docs", "https://mewdeko.tech")
-            .AddField("Support Server", "https://discord.gg/mewdeko")
+            .AddField("Support Server", "https://discord.gg/C3yyk7ebEz")
             .WithOkColor();
         await ctx.Interaction.RespondAsync(embed: eb.Build()).ConfigureAwait(false);
     }

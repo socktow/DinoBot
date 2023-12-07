@@ -764,7 +764,7 @@ public class Music : MewdekoModuleBase<MusicService>
                     await ctx.Channel.SendMessageAsync(embed: eb.Build(), 
                         components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                                     .WithButton(style: ButtonStyle.Link, 
-                                                                        url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                                        url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                                         label: "Invite Me!", 
                                                                         emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
                     if (player.State != PlayerState.Playing)
@@ -792,7 +792,7 @@ public class Music : MewdekoModuleBase<MusicService>
                     await ctx.Channel.SendMessageAsync(embed: eb.Build(), 
                         components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                                     .WithButton(style: ButtonStyle.Link, 
-                                                                        url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                                        url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                                         label: "Invite Me!", 
                                                                         emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
                     if (player.State != PlayerState.Playing)
@@ -959,7 +959,7 @@ public class Music : MewdekoModuleBase<MusicService>
         await ctx.Channel.SendConfirmAsync($"Paused player. Do {await _guildSettings.GetPrefix(ctx.Guild)}pause again to resume.", 
             builder: _config.Data.ShowInviteButton ? new ComponentBuilder()
                 .WithButton(style: ButtonStyle.Link, 
-                    url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                    url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                     label: "Invite Me!", 
                     emote: "<a:HaneMeow:968564817784877066>".ToIEmote()) : null).ConfigureAwait(false);
     }
@@ -990,7 +990,7 @@ public class Music : MewdekoModuleBase<MusicService>
         await ctx.Channel.SendConfirmAsync("Successfully shuffled the queue!", 
             builder: _config.Data.ShowInviteButton ? new ComponentBuilder()
                 .WithButton(style: ButtonStyle.Link, 
-                    url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                    url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                     label: "Invite Me!", 
                     emote: "<a:HaneMeow:968564817784877066>".ToIEmote()) : null).ConfigureAwait(false);
     }
@@ -1050,7 +1050,7 @@ public class Music : MewdekoModuleBase<MusicService>
         await ctx.Channel.SendConfirmAsync($"I've seeked `{player.CurrentTrack.Title}` to {timeSpan}.", 
             builder: _config.Data.ShowInviteButton ? new ComponentBuilder()
                 .WithButton(style: ButtonStyle.Link, 
-                    url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                    url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                     label: "Invite Me!", 
                     emote: "<a:HaneMeow:968564817784877066>".ToIEmote()) : null).ConfigureAwait(false);
     }
@@ -1119,7 +1119,7 @@ public class Music : MewdekoModuleBase<MusicService>
                 await ctx.Channel.SendConfirmAsync($"When the last song is reached autoplay will attempt to add `{autoPlayNum}` songs to the queue.", 
                     builder: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                                 .WithButton(style: ButtonStyle.Link, 
-                                                                    url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                                    url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                                     label: "Invite Me!", 
                                                                     emote: "<a:HaneMeow:968564817784877066>".ToIEmote()) : null);
                 break;
@@ -1130,7 +1130,7 @@ public class Music : MewdekoModuleBase<MusicService>
                 await ctx.Channel.SendConfirmAsync("Autoplay has been disabled.", 
                     builder: _config.Data.ShowInviteButton ? new ComponentBuilder()
                         .WithButton(style: ButtonStyle.Link, 
-                            url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                            url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                             label: "Invite Me!", 
                             emote: "<a:HaneMeow:968564817784877066>".ToIEmote()) : null);
                 break;
@@ -1178,7 +1178,7 @@ public class Music : MewdekoModuleBase<MusicService>
             await ctx.Channel.SendMessageAsync(embed: eb.Build(), 
                 components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                     .WithButton(style: ButtonStyle.Link, 
-                        url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                        url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                         label: "Invite Me!", 
                         emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
         }

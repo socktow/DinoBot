@@ -149,7 +149,7 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
             .AddField("Invite Link (IOS shows an error so use the browser)",
                 $"[Click Here](https://discord.com/oauth2/authorize?client_id={ctx.Client.CurrentUser.Id}&scope=bot&permissions=66186303&scope=bot%20applications.commands)")
             .AddField("Website/Docs", "https://mewdeko.tech")
-            .AddField("Support Server", "https://discord.gg/mewdeko")
+            .AddField("Support Server", "https://discord.gg/C3yyk7ebEz")
             .WithOkColor();
         await ctx.Channel.SendMessageAsync(embed: eb.Build()).ConfigureAwait(false);
     }
@@ -247,7 +247,7 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
         await ctx.Channel.SendMessageAsync(embed: em.Build(), 
             components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                         .WithButton(style: ButtonStyle.Link, 
-                                                            url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                            url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                             label: "Invite Me!", 
                                                             emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
     }
@@ -383,7 +383,7 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
         await ctx.Channel.SendMessageAsync(embed: em.Build(), 
             components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                         .WithButton(style: ButtonStyle.Link, 
-                                                            url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                            url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                             label: "Invite Me!", 
                                                             emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
     }
@@ -441,7 +441,7 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
         await ctx.Channel.SendMessageAsync(embed: em.Build(), 
             components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                         .WithButton(style: ButtonStyle.Link, 
-                                                            url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                            url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                             label: "Invite Me!", 
                                                             emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
     }
@@ -481,7 +481,7 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
             await ctx.Channel.SendMessageAsync(embed: em.Build(), 
                 components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                             .WithButton(style: ButtonStyle.Link, 
-                                                                url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                                url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                                 label: "Invite Me!", 
                                                                 emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
         }
@@ -543,7 +543,7 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
             await ctx.Channel.SendMessageAsync(embed: em.Build(), 
                 components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                             .WithButton(style: ButtonStyle.Link, 
-                                                                url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                                url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                                 label: "Invite Me!", 
                                                                 emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
         }
@@ -589,7 +589,7 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
             await ctx.Channel.SendMessageAsync(embed: em.Build(), 
                 components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                             .WithButton(style: ButtonStyle.Link, 
-                                                                url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                                url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                                 label: "Invite Me!", 
                                                                 emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
         }
@@ -635,7 +635,7 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
             await ctx.Channel.SendMessageAsync(embed: em.Build(), 
                 components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                             .WithButton(style: ButtonStyle.Link, 
-                                                                url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                                url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                                 label: "Invite Me!", 
                                                                 emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
         }
@@ -681,7 +681,7 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
             await ctx.Channel.SendMessageAsync(embed: em.Build(), 
                 components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                             .WithButton(style: ButtonStyle.Link, 
-                                                                url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                                url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                                 label: "Invite Me!", 
                                                                 emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
         }
@@ -742,7 +742,7 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
     public async Task Vote() =>
         await ctx.Channel.EmbedAsync(new EmbedBuilder().WithOkColor()
                                                        .WithDescription(
-                                                           "Vote here for Mewdeko!\n[Vote Link](https://top.gg/bot/752236274261426212)\nMake sure to join the support server! \n[Link](https://mewdeko.tech/support)")).ConfigureAwait(false);
+                                                           "Vote here for Mewdeko!\n[Vote Link](https://top.gg/bot/900449069258899557)\nMake sure to join the support server! \n[Link](https://mewdeko.tech/support)")).ConfigureAwait(false);
 
     [Cmd, Aliases, RequireContext(ContextType.Guild)]
     public async Task InRole([Remainder] IRole role)
@@ -901,7 +901,7 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
         await ctx.Channel.EmbedAsync(
                      new EmbedBuilder().WithOkColor()
                                        .WithAuthor(eab => eab.WithName($"{_client.CurrentUser.Username} v{StatsService.BOT_VERSION}")
-                                                             .WithUrl("https://discord.gg/mewdeko")
+                                                             .WithUrl("https://discord.gg/C3yyk7ebEz")
                                                              .WithIconUrl(_client.CurrentUser.GetAvatarUrl()))
                                        .AddField(efb =>
                                            efb.WithName(GetText("author")).WithValue($"{user.Username}#{user.Discriminator}")

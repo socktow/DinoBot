@@ -743,7 +743,7 @@ public class SlashMusic : MewdekoSlashModuleBase<MusicService>
                     await ctx.Interaction.FollowupAsync(embed: eb.Build(), 
                         components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                                     .WithButton(style: ButtonStyle.Link, 
-                                                                        url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                                        url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                                         label: "Invite Me!", 
                                                                         emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
                     if (player.State != PlayerState.Playing)
@@ -771,7 +771,7 @@ public class SlashMusic : MewdekoSlashModuleBase<MusicService>
                     await ctx.Interaction.FollowupAsync(embed: eb.Build(), 
                         components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                                     .WithButton(style: ButtonStyle.Link, 
-                                                                        url: "https://discord.com/oauth2/authorize?client_id=752236274261426212&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                                        url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                                         label: "Invite Me!", 
                                                                         emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
                     if (player.State != PlayerState.Playing)

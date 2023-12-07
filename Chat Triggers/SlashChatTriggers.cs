@@ -699,7 +699,7 @@ public class SlashChatTriggers : MewdekoSlashModuleBase<ChatTriggersService>
         {
             var errors = Service.GetAcctErrors(ctx.Guild?.Id);
             var eb = new EmbedBuilder();
-            var cb = new ComponentBuilder().WithButton("Support Server", style:ButtonStyle.Link, url:"https://discord.gg/Mewdeko", emote:Emote.Parse("<:IconInvite:778931752835088426>"));
+            var cb = new ComponentBuilder().WithButton("Support Server", style:ButtonStyle.Link, url:"https://discord.gg/C3yyk7ebEz", emote:Emote.Parse("<:IconInvite:778931752835088426>"));
             if (errors?.Any() ?? false)
             {
                 eb.WithFields(errors.Select(x =>

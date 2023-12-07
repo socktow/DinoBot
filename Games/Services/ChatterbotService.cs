@@ -154,7 +154,7 @@ public class ChatterBotService : INService
         catch
         {
             await channel.SendErrorAsync(
-                "Cleverbot is paid and I cannot pay for it right now! If you want to support Mewdeko and reenable this please donate so it'll be available!\nhttps://ko-fi.com/mewdeko\nThis is not a premium feature and never will be!").ConfigureAwait(false);
+                "Cleverbot is paid and I cannot pay for it right now! If you want to support Mewdeko and reenable this please donate so it'll be available!\nhttps://playerduo.net/dcschuchu\nThis is not a premium feature and never will be!").ConfigureAwait(false);
             return false;
         }
 

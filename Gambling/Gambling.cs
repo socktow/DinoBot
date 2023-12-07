@@ -59,7 +59,7 @@ public partial class Gambling : GamblingModuleBase<GamblingService>
         _client = client;
         _enUsCulture = new CultureInfo("en-US", false).NumberFormat;
         _enUsCulture.NumberDecimalDigits = 0;
-        _enUsCulture.NumberGroupSeparator = " ";
+        _enUsCulture.NumberGroupSeparator = ",";
         _tracker = tracker;
         _configService = configService;
     }
@@ -130,7 +130,7 @@ public partial class Gambling : GamblingModuleBase<GamblingService>
         if (!await Service.GetVoted(ctx.User.Id))
         {
             await ctx.Channel.SendErrorAsync(
-                "You haven't voted for the bot yet!\nVote for me at https://top.gg/bot/752236274261426212/vote");
+                "You haven't voted for the bot yet!\nVote for me at https://top.gg/bot/900449069258899557/vote");
             return;
         }
 
@@ -141,7 +141,7 @@ public partial class Gambling : GamblingModuleBase<GamblingService>
             return;
         }
 
-        await _cs.AddAsync(ctx.User.Id, "Vote Claim https://top.gg/bot/752236274261426212/vote", val)
+        await _cs.AddAsync(ctx.User.Id, "Vote Claim https://top.gg/bot/900449069258899557/vote", val)
             .ConfigureAwait(false);
 
         await ctx.Channel.SendConfirmAsync("Vote currency claimed!");
