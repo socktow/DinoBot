@@ -146,7 +146,7 @@ public partial class Gambling
                             }
 
                             var profit = GetProfitAmount(entry.Price);
-                            await _cs.AddAsync(entry.AuthorId, $"Shop sell item - {entry.Type}", profit)
+                            await _cs.AddAsync(ctx.Client.CurrentUser.Id, $"Shop sell item - {entry.Type}", profit)
                                      .ConfigureAwait(false);
                             await _cs.AddAsync(ctx.Client.CurrentUser.Id, "Shop sell item - cut", entry.Price - profit)
                                      .ConfigureAwait(false);
@@ -190,7 +190,7 @@ public partial class Gambling
                                                                         efb.WithName(GetText("name")).WithValue(entry.Name).WithIsInline(true)))
                                       .ConfigureAwait(false);
 
-                                await _cs.AddAsync(entry.AuthorId,
+                                await _cs.AddAsync(ctx.Client.CurrentUser.Id,
                                     $"Shop sell item - {entry.Name}",
                                     GetProfitAmount(entry.Price)).ConfigureAwait(false);
                             }
