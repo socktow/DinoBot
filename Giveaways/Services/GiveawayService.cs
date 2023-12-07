@@ -111,9 +111,9 @@ public class GiveawayService : INService, IReadyExecutor
             Color = Mewdeko.OkColor,
             Title = item,
             Description =
-                $"React with {emote} to enter!\nHosted by {hostuser.Mention}\nEnd Time: <t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}:R> (<t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}>)\n",
+                $"Thả emote {emote} để tham gia !\nTổ chức bởi {hostuser.Mention}\nKết Thúc: <t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}:R> (<t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}>)\n",
             Footer = new EmbedFooterBuilder()
-                .WithText($"{winners} Winners | Mewdeko Giveaways")
+                .WithText($"{winners} Winners | Dino Giveaways")
         };
         if (!string.IsNullOrEmpty(reqroles))
         {
@@ -134,7 +134,7 @@ public class GiveawayService : INService, IReadyExecutor
             if (reqrolesparsed.Count > 0)
             {
                 eb.WithDescription(
-                    $"React with {emote} to enter!\nHosted by {hostuser.Mention}\nRequired Roles: {string.Join("\n", reqrolesparsed.Select(x => x.Mention))}\nEnd Time: <t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}:R> (<t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}>)\n");
+                    $"Thả emote {emote} để tham gia !\nTổ chức bởi {hostuser.Mention}\nYêu cầu role tham gia : {string.Join("\n", reqrolesparsed.Select(x => x.Mention))}\nKết Thúc: <t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}:R> (<t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}>)\n");
             }
         }
         var msg = await chan.SendMessageAsync(embed: eb.Build()).ConfigureAwait(false);
