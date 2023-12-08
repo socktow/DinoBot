@@ -82,12 +82,13 @@ public class HelpService : ILateExecutor, INService
     public async Task<EmbedBuilder> GetHelpEmbed(bool description, IGuild? guild, IMessageChannel channel, IUser user)
     {
         EmbedBuilder embed = new();
-        embed.WithTitle($"{_client.CurrentUser.Username} Help");
+        embed.WithTitle($"{_client.CurrentUser.Username} - Bảng Hỗ trợ");
         embed.WithOkColor();
+        embed.WithCurrentTimestamp();
         embed.WithDescription(
-            $"\nDo `{await _guildSettings.GetPrefix(guild)}help command` to see a description of a command you need more info on!" +
-            $"\nDo `{await _guildSettings.GetPrefix(guild)}cmds category` to see the commands in that module." +
-            "\n\n**Getting Started**\nhttps://chuchudayne.com\n\n**Links**\n" +
+            $"\nNhập `{await _guildSettings.GetPrefix(guild)}help command`  để xem mô tả của 1 lệnh mà bạn cần tìm!" +
+            $"\nNhập `{await _guildSettings.GetPrefix(guild)}cmds category` để xem các lệnh trong modules." +
+            "\n\n**Bắt đầu**\nhttps://chuchudayne.com\n\n**URL**\n" +
             $"[Documentation](https://chuchudayne.com) | [Support Server](https://discord.gg/C3yyk7ebEz) | [Invite Me](https://discord.com/oauth2/authorize?client_id={_bot.Client.CurrentUser.Id}&scope=bot&permissions=66186303&scope=bot%20applications.commands) | [Top.gg Listing](https://top.gg/bot/900449069258899557) | [Donate!](https://playerduo.net/dcschuchu)");
         var modules = _cmds.Commands.Select(x => x.Module).Where(x => !x.IsSubmodule && !x.Attributes.Any(attribute => attribute is HelpDisabled)).Distinct();
         var count = 0;

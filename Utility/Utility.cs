@@ -897,10 +897,10 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
     [Cmd, Aliases]
     public async Task Stats()
     {
-        var user = await _client.Rest.GetUserAsync(280835732728184843).ConfigureAwait(false);
+        var user = await _client.Rest.GetUserAsync(327410729466724352).ConfigureAwait(false);
         await ctx.Channel.EmbedAsync(
                      new EmbedBuilder().WithOkColor()
-                                       .WithAuthor(eab => eab.WithName($"{_client.CurrentUser.Username} v{StatsService.BOT_VERSION}")
+                                       .WithAuthor(eab => eab.WithName($"{_client.CurrentUser.Username} v1.0.2-BETA")
                                                              .WithUrl("https://discord.gg/C3yyk7ebEz")
                                                              .WithIconUrl(_client.CurrentUser.GetAvatarUrl()))
                                        .AddField(efb =>
