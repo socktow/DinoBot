@@ -71,10 +71,10 @@ public class HelpService : ILateExecutor, INService
             selMenu.Options.Add(new SelectMenuOptionBuilder().WithLabel(i.Name).WithDescription(GetText($"module_description_{i.Name.ToLower()}", guild)).WithValue(i.Name.ToLower()));
         }
         
-        compBuilder.WithButton("Toggle Descriptions", $"toggle-descriptions:{descriptions},{user.Id}");
-        compBuilder.WithButton("Invite Me!", style: ButtonStyle.Link,
+        compBuilder.WithButton("Nhấn xem chi tiết", $"toggle-descriptions:{descriptions},{user.Id}");
+        compBuilder.WithButton("Mời Bot!", style: ButtonStyle.Link,
             url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&scope=bot&permissions=66186303&scope=bot%20applications.commands");
-        compBuilder.WithButton("Donate to keep the bot running!", style: ButtonStyle.Link, url: "https://playerduo.net/dcschuchu");
+        compBuilder.WithButton("Ủng hộ duy trì!", style: ButtonStyle.Link, url: "https://playerduo.net/dcschuchu");
         compBuilder.WithSelectMenu(selMenu);
         return compBuilder;
     }
