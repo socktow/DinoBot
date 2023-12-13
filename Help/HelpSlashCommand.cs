@@ -132,7 +132,7 @@ public class HelpSlashCommand : MewdekoSlashModuleBase<HelpService>
                 .AddField(groups.Select(x => x.ElementAt(page).Key).FirstOrDefault(),
                     $"```css\n{string.Join("\n", transformed)}\n```")
                 .WithDescription(
-                    $"<:6891gwenlol:1182004603055779842>: Lệnh hiện tại của bạn là  {Format.Code(prefix)}\n <a:hgtt_tick1:1182001365925507122> : lệnh bạn có thể dùng .\n<a:hgtt_tick2:1182001369402593401>: Bạn không thể dùng lệnh này .\n<:neko_holy:1182004479466422382>: Nếu bạn cần giúp đỡ bất cứ điều gì [The Support Server](https://discord.gg/C3yyk7ebEz)\nNhập `{prefix}h commandname` để xem thông tin lệnh")
+                    $"<:6891gwenlol:1182004603055779842>: Lệnh hiện tại của bạn là  {Format.Code(prefix)}\n <a:pickyes:1183894766648295476> : lệnh bạn có thể dùng .\n<a:pickno:1183894770834223164>: Bạn không thể dùng lệnh này .\n<:neko_holy:1182004479466422382>: Nếu bạn cần giúp đỡ bất cứ điều gì [The Support Server](https://discord.gg/C3yyk7ebEz)\nNhập `{prefix}h commandname` để xem thông tin lệnh")
                 .WithOkColor();
         }
     }
