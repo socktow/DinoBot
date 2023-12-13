@@ -141,8 +141,8 @@ public class HelpSlashCommand : MewdekoSlashModuleBase<HelpService>
     {
         var eb = new EmbedBuilder()
             .AddField("Invite Link",
-                "[Click Here](https://discord.com/oauth2/authorize?client_id=752236274261426212&scope=bot&permissions=66186303&scope=bot%20applications.commands)")
-            .AddField("Website/Docs", "https://mewdeko.tech")
+                "[Click Here](https://discord.com/oauth2/authorize?client_id=701019662795800606&scope=bot&permissions=66186303&scope=bot%20applications.commands)")
+            .AddField("Website/Docs", "https://dinostar.vn")
             .AddField("Support Server", "https://discord.gg/C3yyk7ebEz")
             .WithOkColor();
         await ctx.Interaction.RespondAsync(embed: eb.Build()).ConfigureAwait(false);

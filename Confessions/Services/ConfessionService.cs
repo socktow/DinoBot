@@ -46,7 +46,7 @@ public class ConfessionService : INService
                                        .WithAuthor($"Anonymous confession #{current.ConfessNumber + 1}", guild.IconUrl)
                                        .WithDescription(confession)
                                        .WithFooter(
-                                           $"Do /confess or dm me .confess {guild.Id} yourconfession to send a confession!")
+                                           $"Nhập /Confess [Nội Dung] - [Hỉnh ảnh - nếu cần] . Để gửi confess của bạn")
                                        .WithCurrentTimestamp();
             if (imageUrl != null)
                 eb.WithImageUrl(imageUrl);
@@ -120,7 +120,7 @@ public class ConfessionService : INService
                                        .WithAuthor("Anonymous confession #1", guild.IconUrl)
                                        .WithDescription(confession)
                                        .WithFooter(
-                                           $"Do /confess or dm me .confess {guild.Id} yourconfession to send a confession!")
+                                           $"Nhập /confess [nội dung] - Để gửi confess!!")
                                        .WithCurrentTimestamp();
             if (imageUrl != null)
                 eb.WithImageUrl(imageUrl);

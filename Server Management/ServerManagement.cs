@@ -200,7 +200,7 @@ public partial class ServerManagement : MewdekoModuleBase<ServerManagementServic
     {
         var eb = new EmbedBuilder
         {
-            Description = "<a:loading:900381735244689469> Adding Emotes...",
+            Description = "<a:loadingstate:1138172643867111595> Adding Emotes...",
             Color = Mewdeko.OkColor
         };
         var errored = new List<string>();
@@ -244,7 +244,7 @@ public partial class ServerManagement : MewdekoModuleBase<ServerManagementServic
     {
         var eb = new EmbedBuilder
         {
-            Description = $"<a:loading:900381735244689469> Adding Emotes to {role.Mention}...",
+            Description = $"<a:loadingstate:1138172643867111595> Adding Emotes to {role.Mention}...",
             Color = Mewdeko.OkColor
         };
         var list = new Optional<IEnumerable<IRole>>(new[] { role });

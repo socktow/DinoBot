@@ -21,7 +21,7 @@ public class EmoteStealer : MewdekoSlashCommandModule
         await ctx.Interaction.DeferAsync(true).ConfigureAwait(false);
         var eb = new EmbedBuilder
         {
-            Description = "<a:loading:900381735244689469> Adding Emotes...",
+            Description = "<a:loadingstate:1138172643867111595> Adding Emotes...",
             Color = Mewdeko.OkColor
         };
         var tags = message.Tags.Where(x => x.Type == TagType.Emoji).Select(x => (Emote)x.Value).Distinct();

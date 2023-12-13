@@ -73,7 +73,7 @@ public class HelpService : ILateExecutor, INService
         
         compBuilder.WithButton("Nhấn xem chi tiết", $"toggle-descriptions:{descriptions},{user.Id}");
         compBuilder.WithButton("Mời Bot!", style: ButtonStyle.Link,
-            url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&scope=bot&permissions=66186303&scope=bot%20applications.commands");
+            url: "https://discord.com/oauth2/authorize?client_id=701019662795800606&scope=bot&permissions=66186303&scope=bot%20applications.commands");
         compBuilder.WithButton("Ủng hộ duy trì!", style: ButtonStyle.Link, url: "https://playerduo.net/dcschuchu");
         compBuilder.WithSelectMenu(selMenu);
         return compBuilder;
@@ -88,8 +88,8 @@ public class HelpService : ILateExecutor, INService
         embed.WithDescription(
             $"\nNhập `{await _guildSettings.GetPrefix(guild)}help command`  để xem mô tả của 1 lệnh mà bạn cần tìm!" +
             $"\nNhập `{await _guildSettings.GetPrefix(guild)}cmds category` để xem các lệnh trong modules." +
-            "\n\n**Bắt đầu**\nhttps://chuchudayne.com\n\n**URL**\n" +
-            $"[Documentation](https://chuchudayne.com) | [Support Server](https://discord.gg/C3yyk7ebEz) | [Invite Me](https://discord.com/oauth2/authorize?client_id={_bot.Client.CurrentUser.Id}&scope=bot&permissions=66186303&scope=bot%20applications.commands) | [Top.gg Listing](https://top.gg/bot/900449069258899557) | [Donate!](https://playerduo.net/dcschuchu)");
+            "\n\n**Bắt đầu**\nhttps://dinostar.vn\n\n**URL**\n" +
+            $"[Documentation](https://chuchudayne.com) | [Support Server](https://discord.gg/C3yyk7ebEz) | [Invite Me](https://discord.com/oauth2/authorize?client_id={_bot.Client.CurrentUser.Id}&scope=bot&permissions=66186303&scope=bot%20applications.commands) | [Top.gg Listing](https://top.gg/bot/701019662795800606) | [Donate!](https://playerduo.net/dcschuchu)");
         var modules = _cmds.Commands.Select(x => x.Module).Where(x => !x.IsSubmodule && !x.Attributes.Any(attribute => attribute is HelpDisabled)).Distinct();
         var count = 0;
         if (description)

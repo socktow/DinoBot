@@ -130,7 +130,7 @@ public partial class Gambling : GamblingModuleBase<GamblingService>
         if (!await Service.GetVoted(ctx.User.Id))
         {
             await ctx.Channel.SendErrorAsync(
-                "You haven't voted for the bot yet!\nVote for me at https://top.gg/bot/900449069258899557/vote");
+                "You haven't voted for the bot yet!\nVote for me at https://top.gg/bot/701019662795800606/vote");
             return;
         }
 
@@ -141,7 +141,7 @@ public partial class Gambling : GamblingModuleBase<GamblingService>
             return;
         }
 
-        await _cs.AddAsync(ctx.User.Id, "Vote Claim https://top.gg/bot/900449069258899557/vote", val)
+        await _cs.AddAsync(ctx.User.Id, "Vote Claim https://top.gg/bot/701019662795800606/vote", val)
             .ConfigureAwait(false);
 
         await ctx.Channel.SendConfirmAsync("Vote currency claimed!");

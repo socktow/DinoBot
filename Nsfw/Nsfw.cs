@@ -83,7 +83,7 @@ public class Nsfw : MewdekoModuleBase<ISearchImagesService>
             await ctx.Channel.SendMessageAsync($"http://media.oboobs.ru/{obj["preview"]}", 
                 components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                             .WithButton(style: ButtonStyle.Link, 
-                                                                url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                                url: "https://discord.com/oauth2/authorize?client_id=701019662795800606&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                                 label: "Invite Me!", 
                                                                 emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
         }
@@ -109,7 +109,7 @@ public class Nsfw : MewdekoModuleBase<ISearchImagesService>
             await channel.SendMessageAsync($"https://media.obutts.ru/{obj["preview"]}", 
                 components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                             .WithButton(style: ButtonStyle.Link, 
-                                                                url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                                url: "https://discord.com/oauth2/authorize?client_id=701019662795800606&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                                 label: "Invite Me!", 
                                                                 emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
         }
@@ -122,7 +122,7 @@ public class Nsfw : MewdekoModuleBase<ISearchImagesService>
     [Cmd, Aliases, RequireContext(ContextType.Guild), RequireNsfw, Ratelimit(10)]
     public async Task RedditNsfw(string subreddit)
     {
-        var msg = await ctx.Channel.SendConfirmAsync($"<a:loading:900381735244689469> Trying to get a post from `{subreddit}`...");
+        var msg = await ctx.Channel.SendConfirmAsync($"<a:loadingstate:1138172643867111595> Trying to get a post from `{subreddit}`...");
         try
         {
             RedditPost image;
@@ -156,7 +156,7 @@ public class Nsfw : MewdekoModuleBase<ISearchImagesService>
                 await ctx.Channel.SendFileAsync(imgStream, "boobs.mp4", embed: eb.Build(), 
                     components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                                 .WithButton(style: ButtonStyle.Link, 
-                                                                    url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                                    url: "https://discord.com/oauth2/authorize?client_id=701019662795800606&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                                     label: "Invite Me!", 
                                                                     emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null);
             }
@@ -166,7 +166,7 @@ public class Nsfw : MewdekoModuleBase<ISearchImagesService>
                 await ctx.Channel.SendMessageAsync(embed: eb.Build(), 
                     components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                                 .WithButton(style: ButtonStyle.Link, 
-                                                                    url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                                    url: "https://discord.com/oauth2/authorize?client_id=701019662795800606&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                                     label: "Invite Me!", 
                                                                     emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
             }
@@ -430,7 +430,7 @@ public class Nsfw : MewdekoModuleBase<ISearchImagesService>
             await ctx.Channel.SendMessageAsync(string.Join("\n\n", linksEnum.Select(x => x.Url)), 
                          components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                                      .WithButton(style: ButtonStyle.Link, 
-                                                                         url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                                         url: "https://discord.com/oauth2/authorize?client_id=701019662795800606&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                                          label: "Invite Me!", 
                                                                          emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null)
                      .ConfigureAwait(false);
@@ -538,7 +538,7 @@ public class Nsfw : MewdekoModuleBase<ISearchImagesService>
                                                                     .Build(), 
             components: _config.Data.ShowInviteButton ? new ComponentBuilder()
                                                         .WithButton(style: ButtonStyle.Link, 
-                                                            url: "https://discord.com/oauth2/authorize?client_id=900449069258899557&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
+                                                            url: "https://discord.com/oauth2/authorize?client_id=701019662795800606&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmewdeko.tech&scope=bot%20applications.commands", 
                                                             label: "Invite Me!", 
                                                             emote: "<a:HaneMeow:968564817784877066>".ToIEmote()).Build() : null).ConfigureAwait(false);
     }

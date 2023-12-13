@@ -19,7 +19,7 @@ public partial class ServerManagement
         public async Task LockCheck()
         {
             var msg = await ctx.Channel.SendMessageAsync(
-                "<a:loading:900381735244689469> Making sure role permissions don't get in the way of lockdown...").ConfigureAwait(false);
+                "<a:loadingstate:1138172643867111595> Making sure role permissions don't get in the way of lockdown...").ConfigureAwait(false);
             var roles = Context.Guild.Roles.ToList().FindAll(x =>
                 x.Id != Context.Guild.Id && x.Permissions.SendMessages && x.Position <
                 ((SocketGuild)ctx.Guild).CurrentUser.GetRoles().Max(r => r.Position));
@@ -210,7 +210,7 @@ public partial class ServerManagement
             var eb = new EmbedBuilder();
             eb.WithOkColor();
             eb.WithDescription(
-                $"<a:loading:900381735244689469> Creating the Category {catName} with {channels.Length} Text Channels!");
+                $"<a:loadingstate:1138172643867111595> Creating the Category {catName} with {channels.Length} Text Channels!");
             var msg = await ctx.Channel.SendMessageAsync(embed: eb.Build()).ConfigureAwait(false);
             var cat = await ctx.Guild.CreateCategoryAsync(catName).ConfigureAwait(false);
             foreach (var i in channels) await ctx.Guild.CreateTextChannelAsync(i, x => x.CategoryId = cat.Id).ConfigureAwait(false);
@@ -227,7 +227,7 @@ public partial class ServerManagement
             var eb = new EmbedBuilder();
             eb.WithOkColor();
             eb.WithDescription(
-                $"<a:loading:900381735244689469> Creating the Category {catName} with {channels.Length} Voice Channels");
+                $"<a:loadingstate:1138172643867111595> Creating the Category {catName} with {channels.Length} Voice Channels");
             var msg = await ctx.Channel.SendMessageAsync(embed: eb.Build()).ConfigureAwait(false);
             var cat = await ctx.Guild.CreateCategoryAsync(catName).ConfigureAwait(false);
             foreach (var i in channels) await ctx.Guild.CreateVoiceChannelAsync(i, x => x.CategoryId = cat.Id).ConfigureAwait(false);
@@ -244,7 +244,7 @@ public partial class ServerManagement
             var eb = new EmbedBuilder();
             eb.WithOkColor();
             eb.WithDescription(
-                $"<a:loading:900381735244689469> Adding {channels.Length} Voice Channels to {chan.Name}");
+                $"<a:loadingstate:1138172643867111595> Adding {channels.Length} Voice Channels to {chan.Name}");
             var msg = await ctx.Channel.SendMessageAsync(embed: eb.Build()).ConfigureAwait(false);
             foreach (var i in channels)
                 await ctx.Guild.CreateVoiceChannelAsync(i, x => x.CategoryId = chan.Id).ConfigureAwait(false);
@@ -261,7 +261,7 @@ public partial class ServerManagement
             var eb = new EmbedBuilder();
             eb.WithOkColor();
             eb.WithDescription(
-                $"<a:loading:900381735244689469> Adding {channels.Length} Text Channels to {chan.Name}");
+                $"<a:loadingstate:1138172643867111595> Adding {channels.Length} Text Channels to {chan.Name}");
             var msg = await ctx.Channel.SendMessageAsync(embed: eb.Build()).ConfigureAwait(false);
             foreach (var i in channels) await ctx.Guild.CreateTextChannelAsync(i, x => x.CategoryId = chan.Id).ConfigureAwait(false);
 
