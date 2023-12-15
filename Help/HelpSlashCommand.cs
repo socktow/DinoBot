@@ -143,7 +143,7 @@ public class HelpSlashCommand : MewdekoSlashModuleBase<HelpService>
             .AddField("Invite Link",
                 "[Click Here](https://discord.com/oauth2/authorize?client_id=701019662795800606&scope=bot&permissions=66186303&scope=bot%20applications.commands)")
             .AddField("Website/Docs", "https://dinostar.vn")
-            .AddField("Support Server", "https://discord.gg/C3yyk7ebEz")
+            .AddField("Support Server", "https://discord.gg/dinogaming")
             .WithOkColor();
         await ctx.Interaction.RespondAsync(embed: eb.Build()).ConfigureAwait(false);
     }

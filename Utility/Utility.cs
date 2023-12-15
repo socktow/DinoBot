@@ -148,8 +148,8 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
         var eb = new EmbedBuilder()
             .AddField("Invite Link (IOS shows an error so use the browser)",
                 $"[Click Here](https://discord.com/oauth2/authorize?client_id={ctx.Client.CurrentUser.Id}&scope=bot&permissions=66186303&scope=bot%20applications.commands)")
-            .AddField("Website/Docs", "https://mewdeko.tech")
-            .AddField("Support Server", "https://discord.gg/C3yyk7ebEz")
+            .AddField("Website/Docs", "https://chuchudayne.com")
+            .AddField("Support Server", "https://discord.gg/dinogaming")
             .WithOkColor();
         await ctx.Channel.SendMessageAsync(embed: eb.Build()).ConfigureAwait(false);
     }

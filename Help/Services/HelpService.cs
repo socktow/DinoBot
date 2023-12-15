@@ -117,7 +117,7 @@ public class HelpService : ILateExecutor, INService
             return "✅";
         var pc = await _nPerms.GetCacheFor(guildId.Value);
         if (_perms.BlockedModules.Contains(moduleName.ToLower())) return "🌐❌";
-        return !pc.Permissions.CheckSlashPermissions(moduleName, "none", user, channel, out _) ? "<a:pickno:1183894770834223164> : "<a:pickyes:1183894766648295476>";
+        return !pc.Permissions.CheckSlashPermissions(moduleName, "none", user, channel, out _) ? "<a:pickno:1183894770834223164>" : "<a:pickyes:1183894766648295476>";
     }
 
     public string? GetModuleDescription(string module, IGuild? guild) => GetText($"module_description_{module.ToLower()}", guild);
@@ -202,11 +202,11 @@ public class HelpService : ILateExecutor, INService
             var eb = new EmbedBuilder
             {
                 Description =
-                    $"Hi, thanks for inviting Mewdeko! I hope you like the bot, and discover all its features! The default prefix is `{px}.` This can be changed with the prefix command."
+                    $"Hi, thanks for inviting Dino! I hope you like the bot, and discover all its features! The default prefix is `{px}.` This can be changed with the prefix command."
             };
             eb.AddField("How to look for commands",
                 $"1) Use the {px}cmds command to see all the categories\n2) use {px}cmds with the category name to glance at what commands it has. ex: `{px}cmds mod`\n3) Use {px}h with a command name to view its help. ex: `{px}h purge`");
-            eb.AddField("Have any questions, or need my invite link?", "Support Server: https://discord.gg/C3yyk7ebEz \nInvite Link: https://mewdeko.tech/invite");
+            eb.AddField("Have any questions, or need my invite link?", "Support Server: https://discord.gg/dinogaming \nInvite Link: https://chuchudayne.com/dino");
             eb.WithThumbnailUrl(
                 "https://media.discordapp.net/attachments/866308739334406174/869220206101282896/nekoha_shizuku_original_drawn_by_amashiro_natsuki__df72ed2f8d84038f83c4d1128969d407.png");
             eb.WithOkColor();
