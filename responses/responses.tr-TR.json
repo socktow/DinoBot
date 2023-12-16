@@ -289,7 +289,7 @@
     "command_not_found": "Bu komutu bulamıyorum. Lütfen tekrar denemeden önce komutun var olduğunu doğrulayın.",
     "desc": "Tanıtım",
     "cant_dm": "",
-    "donate": "Mewdeko projesini destekleyebilirsiniz \n Patreon <{0}> yada\n Paypal <{1}>\n Mesajda discord adınızı veya kimliğini bırakmayı unutma.\n \n**Teşekkür ederim** ♥️",
+    "donate": "Dino projesini destekleyebilirsiniz \n Patreon <{0}> yada\n Paypal <{1}>\n Mesajda discord adınızı veya kimliğini bırakmayı unutma.\n \n**Teşekkür ederim** ♥️",
     "guide": "**Komutların listesi**: <{0}>\n**Rehber ve dokümanlar barındırma sayfasında bulunabilir**: <{1}>",
     "list_of_commands": "Komutların listesi",
     "list_of_modules": "Modüllerin listesi",

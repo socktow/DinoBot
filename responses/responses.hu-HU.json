@@ -221,7 +221,7 @@
   "commands_instr": "\u0060{0}h parancsnév\u0060 részletes leírást ad az adott parancsról. Pl.: \u0060{0}h {0}8ball\u0060",
   "command_not_found": "Nem találtam ilyen parancsot. Kérlek, ellenőrizd, hogy biztos jót adtál meg.",
   "desc": "Leírás",
-  "donate": "A Mewdeko projektet támogathatod:\nPatreonon \u003C{0}\u003E vagy\nPaypallal \u003C{1}\u003E\nNe felejtsd el megadni a discord nevedet vagy az azonosítódat az üzenetben.\n\n**Köszi** ♥️",
+  "donate": "A Dino projektet támogathatod:\nPatreonon \u003C{0}\u003E vagy\nPaypallal \u003C{1}\u003E\nNe felejtsd el megadni a discord nevedet vagy az azonosítódat az üzenetben.\n\n**Köszi** ♥️",
   "guide": "**Parancsok listája**: \u003C{0}\u003E\n**Saját bot működtetéséhez segítséget itt találsz**: \u003C{1}\u003E",
   "list_of_commands": "Parancsok listája",
   "list_of_modules": "Modulok listája",

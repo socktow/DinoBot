@@ -289,7 +289,7 @@
     "command_not_found": "Saya tidak dapat menemukan perintah itu. Tolong verifikasi perintah itu ada sebelum mencoba lagi.",
     "desc": "Deskripsi",
     "cant_dm": "",
-    "donate": "Anda dapat mendukung projek Mewdeko di\nPatreon <{0}> atau\nPaypal <{1}>\nJangan lupa untuk meninggalkan nama atau ID Discord anda di dalam pesan.\n\n**Terima kasih**♥️ ",
+    "donate": "Anda dapat mendukung projek Dino di\nPatreon <{0}> atau\nPaypal <{1}>\nJangan lupa untuk meninggalkan nama atau ID Discord anda di dalam pesan.\n\n**Terima kasih**♥️ ",
     "guide": "**Daftar perintah**: <{0}>\n**Panduan dan dokumentasi hosting dapat ditemukan disini**: <{1}>",
     "list_of_commands": "Daftar perintah",
     "list_of_modules": "Daftar modul",

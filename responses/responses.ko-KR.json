@@ -289,7 +289,7 @@
     "command_not_found": "입력하신 명령어를 찾을 수 없습니다. 입력하시기 전에 유효한 명령어인지 확인해주세요.",
     "desc": "설명",
     "cant_dm": "",
-    "donate": "Patreon <{0}>이나\nPaypal <{1}>에서\nMewdeko 프로젝트를 지원할 수 있습니다.\nDiscord 닉네임이나 ID를 메시지에 남겨 두는 것을 잊지 마세요.\n\n**감사합니다** ♥️",
+    "donate": "Patreon <{0}>이나\nPaypal <{1}>에서\nDino 프로젝트를 지원할 수 있습니다.\nDiscord 닉네임이나 ID를 메시지에 남겨 두는 것을 잊지 마세요.\n\n**감사합니다** ♥️",
     "guide": "**명령어 목록**: <{0}>\n**호스팅 가이드와 문서는 여기서 찾을 수 있습니다**: <{1}>",
     "list_of_commands": "명령어 목록",
     "list_of_modules": "모듈 목록",

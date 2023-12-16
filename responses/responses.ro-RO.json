@@ -289,7 +289,7 @@
     "command_not_found": "Nu gasesc acea comanda. Te rog asigura-te ca exista comanda inainte de a incerca din nou.",
     "desc": "Descriere",
     "cant_dm": "",
-    "donate": "Poți susține proiectul Mewdeko pe\nPatreon <{0}> sau\nPaypal <{1}>\nNu uita să iți lași numele de Discord sau ID-ul în mesaj.\n\n**Mulțumesc** ♥️",
+    "donate": "Poți susține proiectul Dino pe\nPatreon <{0}> sau\nPaypal <{1}>\nNu uita să iți lași numele de Discord sau ID-ul în mesaj.\n\n**Mulțumesc** ♥️",
     "guide": "** Listă de comenzi **: <{0}>\n** Ghiduri și documente de găzduire pot fi găsite aici **: <{1}>",
     "list_of_commands": "Lista comenzilor",
     "list_of_modules": "Lista modulelor",

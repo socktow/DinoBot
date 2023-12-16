@@ -289,7 +289,7 @@
     "command_not_found": "I can't find that command. Does it even exist?.",
     "desc": "Description",
     "cant_dm": "",
-    "donate": "You can support the Mewdeko project on \nPatreon <{0}> or\nPaypal <{1}>\nDon't forget to leave your discord name or id in the message.\n\n**Thank you** ♥️",
+    "donate": "You can support the Dino project on \nPatreon <{0}> or\nPaypal <{1}>\nDon't forget to leave your discord name or id in the message.\n\n**Thank you** ♥️",
     "guide": "**You better read these commands before asking questions**: <{0}>\n**Hosting Guides and docs can be found here**: <{1}>",
     "list_of_commands": "List Of Commands",
     "list_of_modules": "List Of Modules",

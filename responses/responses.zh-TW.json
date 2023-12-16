@@ -221,7 +221,7 @@
   "commands_instr": "輸入\u0060{0}h 指令名稱\u0060來查閱該指令的詳細說明。 例如 \u0060{0}h {0}8ball\u0060",
   "command_not_found": "我找不到该指令。請再次查詢前確定該指令是否存在。",
   "desc": "說明",
-  "donate": "您可以透過：\nPatreon \u003C{0}\u003E 或\nPaypal \u003C{1}\u003E\n來贊助Mewdeko專案\n請不要忘記在訊息中留下您的ID。\n\n**感謝您**♥️",
+  "donate": "您可以透過：\nPatreon \u003C{0}\u003E 或\nPaypal \u003C{1}\u003E\n來贊助Dino專案\n請不要忘記在訊息中留下您的ID。\n\n**感謝您**♥️",
   "guide": "**指令清單**: \u003C{0}\u003E\n**自己架設的教學和文件可參考**: \u003C{1}\u003E",
   "list_of_commands": "指令清單",
   "list_of_modules": "模組清單\n",

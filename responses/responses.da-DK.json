@@ -289,7 +289,7 @@
     "command_not_found": "Jeg kan ikke finde den kommando. Tjek at kommandoen eksisterer før du prøver igen.",
     "desc": "Beskrivelse",
     "cant_dm": "",
-    "donate": "Du kan støtte Mewdeko projektet på\nPatreon <{0}> eller\nPaypal <{1}>\nHusk at tilføje dit Discord navn eller ID i beskeden\n\n**Tak** ♥️ ",
+    "donate": "Du kan støtte Dino projektet på\nPatreon <{0}> eller\nPaypal <{1}>\nHusk at tilføje dit Discord navn eller ID i beskeden\n\n**Tak** ♥️ ",
     "guide": "**Kommando liste**: <{0}>\n**Hosting guides og dokumenter kan findes her:** <{1}>",
     "list_of_commands": "Kommandoliste",
     "list_of_modules": "Modulliste",

@@ -20,8 +20,8 @@ acceptmessage:
     - embedcodehere
   desc: >-
     Allows you to set the message sent when a suggestion is accepted. Use the
-    embed builder at https://eb.chuchudayne.com and the placeholders at
-    https://blog.chuchudayne.com/placeholders.
+    embed builder at https://chuchudayne.com/embed and the placeholders at
+    https://chuchudayne.com/placeholders.
 aclist:
   args:
     - ''
@@ -46,7 +46,7 @@ addchattrigger:
     Add a Chat Trigger with a trigger and a response. Running this command in
     server requires the Administration permission. Running this command in DM is
     Bot Owner only and adds a new global Chat Trigger. Guide here:
-    https://blog.chuchudayne.com/chattriggers
+    https://chuchudayne.com/chattriggers
 addchattriggerregex:
   args:
     - \d{3,}cats you have lots of cats
@@ -55,7 +55,7 @@ addchattriggerregex:
     Add a Chat Trigger with a regex trigger and a response. Running this command
     in server requires the Administration permission. Running this command in DM
     is Bot Owner only and adds a new global Chat Trigger. Guide here:
-    https://blog.chuchudayne.com/chattriggers
+    https://chuchudayne.com/chattriggers
 addemote:
   args:
     - name emote
@@ -104,7 +104,7 @@ adsarm:
   args:
     - ''
   desc: >-
-    Toggles the automatic deletion of the user's message and Mewdeko's
+    Toggles the automatic deletion of the user's message and Dino's
     confirmations for `{0}iam` and `{0}iamn` commands.
 affinity:
   args:
@@ -158,7 +158,7 @@ afkrm:
 afktimeout:
   args:
     - 30s
-  desc: Sets how long it takes for Mewdeko to time out Active AFKs..
+  desc: Sets how long it takes for Dino to time out Active AFKs..
 afktype:
   args:
     - onmessage
@@ -194,7 +194,7 @@ alias:
     - allin {0}bf all h
     - '"linux thingy" >loonix Spyware Windows'
   desc: >-
-    Create a custom alias for a certain Mewdeko command. Provide no alias to
+    Create a custom alias for a certain Dino command. Provide no alias to
     remove the existing one.
 aliasesclear:
   args:
@@ -503,9 +503,9 @@ boostmsg:
   desc: >-
     Sets a new boost announcement message. Type `%user.mention%` if you want to
     show the name the user who left. Full list of placeholders can be found here
-    <https://blog.chuchudayne.com/placeholders/> Using this command with no message will
+    <https://chuchudayne.com/placeholders/> Using this command with no message will
     show the current boost message. You can use embed json from
-    <https://eb.chuchudayne.com/> instead of a regular text, if you want the
+    <https://chuchudayne.com/embed/> instead of a regular text, if you want the
     message to be embedded.
 boosttest:
   args:
@@ -552,7 +552,7 @@ byemsg:
     Sets a new leave announcement message. Type `%user.mention%` if you want to
     show the name the user who left. Type `%id%` to show id. Using this command
     with no message will show the current bye message. You can use make embeds
-    using https://eb.chuchudayne.com/ instead of regular text, if you want the
+    using https://chuchudayne.com/embed/ instead of regular text, if you want the
     message to be embedded.
 byetest:
   args:
@@ -909,8 +909,8 @@ considermessage:
     - embedcodehere
   desc: >-
     Allows you to set the message sent when a suggestion is considered.Use the
-    embed builder at https://eb.chuchudayne.com and the placeholders at
-    https://blog.chuchudayne.com/placeholders.
+    embed builder at https://chuchudayne.com/embed and the placeholders at
+    https://chuchudayne.com/placeholders.
 convert:
   args:
     - m km 1000
@@ -1180,8 +1180,8 @@ denymessage:
     - embedcodehere
   desc: >-
     Allows you to set the message sent when a suggestion is denied. Use the
-    embed builder at https://eb.chuchudayne.com and the placeholders at
-    https://blog.chuchudayne.com/placeholders.
+    embed builder at https://chuchudayne.com/embed and the placeholders at
+    https://chuchudayne.com/placeholders.
 derpibooru:
   args:
     - yuri+kissing
@@ -1303,7 +1303,7 @@ eventstart:
     - reaction
     - reaction -d 1 -a 50 --pot-size 1500
   desc: >-
-    Starts one of the events seen on public Mewdeko. Events: `reaction`,
+    Starts one of the events seen on public Dino. Events: `reaction`,
     `gamestatus`
 experience:
   args:
@@ -1343,7 +1343,7 @@ feedmessage:
     - 1 embedcode
   desc: >-
     Add a custom message to a certain feed. Find the number using {0}feeds. You
-    can use https://eb.chuchudayne.com along with https://blog.chuchudayne.com/placeholders
+    can use https://chuchudayne.com/embed along with https://chuchudayne.com/placeholders
     to make cool embeds with this.
 feedremove:
   args:
@@ -1504,7 +1504,7 @@ greetdmmsg:
     Sets a new join announcement message which will be sent to the user who
     joined. Type `%user.mention%` if you want to mention the new member. Using
     it with no message will show the current DM greet message. You can use embed
-    json from <https://eb.chuchudayne.com> instead of a regular text, if you want
+    json from <https://chuchudayne.com/embed> instead of a regular text, if you want
     the message to be embedded.
 greetdmtest:
   args:
@@ -1522,7 +1522,7 @@ greethook:
     Allows you to set a webhook used for welcome messages. You can either upload
     an image to use or use a image url. Type disable to disable webhook greets.
     set the message used for greets using the greetmsg command together with
-    https://eb.chuchudayne.com/ and https://blog.chuchudayne.com/placeholders
+    https://chuchudayne.com/embed/ and https://chuchudayne.com/placeholders
 greetmsg:
   args:
     - Welcome, %user.mention%.
@@ -1530,7 +1530,7 @@ greetmsg:
     Sets a new join announcement message which will be shown in the server's
     channel. Type `%user.mention%` if you want to mention the new member. Using
     it with no message will show the current greet message. You can use make
-    embeds  using https://eb.chuchudayne.com/ instead of regular text, if you want
+    embeds  using https://chuchudayne.com/embed/ instead of regular text, if you want
     the message to be embedded.
 greettest:
   args:
@@ -1669,8 +1669,8 @@ implementmessage:
     - embedcodehere
   desc: >-
     Allows you to set the message sent when a suggestion is implemented. Use the
-    embed builder at https://eb.chuchudayne.com and the placeholders at
-    https://blog.chuchudayne.com/placeholders.
+    embed builder at https://chuchudayne.com/embed and the placeholders at
+    https://chuchudayne.com/placeholders.
 inrole:
   args:
     - RoleName
@@ -1685,7 +1685,7 @@ inroles:
 invite:
   args:
     - ''
-  desc: Pulls up the link to invite mewdeko.
+  desc: Pulls up the link to invite Dino.
 invitecreate:
   args:
     - ''
@@ -1784,7 +1784,7 @@ leavehook:
     Allows you to set a webhook used for leave messages. You can either upload
     an image to use or use a image url. Type disable to disable webhook greets.
     set the message used for leaves using the byemsg command together with
-    https://eb.chuchudayne.com/ and https://blog.chuchudayne.com/placeholders
+    https://chuchudayne.com/embed/ and https://chuchudayne.com/placeholders
 leaveserver:
   args:
     - '123123123123'
@@ -2016,8 +2016,8 @@ multigreetmessage:
     - 2 embedcode/message
   desc: >-
     Gets or sets a MultiGreet message for a given MultiGreet ID. To set a custom
-    embed use https://eb.chuchudayne.com together with
-    https://blog.chuchudayne.com/placeholders
+    embed use https://chuchudayne.com/embed together with
+    https://chuchudayne.com/placeholders
 multigreetremove:
   args:
     - '1'
@@ -2036,8 +2036,8 @@ multigreettype:
     that channel), or Off (Completely disables the MultiGreet system)
 multigreetwebhook:
   args:
-    - 26 Mewdeko avatarurl
-    - 26 Mewdeko
+    - 26 Dino avatarurl
+    - 26 Dino
     - '26'
   desc: >-
     Allows you to set/update/remove a MultiGreet name and avatar. Put just the
@@ -2069,7 +2069,7 @@ muterole:
   desc: >-
     Sets a name of the role which will be assigned to people who should be
     muted. Provide no arguments to see currently set mute role. Default is
-    Mewdeko-mute.
+    Dino-mute.
 mwarn:
   args:
     - '@user'
@@ -2374,7 +2374,7 @@ purge:
     - 20 --nb
     - 20 --ob
   desc: >-
-    `{0}Purge` removes all Mewdeko's messages in the last 100 messages.
+    `{0}Purge` removes all Dino's messages in the last 100 messages.
     `{0}Purge X` removes last `X` number of messages from the channel (up to
     100). `{0}Purge @Someone` removes all Someone's messages in the last 100
     messages. `{0}Purge @Someone X` removes last `X` number of 'Someone's'
@@ -2494,7 +2494,7 @@ reactchannel:
   args:
     - '#channel'
   desc: >-
-    Sets a channel where mewdeko will react with upvote and downvote arrows to
+    Sets a channel where Dino will react with upvote and downvote arrows to
     media. Provide no paramter to disable.
 reactionroles:
   args:
@@ -2645,8 +2645,8 @@ repeatmessage:
     - 1 message/embedcode
   desc: >-
     Set's a repeaters message after it has been made. You can use this with
-    [embeds](https://eb.chuchudayne.com) and
-    [placeholders](https://blog.chuchudayne.com/placeholders)
+    [embeds](https://chuchudayne.com/embed) and
+    [placeholders](https://chuchudayne.com/placeholders)
 repeatredun:
   args:
     - '1'
@@ -2667,7 +2667,7 @@ repostthreshold:
   args:
     - 0
     - 5
-  desc: Sets after how many messages mewdeko reposts a starboard message
+  desc: Sets after how many messages Dino reposts a starboard message
 reptcursong:
   args:
     - ''
@@ -2765,8 +2765,8 @@ rolegreetmessage:
     - 2 embedcode/message
   desc: >-
     Gets or sets a roleGreet message for a given RoleGreet ID. To set a custom
-    embed use https://eb.chuchudayne.com together with
-    https://blog.chuchudayne.com/placeholders
+    embed use https://chuchudayne.com/embed together with
+    https://chuchudayne.com/placeholders
 rolegreetremove:
   args:
     - '1'
@@ -2776,8 +2776,8 @@ rolegreetremove:
     RoleGreets for a mentioned role.
 rolegreetwebhook:
   args:
-    - 26 Mewdeko avatarurl
-    - 26 Mewdeko
+    - 26 Dino avatarurl
+    - 26 Dino
     - '26'
   desc: >-
     Allows you to set/update/remove a RoleGreet name and avatar. Put just the
@@ -2846,7 +2846,7 @@ rps:
     - r 100
     - scissors
   desc: >-
-    Play a game of Rocket-Paperclip-Scissors with Mewdeko. You can bet on it.
+    Play a game of Rocket-Paperclip-Scissors with Dino. You can bet on it.
     Multiplier is the same as on betflip.
 rsar:
   args:
@@ -2958,7 +2958,7 @@ setafktimeout:
 setavatar:
   args:
     - https://i.imgur.com/xTG3a1I.jpg
-  desc: Sets a new avatar image for Mewdeko. Parameter is a direct link to an image.
+  desc: Sets a new avatar image for Dino. Parameter is a direct link to an image.
 setbanner:
   args:
     - url
@@ -3174,7 +3174,7 @@ sleep:
 slot:
   args:
     - '5'
-  desc: Play Mewdeko slots. 1 second cooldown per user.
+  desc: Play Dino slots. 1 second cooldown per user.
 slotstats:
   args:
     - ''
@@ -3328,7 +3328,7 @@ stare:
 stats:
   args:
     - ''
-  desc: Shows some basic stats for Mewdeko.
+  desc: Shows some basic stats for Dino.
 steal:
   args:
     - emote emote emote
@@ -3799,11 +3799,11 @@ volume:
 vote:
   args:
     - ''
-  desc: Vote for Mewdeko!
+  desc: Vote for Dino!
 voteclaim:
   args:
     - ''
-  desc: Claims the vote currency for voting for Mewdeko
+  desc: Claims the vote currency for voting for Dino
 waifuclaim:
   args:
     - 50 @Himesama

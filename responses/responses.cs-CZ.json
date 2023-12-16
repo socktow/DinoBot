@@ -289,7 +289,7 @@
     "command_not_found": "Nemohu najít tento příkaz. Ujisti se prosím, zda tento příkaz opravdu existuje, a poté ho zkus znovu.",
     "desc": "Popis",
     "cant_dm": "",
-    "donate": "Můžeš podpořit projekt Mewdeko na\nPatreonu <{0}> nebo\nPaypalu <{1}>\nNezapomeň ve zprávě zanechat své discord jméno nebo ID.\n\n**Děkuji ** ♥️",
+    "donate": "Můžeš podpořit projekt Dino na\nPatreonu <{0}> nebo\nPaypalu <{1}>\nNezapomeň ve zprávě zanechat své discord jméno nebo ID.\n\n**Děkuji ** ♥️",
     "guide": "**Seznam příkazů**: <{0}>\n**Návody a dokumentaci můžeš nalézt zde**: <{1}>",
     "list_of_commands": "Seznam příkazů",
     "list_of_modules": "Seznam modulů",

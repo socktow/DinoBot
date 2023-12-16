@@ -289,7 +289,7 @@
     "command_not_found": "Impossible de trouver cette commande. Veuillez vérifier qu'elle existe avant de réessayer.",
     "desc": "Description",
     "cant_dm": "",
-    "donate": "Vous pouvez supporter le projet Mewdeko\nsur Patreon <{0}>\npar Paypal <{1}>\nN'oubliez pas de mettre votre nom discord ou ID dans le message.\n\n**Merci** ♥️",
+    "donate": "Vous pouvez supporter le projet Dino\nsur Patreon <{0}>\npar Paypal <{1}>\nN'oubliez pas de mettre votre nom discord ou ID dans le message.\n\n**Merci** ♥️",
     "guide": "**Liste des Commandes** : <{0}>\n**La liste des guides et tous les documents peuvent être trouvés ici** : <{1}>",
     "list_of_commands": "Liste des commandes",
     "list_of_modules": "Liste des modules",

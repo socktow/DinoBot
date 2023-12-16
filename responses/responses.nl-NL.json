@@ -221,7 +221,7 @@
   "commands_instr": "Typ \u0060{0}h CommandoNaam\u0060 om de uitleg te zien voor dat specifieke commando. b.v \u0060{0}h {0}8bal\u0060",
   "command_not_found": "Ik kan het commando niet vinden. Verifieer of dit commando echt bestaat voordat je het opnieuw probeert.",
   "desc": "Beschrijving",
-  "donate": "Je kan het Mewdeko project steunen op\nPatreon \u003C{0}\u003E of\nPayPal \u003C{1}\u003E\nVergeet niet je discord naam en id in het bericht te zetten.\n\n**Hartelijk bedankt** ♥️",
+  "donate": "Je kan het Dino project steunen op\nPatreon \u003C{0}\u003E of\nPayPal \u003C{1}\u003E\nVergeet niet je discord naam en id in het bericht te zetten.\n\n**Hartelijk bedankt** ♥️",
   "guide": "**Lijst met commando\u0027s**: \u003C{0}\u003E\n**Hosting tutorials en documenten kunnen hier gevonden worden**: \u003C{1}\u003E",
   "list_of_commands": "Lijst met commando\u0027s",
   "list_of_modules": "Lijst met modules",

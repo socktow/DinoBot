@@ -289,7 +289,7 @@
     "command_not_found": "Ich konnte diesen Befehl nicht finden. Bitte stelle sicher das dieser Befehl existiert bevor Sie es erneut versuchen.",
     "desc": "Beschreibung",
     "cant_dm": "",
-    "donate": "Sie können das Mewdeko-Projekt über \nPatreon <{0}> oder \nPayPal <{1}> unterstützen.\nVergessen Sie bitte nicht, Ihren Discord-Namen oder Ihre ID in der Nachricht zu hinterlassen.\n\n**Vielen Dank**♥️",
+    "donate": "Sie können das Dino-Projekt über \nPatreon <{0}> oder \nPayPal <{1}> unterstützen.\nVergessen Sie bitte nicht, Ihren Discord-Namen oder Ihre ID in der Nachricht zu hinterlassen.\n\n**Vielen Dank**♥️",
     "guide": "**Liste der Befehle**: <{0}>\n**Hosting Anleitungen und Dokumentationen können hier gefunden werden**: <{1}>",
     "list_of_commands": "Liste der Befehle",
     "list_of_modules": "Liste der Module",
