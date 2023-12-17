@@ -548,6 +548,7 @@ byedel:
     Đặt thời gian (tính bằng giây) để thông báo tạm biệt tự động bị xóa. Đặt là
     `0` để vô hiệu hóa xóa tự động.
 byemsg:
+  args:
     - '%user.mention% has left.'
   desc: >-
     Đặt một thông báo rời bỏ mới. Gõ `%user.mention%` nếu bạn muốn hiển thị tên
@@ -1316,6 +1317,7 @@ fairplay:
     Chuyển đổi chế độ fairplay. Khi được bật, bot sẽ ưu tiên các bài hát từ người
     dùng chưa gần đây có bài hát của họ thay vì vị trí của bài hát trong hàng đợi.
 feed:
+  args:
     - '@user'
   desc: Trả về một gif về việc đưa thức ăn cho người khác.
 feedadd:
@@ -3140,52 +3142,43 @@ srvrcmd:
   args:
     - '"command name" disable'
   desc: Thiết lập quyền cho một lệnh ở cấp độ server.
-
 srvrfilterinv:
   args:
     - ''
   desc: >-
     Bật/Tắt chế độ tự động xóa liên kết mời trong server. Không ảnh hưởng đến người dùng có quyền quản trị.
-
 srvrfilterlin:
   args:
     - ''
   desc: >-
     Bật/Tắt chế độ tự động xóa liên kết trong server. Không ảnh hưởng đến người dùng có quyền quản trị.
-
 srvrfilterwords:
   args:
     - ''
   desc: >-
     Bật/Tắt chế độ tự động xóa tin nhắn chứa từ cấm trong server. Không ảnh hưởng đến người dùng có quyền quản trị.
-
 srvrmdl:
   args:
     - ModuleName enable
   desc: Thiết lập quyền cho một module ở cấp độ server.
-
 staffrole:
   args:
     - role
     - ''
   desc: >-
     Đặt vai trò nhân viên được sử dụng để bot bỏ qua người dùng khi các liên kết, mời, từ cấm, hoặc từ cấm tự động được bật. Có thể được sử dụng cho mục đích khác trong tương lai.
-
 staffroledisable:
   args:
     - ''
   desc: Tắt vai trò nhân viên, nếu đã được đặt.
-
 stand:
   args:
     - ''
   desc: Kết thúc lượt chơi của bạn trong trò blackjack.
-
 starboardallowbots:
   args:
     - true
   desc: Thiết lập liệu starboard có bỏ qua bot hay không. Mặc định là false.
-
 starboardchtoggle:
   args:
     - '#channel'
@@ -3195,55 +3188,45 @@ starboardremoveonbelowthreshold:
   args:
     - true
   desc: Thiết lập liệu một bài đăng sẽ bị xóa khi nó dưới ngưỡng số sao đã đặt.
-
 starboardremoveondelete:
   args:
     - true
   desc: Thiết lập liệu starboard sẽ xóa một bài đăng khi tin nhắn gốc bị xóa.
-
 starboardremoveonreactionscleared:
   args:
     - true
   desc: >-
     Thiết lập liệu starboard sẽ xóa một bài đăng khi phản ứng của tin nhắn gốc bị xóa.
-
 starboardwlmode:
   args:
     - whitelist
     - blacklist
   desc: Thiết lập liệu starboard đang ở chế độ danh sách trắng hoặc danh sách đen.
-
 stare:
   args:
     - '@user'
   desc: Trả về một gif nhìn chằm chằm.
-
 stats:
   args:
     - ''
   desc: Hiển thị một số thống kê cơ bản về Dino.
-
 steal:
   args:
     - emote emote emote
   desc: 'Đánh cắp một hoặc nhiều biểu tượng mà bạn đề cập đến.'
-
 steam:
   args:
     - Sakura Agent
   desc: >-
     Trả về một liên kết cửa hàng cho một trò chơi Steam với tên cụ thể. Nó không hoạt động rất tốt vì bóng rổ.
-
 stfu:
   args:
     - '@user'
   desc: 'Im lặng người dùng trong kênh hiện tại.'
-
 stop:
   args:
     - ''
   desc: Dừng âm nhạc và xóa hàng đợi.
-
 streamadd:
   args:
     - twitch.tv/someguy
@@ -3253,36 +3236,30 @@ streamcheck:
   args:
     - https://twitch.tv/somedude
   desc: Lấy thông tin về một đoạn phát sóng.
-
 streamlist:
   args:
     - ''
   desc: >-
     Liệt kê tất cả các đoạn phát sóng bạn theo dõi trên server này và chỉ số tương ứng của chúng.
-
 streammessage:
   args:
     - 1 Hey @erryone i'm back online!1!!
   desc: >-
     Đặt thông báo sẽ hiển thị khi đoạn phát sóng trên chỉ số cụ thể trở lại trực tuyến.
-
 streamoffline:
   args:
     - ''
   desc: Chuyển đổi xem liệu bot sẽ cũng thông báo khi các đoạn phát sóng được thêm vào offline.
-
 streamremove:
   args:
     - '2'
   desc: >-
     Ngừng theo dõi đoạn phát sóng trên chỉ số cụ thể. (sử dụng `{0}stl` để xem chỉ số)
-
 streamrole:
   args:
     - '"Eligible Streamers" "Featured Streams"'
   desc: >-
     Đặt vai trò được giám sát cho người phát sóng (FromRole), và một vai trò để thêm nếu một người dùng từ 'FromRole' đang phát sóng (AddRole). Khi người dùng từ 'FromRole' bắt đầu phát sóng, họ sẽ nhận được vai trò 'AddRole'. Bạn chỉ có thể có 1 Vai Trò Phát Sóng trên mỗi server. Không cung cấp tham số nào để tắt.
-
 streamroleblacklist:
   args:
     - add @Someone#1234
@@ -3295,34 +3272,28 @@ streamrolekeyword:
     - PUBG
   desc: >-
     Thiết lập từ khóa cần thiết trong tiêu đề của đoạn phát sóng để vai trò phát sóng được áp dụng. Không cung cấp từ khóa nào để đặt lại.
-
 streamrolewhitelist:
   args:
     - add @Someone#1234
     - rem @Someone#1234
   desc: >-
     Thêm hoặc loại bỏ một người dùng được đưa vào danh sách trắng. Người dùng trong danh sách trắng sẽ nhận được vai trò phát sóng ngay cả khi họ không có từ khóa cụ thể trong tiêu đề phát sóng của họ.
-
 streamsclear:
   args:
     - ''
   desc: Xóa tất cả các đoạn phát sóng bạn đang theo dõi.
-
 stringsreload:
   args:
     - ''
   desc: Tải lại chuỗi ngôn ngữ cục bộ của bot.
-
 suggest:
   args:
     - suggestion
   desc: 'Gửi một đề xuất đến kênh đề xuất.'
-
 sudo:
   args:
     - "@sylveon make me a sandwich"
   desc: Cho phép chủ sở hữu bot chạy lệnh như một người dùng.
-
 suggestbuttonchannel:
   args:
     - '#channel'
