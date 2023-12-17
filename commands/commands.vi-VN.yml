@@ -1377,157 +1377,157 @@ fwarn:
   args:
     - y/n
   desc: >-
-    toggles warn on filtered word, make sure to enable filters with sfw and add
-    words with fw first.
+    Chuyển đổi cảnh báo trên từ đã lọc, hãy đảm bảo bật bộ lọc với sfw và thêm
+    từ với fw trước.
 fwclear:
   args:
     - ''
-  desc: Deletes all filtered words on this server.
+  desc: Xóa tất cả các từ đã lọc trên máy chủ này.
 gamevoicechannel:
   args:
     - ''
   desc: >-
-    Toggles game voice channel feature in the voice channel you're currently in.
-    Users who join the game voice channel will get automatically redirected to
-    the voice channel with the name of their current game, if it exists. Can't
-    move users to channels that the bot has no connect permission for. One per
-    server.
+    Chuyển đổi tính năng kênh giọng nói của trò chơi trong kênh giọng nói bạn đang ở.
+    Người dùng tham gia kênh giọng nói trò chơi sẽ tự động được chuyển hướng đến
+    kênh giọng nói có tên giống với trò chơi hiện tại của họ, nếu có. Không thể
+    di chuyển người dùng đến các kênh mà bot không có quyền kết nối. Một lần mỗi
+    máy chủ.
 gatari:
   args:
     - Name
     - Name ctb
-  desc: Shows osu!gatari stats for a player.
+  desc: Hiển thị thống kê osu!gatari cho một người chơi.
 gelbooru:
   args:
     - yuri+kissing
   desc: >-
-    Shows a random hentai image from gelbooru with a given tag. Tag is optional
-    but preferred. (multiple tags are appended with +)
+    Hiển thị một hình ảnh hentai ngẫu nhiên từ gelbooru với một thẻ nhất định. Thẻ là tùy chọn
+    nhưng được ưu tiên. (nhiều thẻ được thêm vào với dấu +)
 gemote:
   args:
     - <:HaneBomb:914307912044802059>
-  desc: Sets a custom emote used in giveaways!
+  desc: Đặt một biểu tượng tùy chỉnh được sử dụng trong các cuộc phân phối!
 gencurlist:
   args:
     - ''
   desc: >-
-    Shows the list of server and channel ids where gc is enabled. Paginated with
-    9 per page.
+    Hiển thị danh sách các id máy chủ và kênh nơi gc được bật. Phân trang với
+    9 mục mỗi trang.
 gencurrency:
   args:
     - ''
   desc: >-
-    Toggles currency generation on this channel. Every posted message will have
-    chance to spawn currency. Chance is specified by the Bot Owner. (default is
-    2%)
+    Chuyển đổi tạo tiền tệ trên kênh này. Mỗi tin nhắn được đăng sẽ có cơ hội sinh ra
+    tiền tệ. Cơ hội được xác định bởi Chủ sở hữu Bot. (mặc định là 2%)
 gend:
   args:
     - '2'
-  desc: Ends a giveaway using the number in `{0}glist`.
+  desc: Kết thúc một cuộc phân phối bằng số trong `{0}glist`.
 getactiveafks:
   args:
     - ''
-  desc: Get all currently AFK Users in a paginated list
+  desc: Lấy tất cả người dùng AFK hiện tại trong một danh sách có phân trang
 getpronouns:
   args:
     - '@user'
     - ''
   desc: >-
-    Gets a user's preferred pronouns, if they haven't specified them using
-    `pnoverride` it will  fetch the pronouns from
+    Lấy giới từ ưa thích của một người dùng, nếu họ chưa chỉ định chúng bằng
+    cách sử dụng `pnoverride`, nó sẽ truy xuất giới từ từ
     [pronoundb](https://pronoundb.org)
 give:
   args:
     - 1 @Someone
     - 5 @CootGurl Ur so pwetty
   desc: >-
-    Give someone a certain amount of currency. You can specify the reason after
-    the mention.
+    Tặng một số lượng tiền tệ cho ai đó. Bạn có thể chỉ định lý do sau
+    khi đề cập đến người đó.
 glist:
   args:
     - ''
-  desc: Lists the currently running giveaways.
+  desc: Liệt kê các cuộc phân phối hiện đang diễn ra.
 globalcommand:
   args:
     - '{0}stats'
-  desc: Toggles whether a command can be used on any server.
+  desc: Bật/tắt khả năng sử dụng lệnh trên bất kỳ máy chủ nào.
 globalmodule:
   args:
     - nsfw
-  desc: Toggles whether a module can be used on any server.
+  desc: Bật/tắt khả năng sử dụng mô-đun trên bất kỳ máy chủ nào.
 globalpermlist:
   args:
     - ''
-  desc: Lists global permissions set by the bot owner.
+  desc: Liệt kê các quyền toàn cầu được thiết lập bởi chủ sở hữu bot.
 google:
   args:
     - query
-  desc: Get a Google search link for some terms.
+  desc: Lấy một liên kết tìm kiếm Google cho một số thuật ngữ.
 grab:
   args:
     - '@user'
   desc: >-
-    Moves the user you mention to your vc. ***The user you mention must already
-    be in a vc.***
+    Chuyển người bạn đề cập đến kênh giọng nói của bạn. ***Người bạn đề cập
+    phải đã ở trong một kênh giọng nói.***
 greet:
   args:
     - ''
-  desc: Toggles anouncements on the current channel when someone joins the server.
+  desc: Chuyển đổi thông báo trên kênh hiện tại khi có người tham gia máy chủ.
 greetdel:
   args:
     - '0'
     - '30'
   desc: >-
-    Sets the time it takes (in seconds) for greet messages to be auto-deleted.
-    Set it to 0 to disable automatic deletion.
+    Đặt thời gian (tính bằng giây) để tự động xóa các thông báo chào mừng.
+    Đặt thành 0 để tắt chức năng tự động xóa.
 greetdm:
   args:
     - ''
   desc: >-
-    Toggles whether the greet messages will be sent in a DM (This is separate
-    from greet - you can have both, any or neither enabled).
-greetdmmsg:
+    Chuyển đổi xem liệu các thông báo chào mừng sẽ được gửi trong DM hay không
+    (Điều này là độc lập với greet - bạn có thể bật cả hai hoặc bất kỳ cái nào cũng được).
+greetmsg:
   args:
-    - Welcome to the server, %user.mention%
+    - Welcome to the server, %user.mention%! We hope you enjoy your stay.
   desc: >-
-    Sets a new join announcement message which will be sent to the user who
-    joined. Type `%user.mention%` if you want to mention the new member. Using
-    it with no message will show the current DM greet message. You can use embed
-    json from <https://chuchudayne.com/embed> instead of a regular text, if you want
-    the message to be embedded.
+    Đặt một thông báo chào mừng mới sẽ được gửi đến người dùng mới gia nhập.
+    Nhập `%user.mention%` nếu bạn muốn đề cập đến thành viên mới. Sử dụng nó
+    mà không có thông báo sẽ hiển thị thông báo chào mừng hiện tại của DM. Bạn
+    có thể sử dụng mã nhúng JSON từ <https://chuchudayne.com/embed> thay vì văn bản thông thường,
+    nếu bạn muốn thông báo được nhúng.
 greetdmtest:
   args:
     - ''
     - '@SomeoneElse'
   desc: >-
-    Sends the greet direct message to you as if you just joined the server. You
-    can optionally specify a different user.
+    Gửi thông báo chào mừng trực tiếp cho bạn như bạn vừa tham gia máy chủ. Bạn
+    có thể tùy chọn chỉ định một người dùng khác.
 greethook:
   args:
     - channel name image
     - channel name
     - disable
   desc: >-
-    Allows you to set a webhook used for welcome messages. You can either upload
-    an image to use or use a image url. Type disable to disable webhook greets.
-    set the message used for greets using the greetmsg command together with
-    https://chuchudayne.com/embed/ and https://chuchudayne.com/placeholders
+    Cho phép bạn thiết lập một webhook được sử dụng cho các thông báo chào mừng.
+    Bạn có thể tải lên một hình ảnh để sử dụng hoặc sử dụng một URL hình ảnh. Gõ
+    'disable' để tắt các thông báo chào mừng webhook. Đặt thông báo được sử dụng
+    cho các thông báo chào mừng bằng lệnh greetmsg cùng với https://chuchudayne.com/embed/
+    và https://chuchudayne.com/placeholders.
 greetmsg:
   args:
     - Welcome, %user.mention%.
   desc: >-
-    Sets a new join announcement message which will be shown in the server's
-    channel. Type `%user.mention%` if you want to mention the new member. Using
-    it with no message will show the current greet message. You can use make
-    embeds  using https://chuchudayne.com/embed/ instead of regular text, if you want
-    the message to be embedded.
+    Đặt một thông báo chào mừng mới sẽ được hiển thị trong kênh của máy chủ.
+    Nhập `%user.mention%` nếu bạn muốn đề cập đến thành viên mới. Sử dụng nó
+    mà không có thông báo sẽ hiển thị thông báo chào mừng hiện tại. Bạn có thể
+    tạo nhúng sử dụng https://chuchudayne.com/embed/ thay vì văn bản thông thường,
+    nếu bạn muốn thông báo được nhúng.
 greettest:
   args:
     - ''
     - '@SomeoneElse'
   desc: >-
-    Sends the greet message in the current channel as if you just joined the
-    server. You can optionally specify a different user.
+    Gửi thông báo chào mừng trong kênh hiện tại như bạn vừa tham gia máy chủ.
+    Bạn có thể tùy chọn chỉ định một người dùng khác.
 greroll:
   args:
     - messageid
@@ -1536,69 +1536,69 @@ gstart:
   args:
     - ''
     - '#channel 2d 1 nitro!'
-  desc: Starts giveaway configuration, or predefined values to start one immediately
+  desc: Bắt đầu cấu hình cho giveaway, hoặc giá trị được xác định trước để bắt đầu ngay lập tức.
 gstats:
   args:
     - ''
-  desc: Shows giveaway stats for the server.
+  desc: Hiển thị thống kê về giveaway cho máy chủ.
 guide:
   args:
     - ''
     - ''
-  desc: Sends a readme and a guide links to the channel.
+  desc: Gửi một tệp readme và liên kết hướng dẫn đến kênh.
 hangman:
   args:
     - ''
     - movies
   desc: >-
-    Starts a game of hangman in the channel. Use `{0}hangmanlist` to see a list
-    of available term types. Defaults to 'all'.
+    Bắt đầu một trò chơi hangman trong kênh. Sử dụng `{0}hangmanlist` để xem danh
+    sách các loại từ khả dụng. Mặc định là 'all'.
 hangmanlist:
   args:
     - ''
-  desc: Shows a list of hangman term types.
+  desc: Hiển thị danh sách các loại từ cho trò chơi hangman.
 hangmanstop:
   args:
     - ''
-  desc: Stops the active hangman game on this channel if it exists.
+  desc: Dừng trò chơi hangman đang hoạt động trên kênh này nếu nó tồn tại.
 happy:
   args:
     - '@user'
-  desc: Returns a happy gif.
+  desc: Trả về một gif hạnh phúc.
 hearthstone:
   args:
     - Ysera
   desc: >-
-    Searches for a Hearthstone card and shows its image. Takes a while to
-    complete.
+    Tìm kiếm một lá bài Hearthstone và hiển thị hình ảnh của nó. Mất một thời
+    gian để hoàn thành.
 help:
   args:
     - '{0}cmds'
     - ''
   desc: >-
-    Either shows a help for a single command, or DMs you help link if no
-    parameters are specified.
+    Hoặc hiển thị trợ giúp cho một lệnh cụ thể, hoặc gửi cho bạn liên kết trợ
+    giúp nếu không có tham số nào được chỉ định.
 hentai:
   args:
     - yuri
   desc: >-
-    Shows a hentai image from a random website (gelbooru, danbooru, konachan or
-    yandere) with a given tag. Tag is optional but preferred. Only 1 tag
-    allowed.
+    Hiển thị một hình ảnh hentai từ một trang web ngẫu nhiên (gelbooru,
+    danbooru, konachan hoặc yandere) với một thẻ cụ thể. Thẻ là tùy chọn nhưng
+    được ưa chuộng. Chỉ cho phép 1 thẻ.
 hentaibomb:
   args:
     - yuri
   desc: >-
-    Shows a total 5 images (from gelbooru, danbooru, konachan and yandere). Tag
-    is optional but preferred.
+    Hiển thị tổng cộng 5 hình ảnh (từ gelbooru, danbooru, konachan và yandere).
+    Thẻ là tùy chọn nhưng được ưa chuộng.
 hentaigif:
   args:
     - ''
-  desc: Sends a random hentai gif from the hentai_gif subreddit
+  desc: Gửi một gif hentai ngẫu nhiên từ subreddit hentai_gif
 highfive:
   args:
     - '@user'
-  desc: Returns a highfive gif.
+  desc: Trả về một gif highfive.
 highlights:
   args:
     - add Sylveon
@@ -1607,440 +1607,439 @@ highlights:
     - 'toggleignore #chat/@user'
     - enabled true
   desc: |-
-    - `add` Adds a word to your highlights
-    - `delete/remove` Removes a word from your highlights
-    - `list` Lists your current highlights
-    - `toggleignore` Toggles the ignoring of a channnel or user.
-    - `enabled` Enables or disables highlights
+    - `add` Thêm một từ vào các điểm nổi bật của bạn
+    - `delete/remove` Xóa một từ khỏi các điểm nổi bật của bạn
+    - `list` Liệt kê các điểm nổi bật hiện tại của bạn
+    - `toggleignore` Bật/tắt bỏ qua một kênh hoặc người dùng.
+    - `enabled` Bật hoặc tắt các điểm nổi bật
 hit:
   args:
     - ''
-  desc: In the blackjack game, ask the dealer for an extra card.
+  desc: Trong trò chơi blackjack, hỏi người chia bài để được một lá bài thêm.
 hug:
   args:
     - '@user'
-  desc: Returns a hug gif.
+  desc: Trả về một gif om.
 iam:
   args:
     - Gamer
   desc: >-
-    Adds a role to you that you choose. Role must be on a list of
-    self-assignable roles.
+    Thêm một vai trò cho bạn mà bạn chọn. Vai trò phải nằm trong danh sách các
+    vai trò tự chọn.
 iamnot:
   args:
     - Gamer
   desc: >-
-    Removes a specified role from you. Role must be on a list of self-assignable
-    roles.
+    Xóa một vai trò cụ thể khỏi bạn. Vai trò phải nằm trong danh sách các vai
+    trò tự chọn.
 image:
   args:
     - cute kitten
-  desc: Pulls a random image using a search parameter.
+  desc: Truy xuất một hình ảnh ngẫu nhiên bằng cách sử dụng một tham số tìm kiếm.
 imagesreload:
   args:
     - ''
   desc: >-
-    Reloads images bot is using. Safe to use even when bot is being used
-    heavily.
+    Tải lại hình ảnh mà bot đang sử dụng. An toàn để sử dụng ngay cả khi bot
+    đang được sử dụng mạnh mẽ.
 implementchannel:
   args:
     - implemented
     - ''
   desc: >-
-    Sets a channel for suggestions to send implemented ones to. Put nothing to
-    disable.
+    Đặt một kênh để gửi những ý kiến đã thực hiện đến đó. Không nhập gì để tắt.
 implemented:
   args:
     - number reason
-  desc: 'Implements a suggestion with an optional reason. '
+  desc: 'Thực hiện một đề xuất với lý do tùy chọn. '
 implementmessage:
   args:
     - embedcodehere
   desc: >-
-    Allows you to set the message sent when a suggestion is implemented. Use the
-    embed builder at https://chuchudayne.com/embed and the placeholders at
-    https://chuchudayne.com/placeholders.
+    Cho phép bạn đặt thông báo được gửi khi một đề xuất được thực hiện. Sử dụng
+    trình xây dựng nhúng tại https://chuchudayne.com/embed và các địa chỉ tại
+    https://chuchudayne.com/placeholder
 inrole:
   args:
     - RoleName
     - 5 RoleName
   desc: >-
-    Lists every person from the specified role on this server. You can specify a
-    page before the role to jump to that page.
+    Liệt kê tất cả mọi người từ vai trò được chỉ định trên máy chủ này. Bạn có
+    thể chỉ định một trang trước vai trò để nhảy đến trang đó.
 inroles:
   args:
     - '@role @role2'
-  desc: Gets members that are in two specified roles.
+  desc: Lấy các thành viên thuộc hai vai trò cụ thể.
 invite:
   args:
     - ''
-  desc: Pulls up the link to invite Dino.
+  desc: Hiển thị liên kết để mời Dino.
 invitecreate:
   args:
     - ''
-  desc: Creates a new invite which has infinite max uses and never expires.
+  desc: Tạo một liên kết mời mới có số lần sử dụng tối đa và không bao giờ hết hạn.
 invitedelete:
   args:
     - '2'
   desc: >-
-    Deletes an invite on the specified index. Use `{0}invitelist` to see the
-    list of invites.
+    Xóa một liên kết mời ở chỉ mục đã chỉ định. Sử dụng `{0}invitelist` để xem
+    danh sách liên kết mời.
 inviteinfo:
   args:
     - spdvbdfih
-  desc: Gets info from an invite. Does not work on vanity invites.
+  desc: Nhận thông tin từ một liên kết mời. Không hoạt động trên liên kết vanity.
 invitelist:
   args:
     - ''
     - '3'
-  desc: Lists all invites for this channel. Paginated with 9 per page.
+  desc: Liệt kê tất cả các liên kết mời cho kênh này. Phân trang với 9 mỗi trang.
 invwarn:
   args:
     - y/n
-  desc: ' Toggles warning on inviteposting, make sure to enable .sfi first.'
+  desc: 'Bật/tắt cảnh báo về việc đăng liên kết mời, đảm bảo bật .sfi trước đó.'
 join:
   args:
     - ''
-  desc: Makes the bot join your voice channel.
+  desc: Đưa bot vào kênh giọng của bạn.
 joinrace:
   args:
     - ''
     - '5'
   desc: >-
-    Joins a new race. You can specify an amount of currency for betting
-    (optional). You will get YourBet*(participants-1) back if you win.
+    Tham gia một cuộc đua mới. Bạn có thể chỉ định một số tiền cược
+    (tùy chọn). Bạn sẽ nhận lại YourBet*(số người tham gia-1) nếu bạn thắng.
 kick:
   args:
     - '@Someone Get out!'
     - '"Some Guy#1234" Your behaviour is toxic.'
-  desc: Kicks a mentioned user.
+  desc: Đuổi một người dùng được đề cập.
 kickunder:
   args:
     - 2y
     - 2m -p
   desc: >-
-    Allows you to ban users under a certain server join age in the server. Use
-    -p after the time to preview the users that will be banned.
+    Cho phép bạn cấm người dùng dưới một số thời gian tham gia máy chủ trong máy
+    chủ. Sử dụng -p sau thời gian để xem trước người dùng sẽ bị cấm.
 kiss:
   args:
     - '@user'
-  desc: Returns a kiss gif.
+  desc: Trả về một gif hôn.
 konachan:
   args:
     - yuri
   desc: >-
-    Shows a random hentai image from konachan with a given tag. Tag is optional
-    but preferred.
+    Hiển thị một hình ảnh hentai ngẫu nhiên từ konachan với một từ khóa cụ thể.
+    Từ khóa là tùy chọn nhưng được ưa chuộng.
 langsetdefault:
   args:
     - en-US
     - default
   desc: >-
-    Sets the bot's default response language. All servers which use a default
-    locale will use this one. Setting to `default` will use the host's current
-    culture. Provide no parameters to see currently set language.
+    Đặt ngôn ngữ mặc định của bot. Tất cả các máy chủ sử dụng ngôn ngữ mặc
+    định sẽ sử dụng ngôn ngữ này. Đặt thành `default` sẽ sử dụng ngôn ngữ hiện
+    tại của máy chủ. Không cung cấp tham số để xem ngôn ngữ đang được đặt.
 languageset:
   args:
     - 'de-DE '
     - default
   desc: >-
-    Sets this server's response language. If bot's response strings have been
-    translated to that language, bot will use that language in this server.
-    Reset by using `default` as the locale name. Provide no parameters to see
-    currently set language.
+    Đặt ngôn ngữ phản hồi của máy chủ này. Nếu các chuỗi phản hồi của bot đã
+    được dịch sang ngôn ngữ đó, bot sẽ sử dụng ngôn ngữ đó trong máy chủ này.
+    Đặt lại bằng cách sử dụng `default` như là tên ngôn ngữ. Không cung cấp tham
+    số để xem ngôn ngữ đang được đặt.
 languageslist:
   args:
     - ''
-  desc: List of languages for which translation (or part of it) exist atm.
+  desc: Danh sách các ngôn ngữ có bản dịch (hoặc một phần của nó) hiện có.
 laugh:
   args:
     - '@user'
-  desc: Returns a laugh gif.
+  desc: Trả về một gif cười.
 leaderboard:
   args:
     - ''
-  desc: Displays the bot's currency leaderboard.
+  desc: Hiển thị bảng xếp hạng tiền của bot.
 leave:
   args:
     - ''
-  desc: Leaves the voice channel and clears the queue
+  desc: Rời khỏi kênh giọng và xóa hàng đợi.
 leavehook:
   args:
     - channel name image
     - channel name
     - disable
   desc: >-
-    Allows you to set a webhook used for leave messages. You can either upload
-    an image to use or use a image url. Type disable to disable webhook greets.
-    set the message used for leaves using the byemsg command together with
-    https://chuchudayne.com/embed/ and https://chuchudayne.com/placeholders
+    Cho phép bạn thiết lập một webhook được sử dụng cho các thông báo rời. Bạn
+    có thể tải lên một hình ảnh để sử dụng hoặc sử dụng một đường dẫn hình ảnh.
+    Nhập disable để vô hiệu hóa thông báo rời webhook. Đặt tin nhắn sử dụng cho
+    rời bằng lệnh byemsg cùng với https://chuchudayne.com/embed/ và https://chuchudayne.com/placeholders
 leaveserver:
   args:
     - '123123123123'
-  desc: Leaves a server using its ID
+  desc: Rời khỏi máy chủ sử dụng ID của nó
 linux:
   args:
     - Spyware Windows
-  desc: Prints a customizable Linux interjection
+  desc: In ấn Linux có thể tùy chỉnh
 listchattriggers:
   args:
     - '1'
     - all
   desc: >-
-    Lists global or server Chat Triggers (20 commands per page). Running the
-    command in DM will list global Chat Triggers, while running it in server
-    will list that server's Chat Triggers. Specifying `all` parameter instead of
-    the number will DM you a text file with a list of all Chat Triggers.
+    Liệt kê toàn bộ hoặc server Chat Triggers (20 lệnh mỗi trang). Chạy lệnh
+    trong DM sẽ liệt kê toàn cầu Chat Triggers, trong khi chạy nó trong máy chủ
+    sẽ liệt kê Chat Triggers của máy chủ đó. Chỉ định thay vì
+    số sẽ DM bạn một tệp văn bản với danh sách tất cả các Chat Triggers.
 listchattriggersgroup:
   args:
     - '1'
   desc: >-
-    Lists global or server Chat Triggers (20 commands per page) grouped by
-    trigger, and show a number of responses for each. Running the command in DM
-    will list global Chat Triggers, while running it in server will list that
-    server's Chat Triggers.
+    Liệt kê toàn bộ hoặc server Chat Triggers (20 lệnh mỗi trang) được nhóm theo
+    kích thước và hiển thị số lượng phản hồi cho mỗi lệnh. Chạy lệnh trong DM
+    sẽ liệt kê toàn cầu Chat Triggers, trong khi chạy nó trong máy chủ
+    sẽ liệt kê Chat Triggers của máy chủ đó.
 listperms:
   args:
     - ''
     - '3'
   desc: >-
-    Lists whole permission chain with their indexes. You can specify an optional
-    page number if there are a lot of permissions.
+    Liệt kê toàn bộ chuỗi quyền với các chỉ số của chúng. Bạn có thể chỉ định
+    một số trang tùy chọn nếu có nhiều quyền.
 listplaying:
   args:
     - ''
-  desc: Lists all playing statuses with their corresponding number.
+  desc: Liệt kê tất cả trạng thái đang chơi với số tương ứng của chúng.
 listqueue:
   args:
     - ''
     - '2'
-  desc: Lists the current queue.
+  desc: Liệt kê hàng đợi hiện tại.
 listquotes:
   args:
     - '3'
     - 3 id
-  desc: Lists all quotes on the server ordered alphabetically or by ID. 15 Per page.
+  desc: Liệt kê tất cả các trích dẫn trên máy chủ theo thứ tự bảng chữ cái hoặc theo ID. 15 Mỗi trang.
 listservers:
   args:
     - '3'
-  desc: Lists servers the bot is on with some basic info. 15 per page.
+  desc: Liệt kê máy chủ mà bot đang tham gia với một số thông tin cơ bản. 15 mỗi trang.
 lmgtfy:
   args:
     - query
-  desc: Google something for an idiot.
+  desc: Google một cái gì đó cho một kẻ ngốc.
 lock:
   args:
     - ''
-  desc: 'Locks the current channel. '
+  desc: 'Khóa kênh hiện tại. '
 lockcheck:
   args:
     - ''
-  desc: Checks all roles to make sure they are lockdown compliant
+  desc: Kiểm tra tất cả các vai trò để đảm bảo chúng tuân thủ quy tắc khóa
 lockdown:
   args:
     - ''
   desc: >-
-    Locks the server, will tell you to run lockcheck if some roles are in the
-    way of lockdown.
+    Khóa máy chủ, sẽ thông báo cho bạn chạy lockcheck nếu một số vai trò đang ở
+    trong đường dẫn của khóa máy chủ.
 log:
   args:
     - userpresence
     - userbanned
   desc: >-
-    Toggles logging event. Disables it if it is active anywhere on the server.
-    Enables if it isn't active. Use `{0}logevents` to see a list of all events
-    you can subscribe to.
+    Chuyển đổi sự kiện đăng nhập. Tắt nếu nó hoạt động ở bất kỳ đâu trên máy
+    chủ nếu nó không hoạt động. Sử dụng `{0}logevents` để xem danh sách tất cả
+    các sự kiện bạn có thể đăng ký.
 logcategory:
   args:
     - Users
-  desc: Placeholder until command is done
+  desc: Placeholder cho đến khi lệnh được thực hiện
 logevents:
   args:
     - ''
-  desc: Shows a list of all events you can subscribe to with `{0}log`
+  desc: Hiển thị danh sách tất cả các sự kiện bạn có thể đăng ký với `{0}log`
 logignore:
   args:
     - ''
   desc: >-
-    Toggles whether the `{0}logserver` command ignores this channel. Useful if
-    you have hidden admin channel and public log channel.
+    Chuyển đổi xem lệnh `{0}logserver` có bỏ qua kênh này hay không. Hữu ích
+    nếu bạn có kênh quản trị ẩn và kênh log công cộng.
 logserver:
   args:
     - enable
     - disable
   desc: >-
-    Enables or Disables ALL log events. If enabled, all log events will log to
-    this channel.
+    Bật hoặc tắt TẤT CẢ các sự kiện đăng nhập. Nếu được kích hoạt, tất cả các
+    sự kiện đăng nhập sẽ được đăng nhập vào kênh này.
 loop:
   args:
     - ''
     - none
     - track
   desc: |-
-    - `none` Doesnt loop anything and stops when the queue ends
-    - `track` Loops the current song. Skip replays the current song.
-    - `queue` Loops the queue until its stopped
+    - `none` Không lặp lại gì cả và dừng khi hàng đợi kết thúc
+    - `track` Lặp lại bài hát hiện tại. Skip sẽ phát lại bài hát hiện tại.
+    - `queue` Lặp lại hàng đợi cho đến khi nó bị dừng
 lsar:
   args:
     - ''
     - '2'
-  desc: Lists self-assignable roles. Shows 20 roles per page.
+  desc: Liệt kê các vai trò có thể tự cấp. Hiển thị 20 vai trò mỗi trang.
 lstfilterwords:
   args:
     - ''
-  desc: Shows a list of filtered words.
+  desc: Hiển thị danh sách các từ đã lọc.
 magicitem:
   args:
     - ''
   desc: >-
-    Shows a random magic item from
+    Hiển thị một vật phẩm ma thuật ngẫu nhiên từ
     <https://1d4chan.org/wiki/List_of_/tg/%27s_magic_items>
 magicthegathering:
   args:
     - about face
     - about face
-  desc: Searches for a Magic The Gathering card.
+  desc: Tìm kiếm một lá Magic The Gathering.
 mal:
   args:
     - straysocks
-  desc: Shows basic info from a MyAnimeList profile.
+  desc: Hiển thị thông tin cơ bản từ hồ sơ MyAnimeList.
 manga:
   args:
     - Shingeki no kyojin
-  desc: Queries anilist for a manga and shows the first result.
+  desc: Truy vấn anilist để tìm một manga và hiển thị kết quả đầu tiên.
 masskill:
   args:
     - BadPerson#1234 Toxic person
   desc: >-
-    Specify a new-line separated list of `userid reason`. You can use
-    Username#discrim instead of UserId. Specified users will be banned from the
-    current server, blacklisted from the bot, and have all of their flowers
-    taken away.
+    Chỉ định một danh sách được tách biệt bằng dòng của `userid lý do`. Bạn có
+    thể sử dụng Username#discrim thay vì UserId. Người dùng được chỉ định sẽ
+    bị cấm khỏi máy chủ hiện tại, bị đưa vào danh sách đen của bot, và bị mất
+    hết hoa của họ.
 maxsuggestionlength:
   args:
     - '4098'
-  desc: Allows you to set the maximum length for suggestions.
+  desc: Cho phép bạn đặt chiều dài tối đa cho đề xuất.
 memberrole:
   args:
     - '@role'
-  desc: Sets the servers member role, will be used for other stuff later on
+  desc: Đặt vai trò thành viên của máy chủ, sẽ được sử dụng cho các chức năng khác sau này
 meme:
   args:
     - ''
-  desc: Sends a random meme from reddit
+  desc: Gửi một bức ảnh meme ngẫu nhiên từ reddit
 memegen:
   args:
     - biw gets iced coffee;in the winter
     - ntot
   desc: >-
-    Generates a meme from memelist with specified text. Separate multiple text
-    values with semicolons. Provide no meme text to see an example meme with
-    that template.
+    Tạo một bức ảnh meme từ danh sách memelist với văn bản cụ thể. Phân tách
+    nhiều giá trị văn bản bằng dấu chấm phảy. Không cung cấp văn bản meme để
+    xem một bức ảnh meme mẫu với bản mẫu đó.
 memelist:
   args:
     - ''
   desc: >-
-    Shows a list of template keys (and their repspective names) used for
-    `{0}memegen`.
+    Hiển thị một danh sách các khóa bản (và tên tương ứng của chúng) được sử
+    dụng cho `{0}memegen`.
 minsuggestionlength:
   args:
     - '10'
   desc: >-
-    Alows you to set a minimum length to suggestions. Maximum value is 2048 to
-    avoid bad discord changes.
+    Cho phép bạn đặt chiều dài tối thiểu cho đề xuất. Giá trị tối đa là 2048
+    để tránh các thay đổi discord xấu.
 modules:
   args:
     - ''
-  desc: Lists all bot modules.
+  desc: Liệt kê tất cả các modules của bot.
 moveperm:
   args:
     - 2 4
-  desc: Moves permission from one position to another in the Permissions list.
+  desc: Di chuyển quyền từ một vị trí sang vị trí khác trong danh sách Quyền.
 movesong:
   args:
     - 5 3
-  desc: Moves a song from one position to another.
+  desc: Di chuyển một bài hát từ một vị trí sang vị trí khác.
 moveto:
   args:
     - calls
   desc: >-
-    Moves you to a vc you name. ***You must already be in a vc for this to
-    work.***
+    Di chuyển bạn đến một vc bạn đặt tên. ***Bạn phải đã ở trong vc để có
+    thể hoạt động.***
 moveuserto:
   args:
     - '@Yuno Gasai calls'
   desc: >-
-    Moves a user you mention to a different vc. ***The user must already be in a
-    vc.***
+    Di chuyển một người dùng bạn đề cập đến một vc khác. ***Người dùng phải
+    đã ở trong vc.***
 movie:
   args:
     - Batman vs Superman
-  desc: Queries omdb for movies or series, show first result.
+  desc: Truy vấn omdb để tìm kiếm phim hoặc series, hiển thị kết quả đầu tiên.
 multigreetadd:
   args:
     - ''
     - '#channel'
   desc: >-
-    Adds the current or mentioned channel to MultiGreets. 5 per channel, or 30
-    per guild
+    Thêm kênh hiện tại hoặc được đề cập đến MultiGreets. 5 mỗi kênh, hoặc 30
+    mỗi guild
 multigreetdelete:
   args:
     - 1s
     - '1'
   desc: >-
-    Sets after how much time a MultiGreet is deleted. You can either use seconds
-    directly or format it like 2m2s. Setting it to 0 disables deletion. Default
-    is 1 second.
+    Đặt sau bao lâu một MultiGreet sẽ bị xóa. Bạn có thể sử dụng giây trực
+    tiếp hoặc định dạng nó như 2m2s. Đặt nó thành 0 để vô hiệu hóa xóa. Mặc
+    định là 1 giây.
 multigreetgreetbots:
   args:
     - 1 false
-  desc: Sets whether a RoleGreet will also greet bots.
+  desc: Đặt RoleGreet cũng sẽ chào
 multigreetlist:
   args:
     - ''
-  desc: Lists all MultiGreets and their properties.
+  desc: Liệt kê tất cả các MultiGreets và các thuộc tính của chúng.
 multigreetmessage:
   args:
     - '2'
     - 2 embedcode/message
   desc: >-
-    Gets or sets a MultiGreet message for a given MultiGreet ID. To set a custom
-    embed use https://chuchudayne.com/embed together with
+    Lấy hoặc đặt một thông điệp MultiGreet cho một ID MultiGreet cụ thể. Để
+    đặt một nhúng tùy chỉnh, sử dụng https://chuchudayne.com/embed cùng với
     https://chuchudayne.com/placeholders
 multigreetremove:
   args:
     - '1'
     - '#somechannel'
   desc: >-
-    Removes a MultiGreet channel using the ID in {0}mgl. Can also remove all
-    MultiGreets if a channel is mentioned.
+    Loại bỏ một kênh MultiGreet bằng ID trong {0}mgl. Cũng có thể loại bỏ tất
+    cả MultiGreets nếu đề cập đến một kênh.
 multigreettype:
   args:
     - RandomGreet
     - MultiGreet
     - 'Off'
   desc: >-
-    Sets wether to use MultiGreet(greets in all set channels),
-    RandomGreet(randomly chooses between all set MultiGreets then sends it to
-    that channel), or Off (Completely disables the MultiGreet system)
+    Đặt liệu sử dụng MultiGreet(greet ở tất cả các kênh đã đặt),
+    RandomGreet(chọn ngẫu nhiên giữa tất cả các MultiGreets đã đặt sau đó gửi
+    nó đến kênh đó), hoặc Off (Vô hiệu hóa hoàn toàn hệ thống MultiGreet)
 multigreetwebhook:
   args:
     - 26 Dino avatarurl
     - 26 Dino
     - '26'
   desc: >-
-    Allows you to set/update/remove a MultiGreet name and avatar. Put just the
-    MultiGreet ID to remove the webhook. Avatar is optional, but must be a
-    direct url to the img used.
+    Cho phép bạn đặt/cập nhật/xóa tên và ảnh đại diện MultiGreet. Chỉ cần đặt ID
+    MultiGreet để xóa webhook. Avatar là tùy chọn, nhưng phải là một url trực
+    tiếp đến ảnh được sử dụng.
 musicquality:
   args:
     - ''
     - High
     - Low
   desc: >-
-    Gets or sets the default music player quality. Available settings: Highest,
-    High, Medium, Low. Default is **Highest**. Provide no argument to see
-    current setting.
+    Lấy hoặc đặt chất lượng máy phát nhạc mặc định. Các cài đặt có sẵn:
+    Highest, High, Medium, Low. Mặc định là **Highest**. Không cung cấp đối số
+    nào để xem cài đặt hiện tại.
 mute:
   args:
     - '@Someone'
@@ -2048,63 +2047,62 @@ mute:
     - 1h30m @Someone
     - 1h30m @Someone too noisy
   desc: >-
-    Mutes a mentioned user both from speaking and chatting. You can also specify
-    time string for how long the user should be muted. You can optionally
-    specify a reason.
+    Tắt tiếng một người dùng đã đề cập đến cả trong việc nói chuyện và chat.
+    Bạn cũng có thể chỉ định chuỗi thời gian cho việc người dùng nên bị tắt tiếng
+    trong bao lâu. Bạn cũng có thể tùy chọn chỉ định lý do.
 muterole:
   args:
     - ''
     - Silenced
   desc: >-
-    Sets a name of the role which will be assigned to people who should be
-    muted. Provide no arguments to see currently set mute role. Default is
-    Dino-mute.
+    Đặt tên của vai trò mà những người nên bị tắt tiếng sẽ được gán. Không cung
+    cấp đối số nào để xem vai trò tắt tiếng hiện tại. Mặc định là Dino-mute.
 mwarn:
   args:
     - '@user'
-  desc: 'Gives a user a Minor Warn '
+  desc: 'Đưa ra một cảnh báo nhỏ cho người dùng '
 mwarnclear:
   args:
     - '@user'
     - '@user 3'
   desc: >-
-    Clears all minor warns for a user, use with a number to clear that specific
-    warn
+    Xóa tất cả các cảnh báo nhỏ cho một người dùng, sử dụng số để xóa cảnh báo
+    cụ thể đó
 mwarnexpire:
   args:
     - 30d
-  desc: ' Sets how long until a warning expires, see {0}h warne for more details'
+  desc: 'Đặt thời gian đến khi cảnh báo hết hạn, xem {0}h warne để biết thêm chi tiết'
 mwarnlog:
   args:
     - '@user'
-  desc: 'Shows the minor warnlog for a user or yourself if you dont mention a user. '
+  desc: 'Hiển thị nhật ký cảnh báo nhỏ cho một người dùng hoặc chính bạn nếu bạn không đề cập đến một người dùng. '
 mwarnlogall:
   args:
     - ''
-  desc: Gets all mini warned users
+  desc: Lấy tất cả người dùng đã cảnh báo nhỏ
 mwarnpunish:
   args:
     - 1 Mute 15m
     - 2 Ban 3d
   desc: >-
-    Sets the punishments used for Minor Warns, punishments are the same as
-    regular WarnPunish
+    Đặt các hình phạt được sử dụng cho Cảnh báo Nhỏ, các hình phạt giống như
+    Hình phạt Thông thường
 mwarnpunishlist:
   args:
     - ''
-  desc: 'Shows your current Minor Warn punishment list. '
+  desc: 'Hiển thị danh sách hình phạt Cảnh báo Nhỏ hiện tại của bạn. '
 next:
   args:
     - ''
     - '5'
   desc: >-
-    Goes to the next song in the queue. You have to be in the same voice channel
-    as the bot. You can skip multiple songs, but in that case songs will not be
-    requeued if {0}rcs or {0}rpl is enabled.
+    Đi đến bài hát tiếp theo trong hàng đợi. Bạn phải ở trong cùng một kênh thoại
+    với bot. Bạn có thể bỏ qua nhiều bài hát, nhưng trong trường hợp đó, các
+    bài hát sẽ không được đặt lại vào hàng đợi nếu {0}rcs hoặc {0}rpl được kích hoạt.
 nhentai:
   args:
     - '209519'
-  desc: Let's you read any doujin using the magic number.
+  desc: Cho phép bạn đọc bất kỳ doujin nào bằng cách sử dụng số kỳ diệu.
 nhentaisearch:
   args:
     - futa
@@ -2112,133 +2110,133 @@ nhentaisearch:
     - cumdump 3
     - cumdump -futa 3
   desc: >-
-    Lets you search nhentai for doujins using keywords. You can also specify
-    blacklisted words by putting a - in froint of the word. If the first set
-    doesnt have the results you wanted, you can also specify page number.
+    Cho phép bạn tìm kiếm nhentai cho doujins bằng từ khóa. Bạn cũng có thể chỉ
+    định các từ bị cấm bằng cách đặt một - ở trước từ đó. Nếu bộ từ đầu tiên
+    không có kết quả bạn muốn, bạn cũng có thể chỉ định số trang.
 novel:
   args:
     - the nine cauldrons
   desc: >-
-    Searches for a novel on `https://novelupdates.com/`. You have to provide an
-    exact name.
+    Tìm kiếm một tiểu thuyết trên `https://novelupdates.com/`. Bạn phải cung
+    cấp một tên chính xác.
 nowplaying:
   args:
     - ''
-  desc: Shows the song that the bot is currently playing.
+  desc: Hiển thị bài hát mà bot đang phát hiện tại.
 nroll:
   args:
     - '5'
     - 5-15
   desc: >-
-    Rolls in a given range. If you specify just one number instead of the range,
-    it will role from 0 to that number.
+    Lắc trong một khoảng cụ thể. Nếu bạn chỉ định chỉ một số thay vì khoảng, nó
+    sẽ lắc từ 0 đến số đó.
 nsfwcc:
   args:
     - ''
-  desc: Clears nsfw cache.
+  desc: Xóa bộ nhớ cache NSFW.
 nsfwtagbl:
   args:
     - poop
   desc: >-
-    Toggles whether the tag is blacklisted or not in nsfw searches. Provide no
-    parameters to see the list of blacklisted tags.
+    Chuyển đổi xem liệu tag có bị cấm hay không trong các tìm kiếm NSFW. Không
+    cung cấp tham số nào để xem danh sách các tag bị cấm.
 nsfwtoggle:
   args:
     - ''
-  desc: Toggles the NSFW parameter of the current text channel.
+  desc: Chuyển đổi tham số NSFW của kênh văn bản hiện tại.
 nuke:
   args:
     - '#channel'
   desc: >-
-    Completely deletes the current channel and remakes it as it was. Useful for
-    quick channel purges. Can be used directly in channel or by mentioning one.
+    Hoàn toàn xóa kênh hiện tại và tạo lại nó như ban đầu. Hữu ích cho việc
+    làm sạch nhanh chóng các kênh. Có thể sử dụng trực tiếp trong kênh hoặc bằng
+    cách đề cập đến nó.
 nunchi:
   args:
     - ''
   desc: >-
-    Creates or joins an existing nunchi game. Users have to count up by 1 from
-    the starting number shown by the bot. If someone makes a mistake (types an
-    incorrect number, or repeats the same number) they are out of the game and a
-    new round starts without them.  Minimum 3 users required.
+    Tạo hoặc tham gia một trò chơi nunchi hiện có. Người chơi phải đếm lên từ 1
+    từ số bắt đầu được hiển thị bởi bot. Nếu ai đó mắc một lỗi (đánh sai một
+    số hoặc lặp lại cùng một số) họ sẽ bị loại khỏi trò chơi và một vòng mới
+    bắt đầu mà không có họ. Yêu cầu tối thiểu 3 người chơi.
 osu:
   args:
     - Name
     - Name taiko
-  desc: Shows osu! stats for a player.
+  desc: Hiển thị thông tin osu! cho một người chơi.
 osu5:
   args:
     - Name
-  desc: Displays a user's top 5 plays.
+  desc: Hiển thị 5 trận đấu hàng đầu của người chơi.
 owoify:
   args:
     - cats are super duper cute
     - snuggles
   desc: >-
-    OwOifies a string, making it infinitly cuter. (for example "cats are super
-    duper cute" becomes  "kittehs awe supew dupew cute")
+    OwOifies một chuỗi, làm cho nó trở nên vô tận dễ thương hơn. (ví dụ:
+    "cats are super duper cute" trở thành "kittehs awe supew dupew cute")
 pat:
   args:
     - '@user'
-  desc: Returns a pat gif.
+  desc: Trả về một gif về việc vuốt ve.
 pathofexile:
   args:
     - '"Zizaran"'
   desc: >-
-    Searches characters for a given Path of Exile account. May specify league
-    name to filter results.
+    Tìm kiếm nhân vật cho một tài khoản Path of Exile cụ thể. Có thể chỉ định
+    tên liên minh để lọc kết quả.
 pathofexilecurrency:
   args:
     - Standard "Mirror of Kalandra"
   desc: >-
-    Returns the chaos equivalent of a given currency or exchange rate between
-    two currencies.
+    Trả về giá trị tương đương về Chaos của một loại tiền tệ cụ thể hoặc tỷ
+    giá trao đổi giữa hai loại tiền tệ.
 pathofexileleagues:
   args:
     - ''
-  desc: Returns a list of the main Path of Exile leagues.
+  desc: Trả về danh sách các liên minh chính của Path of Exile.
 pause:
   args:
     - ''
-  desc: Pauses or Unpauses the song.
+  desc: Dừng hoặc khởi chạy lại bài hát.
 permcontrol:
   args:
     - '#channel allow/deny user/role managemessages viewchannel'
-  desc: Allows you to set multiple permission for a role/user in a channel
+  desc: Cho phép bạn đặt nhiều quyền cho một vai trò/người dùng trong một kênh
 permrole:
   args:
     - Some Role
     - reset
   desc: >-
-    Sets a role which can change permissions. Supply no parameters to see the
-    current one. Type 'reset' instead of the role name to reset the currently
-    set permission role. Users with the Administrator server permissions can use
-    permission commands regardless of whether they have the specified role.
-    There is no default permission role.
+    Đặt một vai trò có thể thay đổi quyền. Không cung cấp tham số để xem vai
+    trò hiện tại. Gõ 'reset' thay vì tên vai trò để đặt lại vai trò quyền đã
+    được đặt. Người dùng có quyền quản trị viên của máy chủ có thể sử dụng các
+    lệnh quyền mặc dù họ có vai trò cụ thể đã được đặt hay không. Không có vai
+    trò quyền mặc định.
 permview:
   args:
     - ''
     - '@role'
     - '@user'
-  desc: Shows guild permissions for a role or user.
+  desc: Hiển thị quyền máy chủ cho một vai trò hoặc người dùng.
 pick:
   args:
     - ''
     - passwd
   desc: >-
-    Picks the currency planted in this channel. If the plant has a password, you
-    need to specify it.
+    Chọn loại tiền mà bạn đã trồng trong kênh này. Nếu cây trồng có mật khẩu,
+    bạn cần chỉ định nó.
 ping:
-  args:
-    - ''
-  desc: Ping the bot to see if there are latency issues.
+    args:
+        - ''
+    desc: Ping bot để xem có vấn đề về độ trễ không.
 place:
-  args:
-    - Cage
-    - steven 500 400
-  desc: >-
-    Shows a placeholder image of a given tag. Use `{0}placelist` to see all
-    available tags. You can specify the width and height of the image as the
-    last two optional parameters.
+    args:
+        - Cage
+        - steven 500 400
+    desc: >-
+        Hiển thị một hình ảnh giữ chỗ của một thẻ cụ thể. Sử dụng `{0}placelist` để xem tất cả
+        các thẻ khả dụng. Bạn có thể chỉ định chiều rộng và chiều cao của hình ảnh như là
 placelist:
   args:
     - ''
@@ -2248,17 +2246,14 @@ plant:
     - '5'
     - 10 meow
   desc: >-
-    Spend an amount of currency to plant it in this channel. Default is 1. You
-    can specify the password after the amount. Password has to be alphanumeric
-    and it will be trimmed down to 10 characters if it's longer.
+    Dùng một lượng tiền để trồng nó trong kênh này. Mặc định là 1. Bạn có thể chỉ định mật khẩu sau số lượng. Mật khẩu phải là chữ số chữ cái và nó sẽ được cắt bớt thành 10 ký tự nếu nó dài hơn.
 play:
   args:
     - ''
     - '5'
     - Dream Of Venice
   desc: >-
-    Plays/Queues a song. Use together with a song number in queue and it'll
-    play.
+    Phát/Thêm vào hàng đợi một bài hát. Sử dụng cùng với một số bài hát trong hàng đợi và nó sẽ được phát.
 playlist:
   args:
     - show playlistname
@@ -2270,58 +2265,57 @@ playlist:
     - default
     - default playlistname
   desc: |2-
-     Allows for you to manage your playlists.
+    Cho phép bạn quản lý danh sách phát của mình.
 
-    Settings:
-     `show`: When used with a playlist name it shows that playlist. Shows your default playlist without a name.
+    Cài đặt:
+    `show`: Khi sử dụng với tên danh sách phát, nó sẽ hiển thị danh sách phát đó. Hiển thị danh sách phát mặc định của bạn nếu không có tên.
 
-     `delete`: Deletes a playlist with a given name.
+    `delete`: Xóa một danh sách phát với tên cụ thể.
 
-     `create`: Creates a playlist using a given name. Stops you if theres a playlist with the same name already available.
+    `create`: Tạo một danh sách phát bằng cách sử dụng một tên cụ thể. Dừng bạn nếu có một danh sách phát có cùng tên đã sẵn có.
 
-     `load`: Loads a playlist. If no name is provided it loads your default playlist.
+    `load`: Tải một danh sách phát. Nếu không có tên nào được cung cấp, nó sẽ tải danh sách phát mặc định của bạn.
 
-     `save`: Allows you to save a song to a playlist from either the queue or by searching. Defaults to searching the queue if the bot is playing something.
+    `save`: Cho phép bạn lưu một bài hát vào danh sách phát từ hàng đợi hoặc bằng cách tìm kiếm. Mặc định là tìm kiếm hàng đợi nếu bot đang phát một cái gì đó.
 
-     `default`: Allows you to set or see the current playlist, if one is set.
+    `default`: Cho phép bạn đặt hoặc xem danh sách phát mặc định hiện tại, nếu có.
 playlists:
   args:
     - ''
-  desc: Lists all your playlists
+  desc: Liệt kê tất cả danh sách phát của bạn.
 playlistshuffle:
   args:
     - ''
-  desc: Shuffles the current playlist.
+  desc: Xáo trộn danh sách phát hiện tại.
 poke:
   args:
     - '@user'
-  desc: Returns a poke gif.
+  desc: Trả về một gif về việc chọc.
 pokemon:
   args:
     - Sylveon
-  desc: Searches for a pokemon.
+  desc: Tìm kiếm thông tin về một Pokémon.
 pokemonability:
   args:
     - overgrow
-  desc: Searches for a pokemon ability.
+  desc: Tìm kiếm thông tin về khả năng của một Pokémon.
 poll:
   args:
     - Question?;Answer1;Answ 2;A_3
     - MultiAnswer Question;answer;answer;answer
   desc: >-
-    Creates a public poll which requires users to type a number of the voting
-    option in the channel command is ran in. Can have multiple modes: >
-    `SingleAnswer` - Users can only pick a single answer and cant change it.
-    Default when not used with a mode. > `AllowChange` - Users can change their
-    answers. > `MultiAnswer` - Users can select more than one answer.
+    Tạo một cuộc thăm dò công cộng yêu cầu người dùng nhập số tùy chọn bỏ phiếu trong kênh mà lệnh được thực hiện. Có thể có nhiều chế độ: >
+    `SingleAnswer` - Người dùng chỉ có thể chọn một câu trả lời và không thể thay đổi nó. Mặc định khi không sử dụng với một chế độ. >
+    `AllowChange` - Người dùng có thể thay đổi câu trả lời của họ. >
+    `MultiAnswer` - Người dùng có thể chọn nhiều hơn một câu trả lời.
 pollend:
   args:
     - ''
-  desc: Stops active poll on this server and prints the results in this channel.
+  desc: Dừng cuộc thăm dò đang hoạt động trên máy chủ này và hiển thị kết quả trong kênh này.
 pollstats:
   args:
     - ''
-  desc: Shows the poll results without stopping the poll on this server.
+  desc: Hiển thị kết quả cuộc thăm dò mà không dừng cuộc thăm dò trên máy chủ này.
 pout:
   args:
     - '@user'
@@ -2330,13 +2324,11 @@ prefix:
   args:
     - +
   desc: >-
-    Sets this server's prefix for all bot commands. Provide no parameters to see
-    the current server prefix. **Setting prefix requires Administrator server
-    permission.**
+    Đặt tiền tố cho tất cả các lệnh bot trên máy chủ này. Không cung cấp tham số nào để xem tiền tố máy chủ hiện tại. **Đặt tiền tố yêu cầu quyền quản trị máy chủ.**
 previewlinks:
   args:
     - enable
-  desc: Sets whether automatically embeds message links.
+  desc: Đặt xem trước liệu liên kết có tự động nhúng không.
 pronounoverrideforceclear:
   args:
     - '@user true pronouns contained transphobic message'
@@ -2344,12 +2336,11 @@ pronounoverrideforceclear:
       @user false pronouns being used to start conflict with another user,
       cleared as a warning.
   desc: >-
-    Forcefully clears a user's pronoun override and sets their PronounsDisabled
-    property
+    Xóa bắt buộc ghi đè về giới tính của người dùng và đặt giới tính Đã tắt của họ
 prunemembers:
   args:
     - 7d
-  desc: Prunes members from the server. ***DANGEROUS, THIS CANNOT BE UNDONE***
+  desc: Tẩy chay thành viên khỏi máy chủ. ***NGUY HIỂM, ĐIỀU NÀY KHÔNG THỂ HOÀN TÁC***
 purge:
   args:
     - ''
@@ -2363,243 +2354,215 @@ purge:
     - 20 --nb
     - 20 --ob
   desc: >-
-    `{0}Purge` removes all Dino's messages in the last 100 messages.
-    `{0}Purge X` removes last `X` number of messages from the channel (up to
-    100). `{0}Purge @Someone` removes all Someone's messages in the last 100
-    messages. `{0}Purge @Someone X` removes last `X` number of 'Someone's'
-    messages in the channel. You can use the `-s` / `--safe` parameter at the
-    end to only Purge messages that are not pinned. You can use the `-nb` /
-    `--nobots` paramater to clear around bots. You can use the `-ob` /
-    `--onlybots` paramater to clear only bots.
+    `{0}Purge` loại bỏ tất cả các tin nhắn của Dino trong 100 tin nhắn gần nhất.
+    `{0}Purge X` loại bỏ `X` số lượng tin nhắn cuối cùng từ kênh (lên đến 100). `{0}Purge @Someone` loại bỏ tất cả tin nhắn của Someone trong 100 tin nhắn gần nhất.
+    `{0}Purge @Someone X` loại bỏ `X` số lượng tin nhắn cuối cùng của 'Someone' trong kênh. Bạn có thể sử dụng tham số `-s` / `--safe` ở cuối để chỉ loại bỏ các tin nhắn không được ghim. Bạn có thể sử dụng tham số `-nb` /
+    `--nobots` để xóa xung quanh các bot. Bạn có thể sử dụng tham số `-ob` /
+    `--onlybots` để chỉ xóa bot.
 queue:
   args:
     - ''
-  desc: Shows the queue
+  desc: Hiển thị hàng đợi
 quoteadd:
   args:
     - sayhi Hi
-  desc: Adds a new quote with the specified name and message.
+  desc: Thêm một trích dẫn mới với tên và thông điệp đã cho.
 quotedelete:
   args:
     - '123456'
   desc: >-
-    Deletes a quote with the specified ID. You have to be either server
-    Administrator or the creator of the quote to delete it.
+    Xóa một trích dẫn với ID cụ thể. Bạn phải là quản trị viên máy chủ hoặc người tạo trích dẫn để xóa nó.
 quoteid:
   args:
     - '123456'
   desc: >-
-    Displays the quote with the specified ID number. Quote ID numbers can be
-    found by typing `{0}liqu [num]` where `[num]` is a number of a page which
-    contains 15 quotes.
+    Hiển thị trích dẫn với số ID cụ thể. Số ID trích dẫn có thể được tìm thấy bằng cách nhập `{0}liqu [num]` trong đó `[num]` là một số trang chứa 15 trích dẫn.
 quoteprint:
   args:
     - abc
-  desc: Prints a random quote with a specified name.
+  desc: In ấn một trích dẫn ngẫu nhiên với một tên cụ thể.
 quotesearch:
   args:
     - keyword text
   desc: >-
-    Shows a random quote for a keyword that contains any text specified in the
-    search.
+    Hiển thị một trích dẫn ngẫu nhiên cho một từ khóa chứa bất kỳ văn bản được chỉ định nào đó trong tìm kiếm.
 quoteshow:
   args:
     - '123'
-  desc: Shows information about a quote with the specified ID.
+  desc: Hiển thị thông tin về một trích dẫn có ID cụ thể.
 race:
   args:
     - ''
-  desc: Starts a new animal race.
+  desc: Bắt đầu một cuộc đua động vật mới.
 raffle:
   args:
     - ''
     - RoleName
   desc: >-
-    Prints a name and ID of a random online user from the server, or from the
-    online user in the specified role.
+    In ấn tên và ID của một người dùng trực tuyến ngẫu nhiên từ máy chủ, hoặc từ người dùng trực tuyến ngẫu nhiên trong vai trò cụ thể.
 raffleany:
   args:
     - ''
     - ' RoleName'
   desc: >-
-    Prints a name and ID of a random user from the server, or from the specified
-    role.
+    In ấn tên và ID của một người dùng ngẫu nhiên từ máy chủ, hoặc từ vai trò cụ thể.
 rafflecur:
   args:
     - '20'
     - mixed 15
   desc: >-
-    Starts or joins a currency raffle with a specified amount. Users who join
-    the raffle will lose the amount of currency specified and add it to the pot.
-    After 30 seconds, random winner will be selected who will receive the whole
-    pot. There is also a `mixed` mode in which the users will be able to join
-    the game with any amount of currency, and have their chances be proportional
-    to the amount they've bet.
+    Bắt đầu hoặc tham gia một cuộc rút thăm giải thưởng tiền tệ với số tiền xác định. Người dùng tham gia cuộc rút thăm giải sẽ mất số tiền xác định và thêm vào nồi.
+    Sau 30 giây, người chiến thắng ngẫu nhiên sẽ được chọn và nhận toàn bộ nồi. Cũng có chế độ `mixed` trong đó người dùng sẽ có thể tham gia trò chơi với bất kỳ số tiền nào, và khả năng chiến thắng của họ sẽ tỷ lệ với số tiền họ đã cược.
 randjoke:
   args:
     - ''
-  desc: Shows a random joke.
+  desc: Hiển thị một câu chuyện cười ngẫu nhiên.
 randombird:
   args:
     - ''
-  desc: Shows a random bird image.
+  desc: Hiển thị một hình ảnh chim ngẫu nhiên.
 randomcat:
   args:
     - ''
-  desc: Shows a random cat image.
+  desc: Hiển thị một hình ảnh mèo ngẫu nhiên.
 randomdog:
   args:
     - ''
-  desc: Shows a random dog image.
+  desc: Hiển thị một hình ảnh chó ngẫu nhiên.
 randomfood:
   args:
     - ''
-  desc: Shows a random food image.
+  desc: Hiển thị một hình ảnh thức ăn ngẫu nhiên.
 randomkitsune:
   args:
     - ''
-  desc: What does the fox say? Returns a random kitsune.
+  desc: Cái gì con cáo ấy nói? Trả về một con cáo ngẫu nhiên.
 randomneko:
   args:
     - ''
-  desc: Nya~ Returns a random neko!
+  desc: Nya~ Trả về một con neko ngẫu nhiên!
 randomreddit:
   args:
     - sylveon
-  desc: Gets an image from a specified subreddit. Must not be NSFW.
+  desc: Lấy một hình ảnh từ một subreddit cụ thể. Không được là NSFW.
 randomwaifu:
   args:
     - ''
-  desc: Ara Ara~ Returns a random waifu.
+  desc: Ara Ara~ Trả về một waifu ngẫu nhiên.
 rategirl:
   args:
     - '@SomeGurl'
   desc: >-
-    Use the universal hot-crazy wife zone matrix to determine the girl's worth.
-    It is everything young men need to know about women. At any moment in time,
-    any woman you have previously located on this chart can vanish from that
-    location and appear anywhere else on the chart.
+    Sử dụng ma trận vợ nóng-crazy phổ quát để xác định giá trị của cô gái. Đó là mọi thứ mà những chàng trai trẻ cần biết về phụ nữ. Bất cứ lúc nào, bất kỳ phụ nữ nào bạn đã định vị trước đó trên biểu đồ này có thể biến mất khỏi vị trí đó và xuất hiện ở bất kỳ đâu khác trên biểu đồ.
+
 reactchannel:
   args:
     - '#channel'
   desc: >-
-    Sets a channel where Dino will react with upvote and downvote arrows to
-    media. Provide no paramter to disable.
+    Thiết lập một kênh nơi Dino sẽ phản ứng với mũi tên upvote và downvote đến phương tiện truyền thông. Không cung cấp tham số nào để tắt.
+
 reactionroles:
   args:
     - 'Gamer :SomeServerEmoji: Streamer :Other: Watcher :Other2:'
     - 'excl Horde :Horde: Alliance :Alliance:'
     - '866309699531702302 Gamer :Nekoha_Yay:'
   desc: >-
-    Specify role names and server emojis with which they're represented, the bot
-    will then add those emojis to the previous message in the channel, and users
-    will be able to get the roles by clicking on the emoji. You can set 'excl'
-    as the first parameter to make them exclusive. You can have up to 5 of these
-    enabled on one server at a time You can optionally use a message ID before
-    specifying roles.
+    Chỉ định tên vai trò và emoji máy chủ với chúng được đại diện, bot sau đó sẽ thêm những emoji đó vào tin nhắn trước đó trong kênh, và người dùng sẽ có thể nhận vai trò bằng cách nhấp vào emoji. Bạn có thể đặt 'excl' làm tham số đầu tiên để làm cho chúng độc quyền. Bạn có thể có tối đa 5 trong số này được bật trên một máy chủ vào một thời điểm. Bạn có thể tùy chọn sử dụng một ID tin nhắn trước đó trước khi xác định vai trò.
 reactionroleslist:
   args:
     - ''
-  desc: Lists all ReactionRole messages on this channel and their indexes.
+  desc: Liệt kê tất cả các tin nhắn ReactionRole trên kênh này và chỉ mục của chúng.
 reactionrolesremove:
   args:
     - '1'
-  desc: Removed a ReactionRole message on the specified index.
+  desc: Loại bỏ một tin nhắn ReactionRole trên chỉ mục đã chỉ định.
 redditnsfw:
   args:
     - waifus34
-  desc: Grabs a post from any subreddit. Regardless of NSFW Status
+  desc: Lấy một bài đăng từ bất kỳ subreddit nào. Không phụ thuộc vào trạng thái NSFW.
 redisexec:
   args:
     - ''
-  desc: Executes a redis command. There is no confirmation so be careful.
+  desc: Thực thi một lệnh redis. Không có xác nhận nên hãy cẩn thận.
 remind:
   args:
-    - me 1d5h Do something
-    - '#general 1m Start now!'
+    - me 1d5h Làm điều gì đó
+    - '#general 1m Bắt đầu ngay bây giờ!'
   desc: >-
-    Sends a message to you or a channel after certain amount of time (max 2
-    months). First parameter is `me`/`here`/'channelname'. Second parameter is
-    time in a descending order (mo>w>d>h>m) example: 1w5d3h10m. Third parameter
-    is a (multiword) message.
+    Gửi một tin nhắn cho bạn hoặc một kênh sau một khoảng thời gian nhất định (tối đa 2 tháng). Tham số đầu tiên là `me`/`here`/'channelname'. Tham số thứ hai là thời gian theo thứ tự giảm dần (mo>w>d>h>m) ví dụ: 1w5d3h10m. Tham số thứ ba là một tin nhắn (nhiều từ) (multiword).
 reminddelete:
   args:
     - '3'
-  desc: Deletes a reminder on the specified index.
+  desc: Xóa một lời nhắc theo chỉ mục đã chỉ định.
 remindlist:
   args:
     - '1'
-  desc: Lists all reminders you created. Paginated.
+  desc: Liệt kê tất cả các lời nhắc bạn đã tạo. Trang.
 removeallroles:
   args:
     - '@User'
   desc: >-
-    Removes all roles which are lower than your highest role in the role
-    hierarchy from the user you specify.
+    Loại bỏ tất cả các vai trò thấp hơn vai trò cao nhất của bạn trong thứ tự vai trò từ người dùng bạn chỉ định.
 removeemote:
   args:
     - emote
-  desc: Removes an emote you choose.
+  desc: Loại bỏ một biểu tượng bạn chọn.
 removefromall:
   args:
     - roletoremove
-  desc: Removes a role from everyone.
+  desc: Loại bỏ một vai trò từ tất cả mọi người.
 removefromallbots:
   args:
     - roletoremove
-  desc: Removes a role from all bots
+  desc: Loại bỏ một vai trò từ tất cả bot
 removefromallusers:
   args:
     - roletoremove
-  desc: Removes a role from all users.
+  desc: Loại bỏ một vai trò từ tất cả mọi người.
 removefromrole:
   args:
     - inrole removethisfrominrole
   desc: >-
-    Removes the second mentioned mentioned role from the users mentioned in the
-    first role.
+    Loại bỏ vai trò thứ hai đã đề cập từ người dùng đã được đề cập trong vai trò đầu tiên.
 removeonmute:
   args:
     - 'yes'
   desc: >-
-    Sets whether muting removes a users role on mute and puts them back on
-    unmute
+    Đặt liệu việc tắt tiếng có loại bỏ vai trò của người dùng khi tắt tiếng và đưa họ trở lại khi bật tiếng hay không.
 removeperm:
   args:
     - '1'
-  desc: Removes a permission from a given position in the Permissions list.
+  desc: Loại bỏ một quyền từ vị trí đã cho trong danh sách Quyền.
 removeplaying:
   args:
     - ''
-  desc: Removes a playing string on a given number.
+  desc: Loại bỏ một chuỗi đang chơi trên một số nhất định.
 removerole:
   args:
     - Role @User
   desc: >-
-    Removes a role from a user. The role you specify has to be lower in the role
-    hierarchy than your highest role.
+    Loại bỏ một vai trò khỏi một người dùng. Vai trò bạn chỉ định phải thấp hơn trong thứ tự vai trò so với vai trò cao nhất của bạn.
 removerolefromrole:
   args:
     - inrole removerole
-  desc: Remvoes a role from users in a role
+  desc: Loại bỏ một vai trò khỏi người dùng trong một vai trò
 removeroles:
   args:
     - '@user @role @role'
-  desc: 'Lets you set remove multiple roles from a user. '
+  desc: 'Cho phép bạn loại bỏ nhiều vai trò từ một người dùng.'
 removeusersfromrole:
   args:
     - '@role @user user userID'
-  desc: Remove users from a role
+  desc: Loại bỏ người dùng khỏi một vai trò
 renameemote:
   args:
     - emote newname
-  desc: renames an emote you choose.
+  desc: Đổi tên một biểu tượng bạn chọn.
 renamerole:
   args:
     - '"First role" SecondRole'
   desc: >-
-    Renames a role. The role you specify has to be lower in the role hierarchy
-    than your highest role.
+    Đổi tên một vai trò. Vai trò bạn chỉ định phải thấp hơn trong thứ tự vai trò so với vai trò cao nhất của bạn.
 repeat:
   args:
     - Hello there
@@ -2609,288 +2572,247 @@ repeat:
       21:00 30m Starting at 21 and every 30 minutes after that i will send this
       message!
   desc: >-
-    Repeat a message once every specified amount of time in the current channel.
-    You can instead specify time of day for the message to be repeated daily
-    (make sure you've set your server's timezone). If you've specified time of
-    day, you can still override the default daily interval with your own
-    interval. You can have up to 5 repeating messages on the server in total.
+    Lặp lại một tin nhắn mỗi khoảng thời gian cụ thể trong kênh hiện tại. Bạn cũng có thể chỉ định thời gian trong ngày để tin nhắn được lặp lại hàng ngày (hãy chắc chắn rằng bạn đã đặt múi giờ máy chủ của mình). Nếu bạn đã chỉ định thời gian trong ngày, bạn vẫn có thể ghi đè lên khoảng thời gian hàng ngày mặc định bằng khoảng thời gian của bạn. Bạn có thể có tối đa 5 tin nhắn lặp lại trên máy chủ trong tổng số.
 repeatchannel:
   args:
     - '1 #channel'
     - null
-  desc: Sets the channel a repeater executes in.
+  desc: Đặt kênh mà một bộ lặp thực hiện trong đó.
 repeatinvoke:
   args:
     - '1'
   desc: >-
-    Immediately shows the repeat message on a certain index and restarts its
-    timer.
+    Hiển thị ngay lập tức tin nhắn lặp lại trên một chỉ mục cụ thể và khởi động lại bộ đếm thời gian của nó.
 repeatlist:
   args:
     - ''
-  desc: Shows currently repeating messages and their indexes.
+  desc: Hiển thị tin nhắn đang lặp lại hiện tại và chỉ mục của chúng.
 repeatmessage:
   args:
     - 1 message/embedcode
   desc: >-
-    Set's a repeaters message after it has been made. You can use this with
-    [embeds](https://chuchudayne.com/embed) and
-    [placeholders](https://chuchudayne.com/placeholders)
+    Đặt tin nhắn của một bộ lặp sau khi nó đã được tạo. Bạn có thể sử dụng điều này với [embeds](https://chuchudayne.com/embed) và [placeholders](https://chuchudayne.com/placeholders)
 repeatredun:
   args:
     - '1'
   desc: >-
-    Specify repeater's index (use `{0}repli` to find it) to toggle whether that
-    repeater's message should be reposted if the last message in the channel is
-    the same repeater's message. This is useful if you want to remind everyone
-    to be nice in the channel every so often, but don't want to have the bot
-    spam the channel. This is NOT useful if you want to periodically ping
-    someone.
+    Chỉ định chỉ mục của bộ lặp (sử dụng `{0}repli` để tìm nó) để chuyển đổi xem liệu tin nhắn của bộ lặp đó có nên được đăng lại không nếu tin nhắn cuối cùng trong kênh là tin nhắn của bộ lặp đó. Điều này hữu ích nếu bạn muốn nhắc nhở mọi người phải lịch sự trong kênh từ thời gian này sang thời gian khác, nhưng không muốn bot làm kênh bị quấy rối. Điều này KHÔNG hữu ích nếu bạn muốn đôi khi thông báo cho ai đó.
 repeatremove:
   args:
     - '2'
   desc: >-
-    Removes a repeating message on a specified index. Use `{0}repeatlist` to see
-    indexes.
+    Loại bỏ một tin nhắn đang lặp lại trên chỉ mục cụ thể. Sử dụng `{0}repeatlist` để xem chỉ mục.
 repostthreshold:
   args:
     - 0
     - 5
-  desc: Sets after how many messages Dino reposts a starboard message
+  desc: Đặt sau bao nhiêu tin nhắn Dino sẽ đăng lại một tin nhắn của bảng sao.
 reptcursong:
   args:
     - ''
-  desc: Toggles repeat of current song.
+  desc: Bật/tắt lặp lại bài hát hiện tại.
 resetglobalperms:
   args:
     - ''
-  desc: Resets global permissions set by bot owner.
+  desc: Đặt lại các quyền toàn cầu do chủ sở hữu bot đặt.
 resetperms:
   args:
     - ''
-  desc: Resets the bot's permissions module on this server to the default value.
+  desc: Đặt lại mô-đun quyền của bot trên máy chủ này về giá trị mặc định.
 resolvetonetags:
   args:
     - /gen
     - I need some cuddles :3 /qp
-  desc: Resolves all tone tags found in a given string.
+  desc: Giải quyết tất cả các thẻ cảm xúc được tìm thấy trong một chuỗi cụ thể.
 restart:
   args:
     - ''
-  desc: Restarts the bot. Might not work.
+  desc: Khởi động lại bot. Có thể không hoạt động.
 restartshard:
   args:
     - '2'
   desc: >-
-    Try (re)connecting a shard with a certain shardid when it dies. No one knows
-    will it work. Keep an eye on the console for errors.
+    Thử kết nối lại một shard với một shardid cụ thể khi nó bị tắt. Không ai biết liệu nó có hoạt động không. Hãy theo dõi console để kiểm tra lỗi.
 resuggest:
   args:
     - number ressugestion
-  desc: ' Updates a suggestion that hasnt already been reviewed.'
+  desc: ' Cập nhật một đề xuất chưa được xem xét.'
 revav:
   args:
     - '@Someone'
-  desc: Returns a Google reverse image search for someone's avatar.
+  desc: Trả lại kết quả tìm kiếm ảnh đảo ngược trên Google cho hình đại diện của ai đó.
 revimg:
   args:
     - Image link
-  desc: Returns a Google reverse image search for an image from a link.
+  desc: Trả lại kết quả tìm kiếm ảnh đảo ngược trên Google cho một hình ảnh từ một liên kết.
 rinfo:
   args:
     - '@role'
     - rid
-  desc: Get info on a role
+  desc: Nhận thông tin về một vai trò
 rip:
   args:
     - '@Someone'
-  desc: Shows the inevitable fate of someone.
+  desc: Hiển thị số phận không thể tránh khỏi của ai đó.
 rj:
   args:
     - ''
-  desc: Lists the current running massrole jobs
+  desc: Liệt kê các công việc masstrole đang chạy hiện tại
 rolecmd:
   args:
     - '"command name" disable MyRole'
-  desc: Sets a command's permission at the role level.
+  desc: Đặt quyền của một lệnh tại cấp độ vai trò.
 rolecolor:
   args:
     - Admin
     - Admin ffba55
   desc: >-
-    Set a role's color using its hex value. Provide no color in order to see the
-    hex value of the color of the specified role. The role you specify has to be
-    lower in the role hierarchy than your highest role.
+    Đặt màu của một vai trò bằng cách sử dụng giá trị hex của nó. Không cung cấp màu để xem giá trị hex của màu của vai trò cụ thể. Vai trò bạn chỉ định phải ở dưới cấp độ của vai trò cao nhất của bạn.
 rolegreetadd:
   args:
     - '@role'
     - '@role #channel'
   desc: >-
-    Adds a role to RoleGreets. Uses the current or mentioned channel to greet.
-    10 per guild,
+    Thêm một vai trò vào RoleGreets. Sử dụng kênh hiện tại hoặc kênh được đề cập để chào đón. 10 vai trò mỗi máy chủ,
 rolegreetdelete:
   args:
     - 1s
     - '1'
   desc: >-
-    Sets after how much time a RoleGreet is deleted. You can either use seconds
-    directly or format it like 2m2s. Setting it to 0 disables deletion. Default
-    is 0.
+    Đặt thời gian sau bao lâu một RoleGreet sẽ bị xóa. Bạn có thể sử dụng giây trực tiếp hoặc định dạng nó như là 2m2s. Đặt nó thành 0 để tắt chế độ xóa. Giá trị mặc định là 0.
 rolegreetdisable:
   args:
     - '1'
-  desc: Disables a RoleGreet by Id
+  desc: Tắt một RoleGreet theo Id
 rolegreetgreetbots:
   args:
     - 1 false
-  desc: Sets whether a RoleGreet will also greet bots.
+  desc: Đặt liệu một RoleGreet có chào đón bots hay không.
 rolegreetlist:
   args:
     - ''
-  desc: Lists all RoleGreets and their properties.
+  desc: Liệt kê tất cả các RoleGreets và các thuộc tính của chúng.
 rolegreetmessage:
   args:
     - '2'
     - 2 embedcode/message
   desc: >-
-    Gets or sets a roleGreet message for a given RoleGreet ID. To set a custom
-    embed use https://chuchudayne.com/embed together with
-    https://chuchudayne.com/placeholders
+    Nhận hoặc đặt một thông điệp RoleGreet cho một RoleGreet ID cụ thể. Để đặt một nhúng tùy chỉnh, hãy sử dụng https://chuchudayne.com/embed cùng với https://chuchudayne.com/placeholders
 rolegreetremove:
   args:
     - '1'
     - '@role'
   desc: >-
-    Removes a MultiGreet channel using the ID in {0}rgl. Can also remove all
-    RoleGreets for a mentioned role.
+    Xóa một kênh MultiGreet bằng ID trong {0}rgl. Cũng có thể xóa tất cả các RoleGreets cho một vai trò được đề cập.
 rolegreetwebhook:
   args:
     - 26 Dino avatarurl
     - 26 Dino
     - '26'
   desc: >-
-    Allows you to set/update/remove a RoleGreet name and avatar. Put just the
-    RoleGreet ID to remove the webhook. Avatar is optional, but must be a direct
-    url to the img used.
+    Cho phép bạn đặt/cập nhật/xóa tên và hình đại diện của một RoleGreet. Chỉ cần đặt RoleGreet ID để xóa webhook. Hình đại diện là tùy chọn, nhưng phải là một URL trực tiếp đến hình ảnh được sử dụng.
 rolehoist:
   args:
     - Guests
     - '"Space Wizards"'
   desc: >-
-    Toggles whether this role is displayed in the sidebar or not. The role you
-    specify has to be lower in the role hierarchy than your highest role.
+    Bật/tắt liệu vai trò này có được hiển thị trong thanh bên hay không. Vai trò bạn chỉ định phải ở dưới cấp độ của vai trò cao nhất của bạn.
 roleid:
   args:
     - Some Role
-  desc: Shows the id of the specified role.
+  desc: Hiển thị id của vai trò được chỉ định.
 rolelevelreq:
   args:
     - 5 SomeRole
-  desc: Set a level requirement on a self-assignable role.
+  desc: Đặt yêu cầu cấp độ cho một vai trò có thể tự gán.
 rolemdl:
   args:
     - ModuleName enable MyRole
-  desc: Sets a module's permission at the role level.
+  desc: Đặt quyền của một mô-đun ở cấp độ vai trò.
 roles:
   args:
     - '2'
     - '@Someone'
   desc: >-
-    List roles on this server or roles of a user if specified. Paginated, 20
-    roles per page.
+    Liệt kê các vai trò trên máy chủ hoặc vai trò của một người dùng nếu được chỉ định. Trang theo trang, 20 vai trò mỗi trang.
 roll:
   args:
     - 4d10 2d5 * 2
     - d8
     - 7d5, 2d100 / 2
   desc: >-
-    Rolls a set of dice in DND notation, returns the total of all rolls and each
-    individual die's value.  Supported opererations are addition, subtraction,
-    multiplication, and division. The operation effects all dice,  for example
-    `3d1, 2d1 * 2` would be **10** instead of **7**.
+    Lắc một bộ xúc xắc theo ký hiệu DND, trả lại tổng số các lần lắc và giá trị của từng viên xúc xắc. Các phép toán được hỗ trợ bao gồm cộng, trừ, nhân và chia. Phép toán ảnh hưởng đến tất cả các viên xúc xắc, ví dụ `3d1, 2d1 * 2` sẽ là **10** thay vì **7**.
 rollduel:
   args:
     - 50 @Someone
     - '@Challenger'
   desc: >-
-    Challenge someone to a roll duel by specifying the amount and the user you
-    wish to challenge as the parameters. To accept the challenge, just specify
-    the name of the user who challenged you, without the amount.
+    Thách thức ai đó vào một cuộc chiến xúc xắc bằng cách chỉ định số tiền và người dùng bạn muốn thách đấu làm tham số. Để chấp nhận thách thức, chỉ cần chỉ định tên của người dùng đã thách đấu bạn, mà không có số tiền.
 rolluo:
   args:
     - ''
     - '7'
     - 3d5
   desc: >-
-    Rolls `X` normal dice (up to 30) unordered. If you split 2 numbers with
-    letter `d` (`xdy`) it will roll `X` dice from 1 to `y`.
+    Lắc xúc xắc bình thường `X` (lên đến 30) không theo thứ tự. Nếu bạn tách 2 số với chữ cái `d` (`xdy`), nó sẽ lắc `X` viên xúc xắc từ 1 đến `y`.
 rotateplaying:
   args:
     - ''
   desc: >-
-    Toggles rotation of playing status of the dynamic strings you previously
-    specified.
+    Chuyển đổi quay vòng trạng thái đang chơi của các chuỗi động bạn đã chỉ định trước đó.
 rps:
   args:
     - r 100
     - scissors
   desc: >-
-    Play a game of Rocket-Paperclip-Scissors with Dino. You can bet on it.
-    Multiplier is the same as on betflip.
+    Chơi trò chơi Rocket-Paperclip-Scissors với Dino. Bạn có thể đặt cược trên nó. Hệ số nhân giống như trên betflip.
 rsar:
   args:
     - ''
-  desc: Removes a specified role from the list of self-assignable roles.
+  desc: Loại bỏ một vai trò cụ thể khỏi danh sách các vai trò tự đặt.
 rsstest:
   args:
     - '1'
-  desc: Tests an rss feed that you are subscribed to.
+  desc: Kiểm tra một nguồn cấp dữ liệu RSS mà bạn đã đăng ký.
 rtt:
   args:
     - '420'
   desc: >-
-    Toggles whether the bot responds to the response of a Chat Trigger or the
-    trigger.
+    Chuyển đổi xem liệu bot có phản ứng lại với phản ứng của một Kích hoạt Trò chuyện hay không.
 rule34:
   args:
     - yuri+kissing
   desc: >-
-    Shows a random image from rule34.xx with a given tag. Tag is optional but
-    preferred. (multiple tags are appended with +)
+    Hiển thị một hình ảnh ngẫu nhiên từ rule34.xx với một từ khóa cụ thể. Từ khóa là tùy chọn nhưng được ưa thích. (nhiều từ khóa được nối với +)
 safebooru:
   args:
     - yuri+kissing
   desc: >-
-    Shows a random image from safebooru with a given tag. Tag is optional but
-    preferred. (multiple tags are appended with +)
+    Hiển thị một hình ảnh ngẫu nhiên từ safebooru với một từ khóa cụ thể. Từ khóa là tùy chọn nhưng được ưa thích. (nhiều từ khóa được nối với +)
 sankaku:
   args:
     - Vanilla
-  desc: Grabs a random image from Sankaku using the tags you provide.
+  desc: Lấy một hình ảnh ngẫu nhiên từ Sankaku sử dụng các từ khóa bạn cung cấp.
 sargn:
   args:
     - 1 Faction
     - '2'
-  desc: Sets a self assignable role group name. Provide no name to remove.
+  desc: Đặt tên cho một nhóm vai trò tự đặt. Không cung cấp tên để loại bỏ.
 savechat:
   args:
     - '150'
-  desc: Saves a number of messages to a text file and sends it to you.
+  desc: Lưu một số lượng tin nhắn vào một tệp văn bản và gửi nó đến bạn.
 say:
   args:
     - hi
     - '#chat hi'
   desc: >-
-    Bot will send the message you typed in the specified channel. If you omit
-    the channel name, it will send the message in the current channel. Supports
-    embeds.
+    Bot sẽ gửi tin nhắn bạn đã gõ trong kênh đã chỉ định. Nếu bạn bỏ qua tên kênh, nó sẽ gửi tin nhắn trong kênh hiện tại. Hỗ trợ các tính năng nhúng.
 scadd:
   args:
     - '{0}stats'
   desc: >-
-    Adds a command to the list of commands which will be executed automatically
-    in the current channel, in the order they were added in, by the bot when it
-    startups up.
+    Thêm một lệnh vào danh sách các lệnh sẽ được thực hiện tự động trong kênh hiện tại, theo thứ tự chúng được thêm vào, bởi bot khi nó khởi động.
 scclear:
   args:
     - ''
@@ -2910,268 +2832,250 @@ searchcommand:
 seek:
   args:
     - 2m30s
-  desc: Allows you to play a song from a certain time.
+  desc: Cho phép bạn phát một bài hát từ một thời điểm cụ thể.
 send:
   args:
     - serverid|c:channelid message
     - serverid|u:userid message
   desc: >-
-    Sends a message to someone on a different server through the bot.  Separate
-    server and channel/user ids with `|` and prefix the channel id with `c:` and
-    the user id with `u:`.
+    Gửi một tin nhắn đến ai đó trên một máy chủ khác thông qua bot. Phân tách id máy chủ và kênh/người dùng bằng `|` và tiền tố id kênh bằng `c:` và id người dùng bằng `u:`.
 serverblacklist:
   args:
     - add 12312321312
     - rem SomeTrashServer
   desc: >-
-    Either [add]s or [rem]oves a server specified by a Name or an ID from a
-    blacklist.
+    Entweder [add]iert oder [rem]oviert einen Server, der durch einen Namen oder eine ID in die Blacklist aufgenommen wurde.
 serverid:
   args:
     - ''
-  desc: Shows current server ID.
+  desc: Hiện ID máy chủ hiện tại.
 serverinfo:
   args:
     - Some Server
   desc: >-
-    Shows info about the server the bot is on. If no server is supplied, it
-    defaults to current one.
+    Hiển thị thông tin về máy chủ bot đang hoạt động. Nếu không có máy chủ nào được cung cấp, nó sẽ mặc định thành máy chủ hiện tại.
 setafkchannel:
   args:
     - Channel
-  desc: 'Sets the voice channel used when a user is afk in vc '
+  desc: 'Đặt kênh thoại được sử dụng khi người dùng đang AFK trong voice channel.'
 setafktimeout:
   args:
     - ''
-  desc: Sets the afk timeout for the afk vc.
+  desc: Đặt thời gian chờ AFK cho kênh thoại AFK.
 setavatar:
   args:
     - https://i.imgur.com/xTG3a1I.jpg
-  desc: Sets a new avatar image for Dino. Parameter is a direct link to an image.
+  desc: Đặt một hình ảnh đại diện mới cho Dino. Tham số là một liên kết trực tiếp đến một hình ảnh.
 setbanner:
   args:
     - url
-  desc: 'Sets the server banner, only works if you have enough boosts. '
+  desc: 'Đặt banner của máy chủ, chỉ hoạt động nếu bạn có đủ boost.'
 setchanlname:
   args:
     - NewName
-  desc: Changes the name of the current channel.
+  desc: Thay đổi tên của kênh hiện tại.
 setgame:
   args:
     - Playing with snakes.
     - Watching anime.
     - Listening music.
-  desc: Sets the bots game status to either Playing, Listening, or Watching.
+  desc: Đặt trạng thái trò chơi của bot thành Đang chơi, Đang nghe hoặc Đang xem.
 seticon:
   args:
     - url
-  desc: Sets the server icon
+  desc: Đặt biểu tượng của máy chủ
 setmaxplaytime:
   args:
     - '0'
     - '270'
   desc: >-
-    Sets a maximum number of seconds (>14) a song can run before being skipped
-    automatically. Set 0 to have no limit.
+    Đặt số giây tối đa (>14) mà một bài hát có thể chạy trước khi được bỏ qua tự động. Đặt 0 để không có giới hạn.
 setmaxqueue:
   args:
     - '50'
     - ''
-  desc: Sets a maximum queue size. Specify no parameters to have no limit.
+  desc: Đặt kích thước hàng đợi tối đa. Không chỉ định tham số nếu không có giới hạn.
 setmusicchannel:
   args:
     - ''
   desc: >-
-    Sets the current channel as the default music output channel. This will
-    output playing, finished, paused and removed songs to that channel instead
-    of the channel where the first song was queued in. Persistent server
-    setting.
+    Đặt kênh hiện tại là kênh xuất âm nhạc mặc định. Điều này sẽ đưa ra kết quả bài hát đang phát, bài hát đã hoàn thành, đã tạm dừng và đã bỏ qua đến kênh đó thay vì kênh mà bài hát đầu tiên được đặt vào. Cài đặt của máy chủ lâu dài.
 setmwarnchannel:
   args:
     - '#channel'
-  desc: 'Sets the channel used for logging minor warns. '
+  desc: 'Đặt kênh được sử dụng để ghi lại cảnh báo nhỏ. '
 setname:
   args:
     - BotName
-  desc: Gives the bot a new name.
+  desc: Đặt tên mới cho bot.
 setnick:
   args:
     - BotNickname
     - '@SomeUser New Nickname'
   desc: >-
-    Changes the nickname of the bot on this server. You can also target other
-    users to change their nickname.
+    Thay đổi biệt danh của bot trên máy chủ này. Bạn cũng có thể chọn mục tiêu là người dùng khác để thay đổi biệt danh của họ.
 setpronouns:
   args:
     - she/they/kits
     - tig/vamps
     - ''
   desc: >-
-    Changes the default pronouns displayed when someone runs `getpronouns` on
-    you. Use the command with no args to clear the pronouns.
+    Thay đổi giới từ mặc định được hiển thị khi ai đó chạy lệnh `getpronouns` trên bạn. Sử dụng lệnh mà không có đối số để xóa giới từ.
 setrole:
   args:
     - Role @User
   desc: >-
-    Gives a role to a user. The role you specify has to be lower in the role
-    hierarchy than your highest role.
+    Gán một vai trò cho một người dùng. Vai trò bạn chỉ định phải thấp hơn trong thứ bậc vai trò so với vai trò cao nhất của bạn.
 setroles:
   args:
     - '@user @role @role'
-  desc: 'Lets you set mulitple roles on a user. '
+  desc: 'Cho phép bạn đặt nhiều vai trò cho một người dùng. '
 setservername:
   args:
     - name
-  desc: 'Sets the servers name '
+  desc: 'Đặt tên của máy chủ'
 setsplash:
   args:
     - url
-  desc: Sets the invite splash, must have a high enough level.
+  desc: Đặt hình nền mời, phải có đủ cấp độ.
 setstar:
   args:
     - emote
-  desc: Sets the star used for starboard.
+  desc: Đặt dấu sao được sử dụng cho starboard.
 setstarboard:
   args:
     - '#channel'
-  desc: Sets the starboard channel
+  desc: Đặt kênh starboard
 setstars:
   args:
     - '90'
-  desc: Sets the amount of stars needed to reach starboard.
+  desc: Đặt số lượng sao cần thiết để đạt được starboard.
 setstatus:
   args:
     - Idle
-  desc: Sets the bot's status. (Online/Idle/Dnd/Invisible)
+  desc: Đặt trạng thái của bot. (Online/Idle/Dnd/Invisible)
 setstream:
   args:
     - TWITCHLINK Hello
   desc: >-
-    Sets the bots stream. First parameter is the twitch link, second parameter
-    is stream name.
+    Đặt luồng của bot. Tham số đầu tiên là liên kết twitch, tham số thứ hai là tên luồng.
 setsuggestchannel:
   args:
     - '#channel'
-  desc: 'Sets the channel used for suggestions '
+  desc: 'Đặt kênh được sử dụng cho đề xuất '
 settopic:
   args:
     - My new topic
-  desc: Sets a topic on the current channel.
+  desc: Đặt chủ đề cho kênh hiện tại.
 setwarnchannel:
   args:
     - '#channel'
-  desc: Sets the channel used for logging regular warns.
+  desc: Đặt kênh được sử dụng để ghi lại cảnh báo thường xuyên.
 sfr:
   args:
     - role emote emote
     - roleid emote emote
-  desc: Lets you steal emotes for specific roles
+  desc: Cho phép bạn đánh cắp emote cho các vai trò cụ thể
 shardstats:
   args:
     - ''
     - '2'
-  desc: Stats for shards. Paginated with 25 shards per page.
+  desc: Thống kê cho các shard. Phân trang với 25 shard mỗi trang.
 ship:
   args:
     - '@user'
     - '@user1 @user2'
-  desc: Ship two users or ship yourself with another user!
+  desc: Ghép đôi hai người dùng hoặc ghép đôi bạn với một người dùng khác!
 shoot:
   args:
     - '@user'
-  desc: Shoots a mentioned user
+  desc: Bắn một người dùng được đề cập
 shop:
   args:
     - ''
     - '2'
-  desc: Lists this server's administrators' shop. Paginated.
+  desc: Liệt kê cửa hàng của quản trị viên trong máy chủ này. Phân trang.
 shopadd:
   args:
     - role 1000 Rich
   desc: >-
-    Adds an item to the shop by specifying type price and name. Available types
-    are role and list. 90% of currency from each purchase will be received by
-    the user who added the item to the shop.
+    Thêm một mục vào cửa hàng bằng cách chỉ định loại giá và tên. Các loại có sẵn là vai trò và danh sách. 90% của tiền tệ từ mỗi giao dịch sẽ được nhận bởi người dùng đã thêm mục vào cửa hàng.
 shopchangename:
   args:
     - 3 Cool stuff
   desc: >-
-    Change the name of a shop entry at the specified index. Only works for
-    non-role items
+    Thay đổi tên của một mục cửa hàng tại chỉ mục cụ thể. Chỉ hoạt động cho các mục không phải là vai trò
 shopchangeprice:
   args:
     - 1 500
   desc: >-
-    Change the price of a shop entry at the specified index. Specify the index
-    of the entry, followed by the price
+    Thay đổi giá của một mục cửa hàng tại chỉ mục cụ thể. Chỉ định chỉ mục của mục, tiếp theo là giá
 shoplistadd:
   args:
     - 1 Uni-que-Steam-Key
   desc: >-
-    Adds an item to the list of items for sale in the shop entry given the
-    index. You usually want to run this command in the secret channel, so that
-    the unique items are not leaked.
+    Thêm một mục vào danh sách các mục để bán trong mục cửa hàng đã cho chỉ mục. Bạn thường muốn chạy lệnh này trong kênh bí mật, để những mục độc đáo không bị rò rỉ.
 shopmove:
   args:
     - 2 4
-  desc: Moves the shop entry from the current index to a new one
+  desc: Di chuyển mục cửa hàng từ chỉ mục hiện tại đến một chỉ mục mới
 shopremove:
   args:
     - '1'
-  desc: Removes an item from the shop by its ID.
+  desc: Loại bỏ một mục từ cửa hàng bằng ID của nó.
 shopswap:
   args:
     - 1 5
-  desc: Swap the index of two shop entries
+  desc: Đổi chỗ chỉ mục của hai mục cửa hàng
 shorten:
   args:
     - https://google.com
-  desc: Attempts to shorten an URL, if it fails, returns the input URL.
+  desc: Cố gắng làm ngắn URL, nếu thất bại, trả về URL đầu vào.
 showchattrigger:
   args:
     - '1'
-  desc: Shows a Chat Trigger's response on a given ID.
+  desc: Hiển thị phản hồi của Chat Trigger trên một ID cụ thể.
 showemojis:
   args:
     - A message full of SPECIAL emojis
-  desc: Shows a name and a link to every SPECIAL emoji in the message.
+  desc: Hiển thị tên và liên kết đến mỗi emoji SPECIAL trong tin nhắn.
 shrug:
   args:
     - '@user'
-  desc: Returns a shrug gif.
+  desc: Trả về một gif shrug.
 shuffle:
   args:
     - ''
-  desc: Shuffles the queue
+  desc: Xáo trộn hàng đợi
 sj:
   args:
     - '1'
-  desc: Stops a massrole job with the given number.
+  desc: Dừng một công việc massrole với số đã cho.
 skip:
   args:
     - ''
     - '9'
-  desc: Skips to the next track. Or skips ahead the mentioned number of tracks
+  desc: Bỏ qua đến bài hát tiếp theo. Hoặc bỏ qua số lượng bài hát đã đề cập
 slap:
   args:
     - '@user'
-  desc: Returns a slap gif.
+  desc: Trả về một gif vỗ.
 sleep:
   args:
     - '@user'
-  desc: Returns a sleep gif.
+  desc: Trả về một gif giấc ngủ.
 slot:
   args:
     - '5'
-  desc: Play Dino slots. 1 second cooldown per user.
+  desc: Chơi trò chơi Dino slots. Cooldown 1 giây mỗi người dùng.
 slotstats:
   args:
     - ''
-  desc: Shows the total stats of the slot command for this bot's session.
+  desc: Hiển thị tổng số liệu thống kê của lệnh slot cho phiên làm việc của bot này.
 slottest:
   args:
     - '1000'
-  desc: Tests to see how much slots payout for X number of plays.
+  desc: Kiểm tra xem máy đánh bạc trả bao nhiêu cho X lượt chơi.
 slowmode:
   args:
     - ''
@@ -3179,16 +3083,15 @@ slowmode:
     - seconds
     - seconds channel
   desc: >-
-    Toggles slowmode in the current or mentioned channel. Default value is 60s
-    without any parameters
+    Chuyển đổi chế độ chậm trong kênh hiện tại hoặc được đề cập. Giá trị mặc định là 60 giây mà không có tham số nào
 smile:
   args:
     - '@user'
-  desc: Returns a smile gif.
+  desc: Trả về một gif cười.
 smug:
   args:
     - '@user'
-  desc: Returns a smug gif.
+  desc: Trả về một gif smug.
 snipe:
   args:
     - ''
@@ -3196,573 +3099,557 @@ snipe:
     - '@user'
     - '#channel @user'
   desc: >-
-    Allows you to see the last deleted message in the current or specified
-    channel, will tell you how to enable sniping if its disabled when running
-    the command.
+    Cho phép bạn xem tin nhắn cuối cùng bị xóa trong kênh hiện tại hoặc được chỉ định, sẽ hướng dẫn bạn cách bật sniping nếu nó bị tắt khi chạy lệnh.
 snipelist:
   args:
     - ''
     - '20'
-  desc: Shows the last 5 deleted messages, unless a different number is specified
+  desc: Hiển thị 5 tin nhắn cuối cùng bị xóa, trừ khi có một số khác được chỉ định
 snipeset:
   args:
     - enable
     - disable
-  desc: Enables or Disables Sniping
+  desc: Bật hoặc tắt Sniping
 softban:
   args:
     - '@Someone Get out!'
-    - '"Some Guy#1234" Your behaviour is toxic.'
-  desc: Bans and then unbans a user by ID or name with an optional message.
+    - '"Some Guy#1234" Hành vi của bạn là độc hại.'
+  desc: Cấm và sau đó hủy cấm một người dùng theo ID hoặc tên với một tin nhắn tùy chọn.
 songremove:
   args:
     - '5'
     - all
     - ''
   desc: >-
-    Remove a song by its # in the queue, or 'all' (or provide no parameter) to
-    remove all songs from the queue.
+    Loại bỏ một bài hát theo số thứ tự trong hàng đợi, hoặc 'all' (hoặc không cung cấp tham số nào) để loại bỏ tất cả các bài hát từ hàng đợi.
 source:
   args:
     - ''
   desc: >-
-    Shows the github link for the bot. If this command exists in the lang files
-    and not in the source code, the bot has been tampered with in an improper
-    way.
+    Hiển thị liên kết github cho bot. Nếu lệnh này tồn tại trong tệp ngôn ngữ mà không có trong mã nguồn, bot đã bị sửa đổi một cách không đúng đắn.
 sqlexec:
   args:
     - UPDATE DiscordUser SET CurrencyAmount=CurrencyAmount+1234
   desc: >-
-    Executes provided sql command and returns the number of affected rows.
-    Dangerous.
+    Thực hiện lệnh sql được cung cấp và trả về số dòng bị ảnh hưởng. Nguy hiểm.
 sqlselect:
   args:
     - SELECT * FROM DiscordUser LIMIT 5
-  desc: Executes provided sql query and returns the results. Dangerous.
+  desc: Thực hiện truy vấn sql được cung cấp và trả về kết quả. Nguy hiểm.
 srvrcmd:
   args:
     - '"command name" disable'
-  desc: Sets a command's permission at the server level.
+  desc: Thiết lập quyền cho một lệnh ở cấp độ server.
+
 srvrfilterinv:
   args:
     - ''
   desc: >-
-    Toggles automatic deletion of invites posted in the server. Does not affect
-    users with the Administrator permission.
+    Bật/Tắt chế độ tự động xóa liên kết mời trong server. Không ảnh hưởng đến người dùng có quyền quản trị.
+
 srvrfilterlin:
   args:
     - ''
   desc: >-
-    Toggles automatic deletion of links posted in the server. Does not affect
-    users with the Administrator permission.
+    Bật/Tắt chế độ tự động xóa liên kết trong server. Không ảnh hưởng đến người dùng có quyền quản trị.
+
 srvrfilterwords:
   args:
     - ''
   desc: >-
-    Toggles automatic deletion of messages containing filtered words on the
-    server. Does not affect users with the Administrator permission.
+    Bật/Tắt chế độ tự động xóa tin nhắn chứa từ cấm trong server. Không ảnh hưởng đến người dùng có quyền quản trị.
+
 srvrmdl:
   args:
     - ModuleName enable
-  desc: Sets a module's permission at the server level.
+  desc: Thiết lập quyền cho một module ở cấp độ server.
+
 staffrole:
   args:
     - role
     - ''
   desc: >-
-    sets a staff role that is used for the bot to ignore users when filtered
-    links, invites, words, or autobanwords are enabled. May be used for more in
-    the future.
+    Đặt vai trò nhân viên được sử dụng để bot bỏ qua người dùng khi các liên kết, mời, từ cấm, hoặc từ cấm tự động được bật. Có thể được sử dụng cho mục đích khác trong tương lai.
+
 staffroledisable:
   args:
     - ''
-  desc: Disables the staff role, if set.
+  desc: Tắt vai trò nhân viên, nếu đã được đặt.
+
 stand:
   args:
     - ''
-  desc: Finish your turn in the blackjack game.
+  desc: Kết thúc lượt chơi của bạn trong trò blackjack.
+
 starboardallowbots:
   args:
     - true
-  desc: Sets wether starboard ignores bots. Defaults to false.
+  desc: Thiết lập liệu starboard có bỏ qua bot hay không. Mặc định là false.
+
 starboardchtoggle:
   args:
     - '#channel'
   desc: >-
-    Adds or removes a channel from the black/whitelist depending on what's set
-    in `{0}swm`
+    Thêm hoặc loại bỏ một kênh khỏi danh sách đen/trắng tùy thuộc vào điều gì được đặt trong `{0}swm`.
 starboardremoveonbelowthreshold:
   args:
     - true
-  desc: Sets wether a post is removed when its below the set star count.
+  desc: Thiết lập liệu một bài đăng sẽ bị xóa khi nó dưới ngưỡng số sao đã đặt.
+
 starboardremoveondelete:
   args:
     - true
-  desc: Sets wether starboard removes a post when the origin message is deleted.
+  desc: Thiết lập liệu starboard sẽ xóa một bài đăng khi tin nhắn gốc bị xóa.
+
 starboardremoveonreactionscleared:
   args:
     - true
   desc: >-
-    Sets wether starboard removes a post when the origin message's reactions get
-    cleared
+    Thiết lập liệu starboard sẽ xóa một bài đăng khi phản ứng của tin nhắn gốc bị xóa.
+
 starboardwlmode:
   args:
     - whitelist
     - blacklist
-  desc: Sets wether starboard is in blacklist/whitelist mode
+  desc: Thiết lập liệu starboard đang ở chế độ danh sách trắng hoặc danh sách đen.
+
 stare:
   args:
     - '@user'
-  desc: Returns a stare gif.
+  desc: Trả về một gif nhìn chằm chằm.
+
 stats:
   args:
     - ''
-  desc: Shows some basic stats for Dino.
+  desc: Hiển thị một số thống kê cơ bản về Dino.
+
 steal:
   args:
     - emote emote emote
-  desc: 'Steals one or more emotes you mention. '
+  desc: 'Đánh cắp một hoặc nhiều biểu tượng mà bạn đề cập đến.'
+
 steam:
   args:
     - Sakura Agent
   desc: >-
-    Returns a store link for a steam game with the specified name. It doesn't
-    work very well because bundles.
+    Trả về một liên kết cửa hàng cho một trò chơi Steam với tên cụ thể. Nó không hoạt động rất tốt vì bóng rổ.
+
 stfu:
   args:
     - '@user'
-  desc: 'Shuts the user up in the current channel '
+  desc: 'Im lặng người dùng trong kênh hiện tại.'
+
 stop:
   args:
     - ''
-  desc: Stops the music and clears the queue.
+  desc: Dừng âm nhạc và xóa hàng đợi.
+
 streamadd:
   args:
     - twitch.tv/someguy
   desc: >-
-    Notifies this channel when the stream on the specified URL goes online or
-    offline. Offline notifications will only show if you enable `{0}streamoff`.
-    Maximum 10 per server.
+    Thông báo trong kênh này khi dòng chảy trên URL cụ thể trực tuyến hoặc ngoại tuyến. Thông báo ngoại tuyến sẽ chỉ hiển thị nếu bạn bật `{0}streamoff`. Tối đa 10 trên mỗi server.
 streamcheck:
   args:
     - https://twitch.tv/somedude
-  desc: Retrieves information about a stream.
+  desc: Lấy thông tin về một đoạn phát sóng.
+
 streamlist:
   args:
     - ''
   desc: >-
-    Lists all streams you are following on this server and their respective
-    indexes.
+    Liệt kê tất cả các đoạn phát sóng bạn theo dõi trên server này và chỉ số tương ứng của chúng.
+
 streammessage:
   args:
     - 1 Hey @erryone i'm back online!1!!
   desc: >-
-    Sets the message which will show when the stream on the specified index
-    comes online.
+    Đặt thông báo sẽ hiển thị khi đoạn phát sóng trên chỉ số cụ thể trở lại trực tuyến.
+
 streamoffline:
   args:
     - ''
-  desc: Toggles whether the bot will also notify when added streams go offline.
+  desc: Chuyển đổi xem liệu bot sẽ cũng thông báo khi các đoạn phát sóng được thêm vào offline.
+
 streamremove:
   args:
     - '2'
   desc: >-
-    Stops following the stream on the specified index. (use `{0}stl` to see
-    indexes)
+    Ngừng theo dõi đoạn phát sóng trên chỉ số cụ thể. (sử dụng `{0}stl` để xem chỉ số)
+
 streamrole:
   args:
     - '"Eligible Streamers" "Featured Streams"'
   desc: >-
-    Sets a role which is monitored for streamers (FromRole), and a role to add
-    if a user from 'FromRole' is streaming (AddRole). When a user from
-    'FromRole' starts streaming, they will receive an 'AddRole'. You can only
-    have 1 Stream Role per server. Provide no parameters to disable
+    Đặt vai trò được giám sát cho người phát sóng (FromRole), và một vai trò để thêm nếu một người dùng từ 'FromRole' đang phát sóng (AddRole). Khi người dùng từ 'FromRole' bắt đầu phát sóng, họ sẽ nhận được vai trò 'AddRole'. Bạn chỉ có thể có 1 Vai Trò Phát Sóng trên mỗi server. Không cung cấp tham số nào để tắt.
+
 streamroleblacklist:
   args:
     - add @Someone#1234
     - rem @Someone#1234
   desc: >-
-    Adds or removes a blacklisted user. Blacklisted users will never receive the
-    stream role.
+    Thêm hoặc loại bỏ một người dùng được đưa vào danh sách đen. Người dùng trong danh sách đen sẽ không bao giờ nhận được vai trò phát sóng.
 streamrolekeyword:
   args:
     - ''
     - PUBG
   desc: >-
-    Sets keyword which is required in the stream's title in order for the
-    streamrole to apply. Provide no keyword in order to reset.
+    Thiết lập từ khóa cần thiết trong tiêu đề của đoạn phát sóng để vai trò phát sóng được áp dụng. Không cung cấp từ khóa nào để đặt lại.
+
 streamrolewhitelist:
   args:
     - add @Someone#1234
     - rem @Someone#1234
   desc: >-
-    Adds or removes a whitelisted user. Whitelisted users will receive the
-    stream role even if they don't have the specified keyword in their stream
-    title.
+    Thêm hoặc loại bỏ một người dùng được đưa vào danh sách trắng. Người dùng trong danh sách trắng sẽ nhận được vai trò phát sóng ngay cả khi họ không có từ khóa cụ thể trong tiêu đề phát sóng của họ.
+
 streamsclear:
   args:
     - ''
-  desc: Clears all followed streams.
+  desc: Xóa tất cả các đoạn phát sóng bạn đang theo dõi.
+
 stringsreload:
   args:
     - ''
-  desc: Reloads localized bot strings.
+  desc: Tải lại chuỗi ngôn ngữ cục bộ của bot.
+
 suggest:
   args:
     - suggestion
-  desc: 'Sends a suggestion to the suggestion channel. '
+  desc: 'Gửi một đề xuất đến kênh đề xuất.'
+
 sudo:
   args:
     - "@sylveon make me a sandwich"
-  desc: Alows a bot owner to run commands as a user
+  desc: Cho phép chủ sở hữu bot chạy lệnh như một người dùng.
+
 suggestbuttonchannel:
   args:
     - '#channel'
-  desc: Sets the channel where the suggest button is posted.
+  desc: Thiết lập kênh nơi nút đề xuất được đăng.
+
 suggestbuttoncolor:
   args:
     - red
     - green
     - blue
     - grey
-  desc: Sets the color used for the suggest button. Updates Immediately.
+  desc: Thiết lập màu sử dụng cho nút đề xuất. Cập nhật ngay lập tức.
+
 suggestbuttonemote:
   args:
     - hanebomb
-  desc: Sets the emote used in the suggest button. Updates Immediately.
+  desc: Thiết lập biểu tượng sử dụng trong nút đề xuất. Cập nhật ngay lập tức.
+
 suggestbuttonlabel:
   args:
     - Suggest Here!
   desc: >-
-    Sets the label used on the suggest button. Up to 80 characters. Updates
-    Immediately.
+    Thiết lập nhãn sử dụng trên nút đề xuất. Lên đến 80 ký tự. Cập nhật ngay lập tức.
+
 suggestbuttonmessage:
   args:
     - embedcode
     - Suggest Here!
   desc: >-
-    Sets the message used for the suggest button, accepts embed code. Set to -
-    to set to default. Updates Immediately.
+    Thiết lập thông báo sử dụng cho nút đề xuất, chấp nhận mã nhúng. Đặt thành - để đặt lại giá trị mặc định. Cập nhật ngay lập tức.
 suggestclear:
   args:
     - ''
-  desc: Resets and wipes suggestions. ***Cannot be undone***
+  desc: Đặt lại và xóa đề xuất. ***Không thể hoàn tác***
 suggestinfo:
   args:
     - '10'
-  desc: Allows you to see stats of a suggestion using its number.
+  desc: Cho phép bạn xem thống kê của một đề xuất bằng cách sử dụng số của nó.
 suggestmessage:
   args:
     - embedcodehere
-  desc: Allows you to set the message sent when a suggestion is sent.
+  desc: Cho phép bạn đặt thông điệp được gửi khi một đề xuất được gửi.
 suggestmotecolor:
   args:
     - 1 red
     - 2 blue
     - 3 gray
     - 4 green
-  desc: Sets the color for each emote button if enabled
+  desc: Thiết lập màu sắc cho mỗi nút biểu tượng nếu được kích hoạt
 suggestmotes:
   args:
     - emote1 emote2
   desc: >-
-    Allows you to set up to 5 emotes the bot will react with when a suggestion
-    is sent. ***Must be a emote in the current server***
+    Cho phép bạn thiết lập tới 5 biểu tượng mà bot sẽ phản ứng khi một đề xuất được gửi. ***Phải là biểu tượng trong server hiện tại***
 suggestmotesmode:
   args:
     - emotes
     - buttons
-  desc: Sets whether to use buttons or emotes for the set suggestion emotes
+  desc: Thiết lập xem có sử dụng nút hay biểu tượng cho các biểu tượng đề xuất đã đặt
 suggestrole:
   args:
     - '@role'
-  desc: Sets a role to ping when someone suggests something.
+  desc: Đặt vai trò để ping khi ai đó đề xuất điều gì đó.
 suggestthreadstype:
   args:
     - public
     - none
     - private
   desc: >-
-    Sets the type of threads to use when suggestions are made. Can only be used
-    if your server has threads enabled
+    Thiết lập loại threads để sử dụng khi có đề xuất được thực hiện. Chỉ có thể sử dụng nếu máy chủ của bạn đã bật threads
 
-    - `none` Disables threads for suggestions
+    - `none` Tắt threads cho đề xuất
 
-    - `public` Sets the button to open a public thread under that suggestion
+    - `public` Đặt nút để mở một thread công khai dưới đề xuất đó
 
-    - `private` Sets the button to open a private thread under that suggestion
+    - `private` Đặt nút để mở một thread riêng tư dưới đề xuất đó
 syncroletoall:
   args:
     - '@role'
     - roleid
   desc: >-
-    Allows you to sync role perms that are in this channel to all channels and
-    categories.
+    Cho phép bạn đồng bộ quyền vai trò đó ở kênh hiện tại với tất cả các kênh và thể loại.
 syncroletoallcategories:
   args:
     - '@role'
   desc: >-
-    Syncs a roles permissions from the current channel to all categories,
-    channels excluded unless they are synced.
+    Đồng bộ quyền của vai trò từ kênh hiện tại với tất cả các thể loại, các kênh sẽ không được bao gồm trừ khi chúng được đồng bộ.
 syncroletoallcchannels:
   args:
     - '@role'
   desc: >-
-    Syncs a roles permissions from the current channel to all channels,
-    categories excluded.
+    Đồng bộ quyền của vai trò từ kênh hiện tại với tất cả các kênh, các thể loại được loại trừ.
 syncroletoallchannels:
   args:
     - '@role'
-  desc: Syncs the selected roles permissions from this channel to all channels
+  desc: Đồng bộ quyền của vai trò đã chọn từ kênh hiện tại với tất cả các kênh.
 take:
   args:
     - 1 @Someone
-  desc: Takes a certain amount of currency from someone.
+  desc: Lấy một số tiền từ ai đó.
 testsite:
   args:
     - ''
-  desc: Tests whether a site is up. Very primitive.
+  desc: Kiểm tra xem một trang web có hoạt động hay không. Rất nguyên thủy.
 think:
   args:
     - '@user'
-  desc: Returns a think gif.
+  desc: Trả về một gif suy nghĩ.
 thumbsup:
   args:
     - '@user'
-  desc: Returns a thumbsup gif.
+  desc: Trả về một gif đưa ra ý kiến tích cực.
 ticket:
   args:
     - ''
-  desc: 'Opens a ticket channel '
+  desc: 'Mở một kênh vé'
 ticketcategory:
   args:
     - CategoryName/ID
-  desc: 'Sets a category to use with the ticket command '
+  desc: 'Đặt một thể loại để sử dụng với lệnh vé'
 tickle:
   args:
     - '@user'
-  desc: Returns a tickle gif.
+  desc: Trả về một gif kích thích.
 tictactoe:
   args:
     - ''
   desc: >-
-    Starts a game of tic tac toe. Another user must run the command in the same
-    channel in order to accept the challenge. Use numbers 1-9 to play.
+    Bắt đầu một trò chơi cờ caro. Người dùng khác phải chạy lệnh trong cùng một kênh để chấp nhận thách thức. Sử dụng số từ 1-9 để chơi.
 time:
   args:
     - London, UK
-  desc: Shows the current time and timezone in the specified location.
+  desc: Hiển thị thời gian hiện tại và múi giờ tại địa điểm được chỉ định.
 timedafk:
   args:
     - 2m Test
   desc: >-
-    Allows you to set a timed afk that auto removes itself and pings you when it
-    does. Afktimeout ignores timed AFKs.
+    Cho phép bạn đặt một AFK định giờ tự động loại bỏ chính nó và ping bạn khi điều đó xảy ra. Afktimeout bỏ qua AFK đã đặt thời gian.
 timely:
   args:
     - ''
   desc: >-
-    Use to claim your 'timely' currency. Bot owner has to specify the amount and
-    the period on how often you can claim your currency.
+    Sử dụng để nhận tiền xu 'đúng giờ' của bạn. Chủ sở hữu bot phải xác định số lượng và khoảng thời gian bạn có thể nhận tiền xu của mình.
 timelyreset:
   args:
     - ''
-  desc: Resets all user timeouts on `{0}timely` command.
+  desc: Đặt lại tất cả các thời gian chờ của người dùng trên lệnh `{0}timely`.
 timelyset:
   args:
     - '100'
     - 50 12
   desc: >-
-    Sets the 'timely' currency allowance amount for users. Second parameter is
-    period in hours, default is 24 hours.
+    Đặt số lượng tiền xu 'đúng giờ' cho người dùng. Tham số thứ hai là khoảng thời gian tính bằng giờ, mặc định là 24 giờ.
 timeout:
   args:
     - 10d @user bad boi
     - 28d @user
   desc: >-
-    Times out a user using discords Timeout with an optional reason. Max is 28
-    days.
+    Đặt thời gian chờ cho một người dùng sử dụng chế độ chờ của Discord với một lý do tùy chọn. Tối đa là 28 ngày.
 timezone:
   args:
     - ''
     - GMT Standard Time
   desc: >-
-    Sets this guilds timezone. This affects bot's time output in this server
-    (logs, etc..)
+    Đặt múi giờ của máy chủ này. Điều này ảnh hưởng đến đầu ra thời gian của bot trong máy chủ này (logs, v.v.).
 timezones:
   args:
     - ''
-  desc: Lists all timezones available on the system to be used with `{0}timezone`.
+  desc: Liệt kê tất cả các múi giờ có sẵn trên hệ thống để sử dụng với `{0}timezone`.
 tl:
   args:
     - ''
-  desc: Shows a current trivia leaderboard.
+  desc: Hiển thị bảng xếp hạng trắc nghiệm hiện tại.
 togglexclsar:
   args:
     - ''
   desc: >-
-    Toggles whether the self-assigned roles are exclusive. While enabled, users
-    can only have one self-assignable role per group.
+    Chuyển đổi xem liệu vai trò tự gán có độc quyền hay không. Khi bật, người dùng chỉ có thể có một vai trò tự gán được phép mỗi nhóm.
 tq:
   args:
     - ''
-  desc: Quits current trivia after current question.
+  desc: Thoát trắc nghiệm hiện tại sau câu hỏi hiện tại.
 translangs:
   args:
     - ''
-  desc: Lists the valid languages for translation.
+  desc: Liệt kê các ngôn ngữ hợp lệ để dịch.
 translate:
   args:
     - fr Hello
   desc: >-
-    Translates from>to text. From the given language to the destination
-    language.
+    Dịch từ ngôn ngữ nguồn sang ngôn ngữ đích. Từ ngôn ngữ được cung cấp đến ngôn ngữ đích.
 trivia:
   args:
     - ''
     - '--timeout 5 -p -w 3 -q 10'
   desc: >-
-    Starts a game of trivia. You can add `nohint` to prevent hints. First player
-    to get to 10 points wins by default. You can specify a different number. 30
-    seconds per question.
+    Bắt đầu một trò chơi trắc nghiệm. Bạn có thể thêm `nohint` để ngăn chặn gợi ý. Người chơi đầu tiên đạt 10 điểm thì thắng mặc định. Bạn có thể chỉ định một số khác. 30 giây mỗi câu hỏi.
 typeadd:
   args:
     - wordswords
-  desc: Adds a new article to the typing contest.
+  desc: Thêm một bài viết mới vào cuộc thi đánh máy.
 typedel:
   args:
     - '3'
-  desc: Deletes a typing article given the ID.
+  desc: Xóa một bài viết đánh máy theo ID.
 typelist:
   args:
     - ''
     - '3'
-  desc: Lists added typing articles with their IDs. 15 per page.
+  desc: Liệt kê các bài viết đánh máy đã thêm với ID của chúng. 15 mục mỗi trang.
 typestart:
   args:
     - ''
-  desc: Starts a typing contest.
+  desc: Bắt đầu một cuộc thi đánh máy.
 typestop:
   args:
     - ''
-  desc: Stops a typing contest on the current channel.
+  desc: Dừng cuộc thi đánh máy trong kênh hiện tại.
 unban:
   args:
     - Sylveon#0069
     - '123123123'
-  desc: Unbans a user with the provided user#discrim or id.
+  desc: Giải cấm một người dùng với user#discrim hoặc id được cung cấp.
 undeafen:
   args:
     - '"@Someguy"'
     - '"@Someguy" "@Someguy"'
-  desc: Undeafens mentioned user or users.
+  desc: Hủy tình trạng điếc cho người dùng được đề cập hoặc các người dùng được đề cập.
 unlock:
   args:
     - ''
     - '#channel'
-  desc: 'Unlocks the current or mentioned channel '
+  desc: 'Mở khóa kênh hiện tại hoặc kênh được đề cập '
 unlockdown:
   args:
     - ''
-  desc: Ends a server lockdown.
+  desc: Kết thúc tình trạng khẩn cấp của máy chủ.
 unmute:
   args:
     - '@Someone'
-  desc: Unmutes a mentioned user previously muted with `{0}mute` command.
+  desc: Bỏ tắt tiếng cho một người dùng đã được tắt tiếng trước đó bằng lệnh `{0}mute`.
 unmuteall:
   args:
     - ''
     - ''
-  desc: Unmutes all users with an optional reason.
+  desc: Bỏ tắt tiếng cho tất cả người dùng với một lý do tùy chọn.
 unsetmusicchannel:
   args:
     - ''
   desc: >-
-    Bot will output playing, finished, paused and removed songs to the channel
-    where the first song was queued in. Persistent server setting.
+    Bot sẽ xuất thông báo về bài hát đang phát, bài hát đã kết thúc, tạm dừng và bài hát đã bị xóa đến kênh nơi bài hát đầu tiên được thêm vào hàng đợi. Cài đặt cố định của máy chủ.
 unstfu:
   args:
     - '@user'
-  desc: Lets the user speak in the channel again.
+  desc: Cho phép người dùng nói trong kênh lại.
 untimeout:
   args:
     - '@user goodboi'
-  desc: Removes a users timeout with an option reason
+  desc: Gỡ bỏ thời gian chờ của người dùng với một lý do tùy chọn
 up:
   args:
     - image/url
     - uploaded file
-  desc: Upscales an image by up to 4x
+  desc: Phóng to hình ảnh lên tới 4x
 urbandict:
   args:
     - Pineapple
-  desc: Searches Urban Dictionary for a word.
+  desc: Tìm kiếm từ trên Urban Dictionary.
 userblacklist:
   args:
     - add @SomeUser spam pinging
     - rem 12312312313 applied for unban
   desc: >-
-    Either [add]s or [rem]oves a user specified by a Mention or an ID from a
-    blacklist.
+    [add]s hoặc [rem]oves một người dùng được chỉ định bằng Menti hoặc ID từ danh sách đen.
 userid:
   args:
     - ''
     - '@Someone'
-  desc: Shows user ID.
+  desc: Hiển thị ID người dùng.
 userinfo:
   args:
     - '@SomeUser'
   desc: >-
-    Shows info about the user. If no user is supplied, it defaults a user
-    running the command.
+    Hiển thị thông tin về người dùng. Nếu không có người dùng nào được cung cấp, nó mặc định là người dùng đang chạy lệnh.
 usrcmd:
   args:
     - '{0}command enable SomeUsername'
-  desc: Sets a command's permission at the user level.
+  desc: Đặt quyền của một lệnh ở cấp độ người dùng.
 usrmdl:
   args:
     - ModuleName enable SomeUsername
-  desc: Sets a module's permission at the user level.
+  desc: Đặt quyền của một module ở cấp độ người dùng.
 vcheck:
   args:
     - https://discord.com
-  desc: Uses VirusTotal to check a url for viruses
+  desc: Sử dụng VirusTotal để kiểm tra một URL có virus hay không.
 vcrole:
   args:
     - SomeRole
     - SomeVoiceChannel SomeRole
   desc: >-
-    Sets or resets a role which will be given to users who join the voice
-    channel you're in when you run this command. Provide no role name to
-    disable. You can run this command in a voice channel with just the role
-    paramater to assign it a role.
+    Đặt hoặc thiết lập lại vai trò sẽ được gán cho người dùng khi họ tham gia kênh thoại bạn đang ở khi bạn chạy lệnh này. Không cung cấp tên vai trò nếu muốn vô hiệu hóa. Bạn có thể chạy lệnh này trong một kênh thoại chỉ với tham số vai trò để gán vai trò đó.
 vcrolelist:
   args:
     - ''
-  desc: Shows a list of currently set voice channel roles.
+  desc: Hiển thị danh sách vai trò kênh thoại hiện đang được đặt.
 vcrolerm:
   args:
     - '123123123123123'
   desc: >-
-    Removes vcrole associated with the specified voice channel ID. This is
-    useful if your vcrole has been enabled on a VC which has been deleted.
+    Gỡ bỏ vcrole liên kết với ID kênh thoại cụ thể. Điều này hữu ích nếu vcrole của bạn đã được kích hoạt trên một VC đã bị xóa.
 verbose:
   args:
     - ''
     - 'true'
-  desc: Toggles or sets whether to show when a command/module is blocked.
+  desc: Chuyển đổi hoặc đặt liệu có hiển thị khi một lệnh/module bị chặn hay không.
 verboseerror:
   args:
     - ''
     - 'false'
   desc: >-
-    Toggles or sets whether the bot should print command errors when a command
-    is incorrectly used.
+    Chuyển đổi hoặc đặt liệu bot có nên in lỗi lệnh khi một lệnh được sử dụng không đúng cách hay không.
 vinfo:
   args:
     - ''
     - id/name
-  desc: Shows info for your current (if any) or mentioned voice channel
+  desc: Hiển thị thông tin cho kênh thoại hiện tại của bạn (nếu có) hoặc kênh thoại được đề cập.
 voicemute:
   args:
     - '@Someone'
@@ -3771,101 +3658,85 @@ voicemute:
     - 1h30m @Someone
     - 1h @Someone silence
   desc: >-
-    Prevents a mentioned user from speaking in voice channels. User has to be in
-    a voice channel in order for the command to have an effect. You can also
-    specify time string for how long the user should be muted. You can You can
-    optionally specify a reason.
+    Ngăn người dùng được đề cập nói trong các kênh thoại. Người dùng phải ở trong một kênh thoại để lệnh có hiệu lực. Bạn cũng có thể chỉ định chuỗi thời gian về thời gian mà người dùng nên bị tắt tiếng. Bạn có thể tùy chọn chỉ định một lý do.
 voiceunmute:
   args:
     - '@Someguy'
-  desc: Gives a previously voice-muted user a permission to speak.
+  desc: Cho phép người dùng đã bị tắt tiếng trong kênh thoại nói lại.
 volume:
   args:
     - '50'
   desc: >-
-    Sets the music playback volume (0-100%). Persistent server setting. Default
-    100
+    Đặt âm lượng phát lại âm nhạc (0-100%). Cài đặt cố định của máy chủ. Mặc định là 100.
 vote:
   args:
     - ''
-  desc: Vote for Dino!
+  desc: Bình chọn cho Dino!
 voteclaim:
   args:
     - ''
-  desc: Claims the vote currency for voting for Dino
+  desc: Nhận tiền bình chọn cho việc bình chọn cho Dino.
 waifuclaim:
   args:
     - 50 @Himesama
   desc: >-
-    Claim a waifu for yourself by spending currency.  You must spend at least
-    10% more than her current value unless she set `{0}affinity` towards you.
+    Đòi quyền sở hữu một waifu bằng cách tiêu tốn tiền. Bạn phải tiêu tốn ít nhất 10% so với giá trị hiện tại của cô ấy trừ khi cô ấy đặt `{0}affinity` với bạn.
 waifugift:
   args:
     - ''
     - Rose @Himesama
   desc: >-
-    Gift an item to someone. This will increase their waifu value by 50% of the
-    gifted item's value if you are not their waifu, or 95% if you are. Provide
-    no parameters to see a list of items that you can gift.
+    Tặng một món quà cho ai đó. Điều này sẽ tăng giá trị waifu của họ lên 50% giá trị của món quà được tặng nếu bạn không phải là waifu của họ, hoặc 95% nếu bạn là waifu của họ. Không cung cấp tham số nào để xem danh sách các mục bạn có thể tặng.
 waifuinfo:
   args:
     - '@MyCrush'
     - ''
   desc: >-
-    Shows waifu stats for a target person. Defaults to you if no user is
-    provided.
+    Hiển thị thông tin waifu cho người được chọn. Mặc định là bạn nếu không có người dùng nào được cung cấp.
 waifulb:
   args:
     - ''
     - '3'
-  desc: Shows top 9 waifus. You can specify another page to show other waifus.
+  desc: Hiển thị top 9 waifus. Bạn có thể chỉ định trang khác để xem waifus khác.
 waifureset:
   args:
     - ''
-  desc: Resets your waifu stats, except current waifus.
+  desc: Đặt lại thông tin waifu của bạn, ngoại trừ waifus hiện tại.
 waifutransfer:
   args:
     - '@ExWaifu @NewOwner'
   desc: >-
-    Transfer the ownership of one of your waifus to another user. You must pay
-    10%  of your waifu's value unless that waifu has affinity towards you, in
-    which case you must pay 60% fee. Transferred waifu's price will be reduced
-    by the fee amount.
+    Chuyển quyền sở hữu của một trong những waifu của bạn cho người dùng khác. Bạn phải trả 10% giá trị của waifu của bạn trừ khi waifu đó có thiện cảm với bạn, trong trường hợp đó bạn phải trả 60% phí. Giá của waifu được chuyển sẽ giảm đi số phí.
 wait:
   args:
     - '3000'
   desc: >-
-    Used only as a startup command. Waits a certain number of miliseconds before
-    continuing the execution of the following startup commands.
+    Chỉ được sử dụng làm lệnh khởi động. Chờ một số miligiây nhất định trước khi tiếp tục thực hiện các lệnh khởi động tiếp theo.
 warn:
   args:
     - '@Someone Very rude person'
-  desc: Warns a user.
+  desc: Cảnh báo một người dùng.
 warnclear:
   args:
     - '@PoorDude 3'
     - '@PoorDude'
   desc: >-
-    Clears all warnings from a certain user. You can specify a number to clear a
-    specific one.
+    Xóa tất cả các cảnh báo của một người dùng cụ thể. Bạn có thể chỉ định một số để xóa một cảnh báo cụ thể.
 warnexpire:
   args:
     - '3'
     - 6 --delete
   desc: >-
-    Sets the number of days after which the warnings will be cleared
-    automatically. This setting works retroactively. If you want to delete the
-    warnings instead of clearing them, you can set the `--delete` optional
-    parameter.
+    Đặt số ngày sau khi cảnh báo sẽ tự động bị xóa. Cài đặt này hoạt động theo chiều ngược. Nếu bạn muốn xóa cảnh báo thay vì xóa chúng, bạn có thể đặt tham số tùy chọn `--delete`.
 warnlog:
   args:
     - '@Someone'
-  desc: See a list of warnings of a certain user.
+  desc: Xem danh sách cảnh báo của một người dùng cụ thể.
 warnlogall:
   args:
     - ''
     - '2'
-  desc: See a list of all warnings on the server. 15 users per page.
+  desc: Xem danh sách tất cả cảnh báo trên server. 15 người dùng mỗi trang.
 warnpunish:
   args:
     - '3'
@@ -3873,185 +3744,159 @@ warnpunish:
     - 5 Mute 2d12h
     - 4 AddRole toxic 1h
   desc: >-
-    Sets a punishment for a certain number of warnings. You can specify a time
-    string after 'Ban' or *'Mute' punishments to make it a temporary mute/ban.
-    Provide no punishment to remove. Available punishments: Ban, Kick, Softban,
-    Mute, VoiceMute, ChatMute, AddRole, RemoveRoles
+    Đặt một hình phạt cho một số cảnh báo nhất định. Bạn có thể chỉ định một chuỗi thời gian sau 'Ban' hoặc * 'Mute' để làm cho nó trở thành tạm thời mute/ban. Không cung cấp hình phạt để loại bỏ. Hình phạt có sẵn: Ban, Kick, Softban, Mute, VoiceMute, ChatMute, AddRole, RemoveRoles
 warnpunishlist:
   args:
     - ''
-  desc: Lists punishments for warnings.
+  desc: Liệt kê các hình phạt cho cảnh báo.
 wave:
   args:
     - '@user'
-  desc: Returns a wave gif.
+  desc: Trả về một gif vẫy tay.
 weather:
   args:
     - Moscow, RU
   desc: >-
-    Shows weather data for a specified city. You can also specify a country
-    after a comma.
+    Hiển thị dữ liệu thời tiết cho một thành phố cụ thể. Bạn cũng có thể chỉ định một quốc gia sau dấu phẩy.
 webhook:
   args:
     - '#channel name image pastebinlinks'
     - '#channel name image file(s)'
   desc: >-
-    sends a webhook to the channel you select with the name and image you set.
-    You can send multiple embeds at once using multiple files or pastebin links.
+    Gửi một webhook đến kênh bạn chọn với tên và hình bạn thiết lập. Bạn có thể gửi nhiều embed cùng một lúc bằng cách sử dụng nhiều tệp hoặc liên kết pastebin.
 wheeloffortune:
   args:
     - '10'
   desc: >-
-    Bets a certain amount of currency on the wheel of fortune. Wheel can stop on
-    one of many different multipliers. Won amount is rounded down to the nearest
-    whole number.
+    Đặt một số tiền cược nhất định trên bánh xe may mắn. Bánh xe có thể dừng lại ở một trong nhiều bội số khác nhau. Số tiền thắng được làm tròn xuống số nguyên gần nhất.
 whosplaying:
   args:
     - Overwatch
-  desc: Shows a list of users who are playing the specified game.
+  desc: Hiển thị danh sách người chơi đang chơi trò chơi đã chỉ định.
 wiki:
   args:
     - query
-  desc: Gives you back a wikipedia link
+  desc: Trả lại một liên kết wikipedia.
 wikia:
   args:
     - mtg Vigilance
     - mlp Dashy
-  desc: Gives you back a fandom link
+  desc: Trả lại một liên kết fandom.
 wink:
   args:
     - '@user'
-  desc: Returns a wink gif.
+  desc: Trả về một gif nháy mắt.
 wowjoke:
   args:
     - ''
-  desc: Get one of Kwoth's penultimate WoW jokes.
+  desc: Lấy một trong những câu chuyện trò chơi cuối cùng của Kwoth về WoW.
 xkcd:
   args:
     - ''
     - '1400'
     - latest
   desc: >-
-    Shows a XKCD comic. Specify no parameters to retrieve a random one. Number
-    parameter will retrieve a specific comic, and "latest" will get the latest
-    one.
+    Hiển thị một truyện tranh XKCD. Không chỉ định tham số để nhận một bức tranh ngẫu nhiên. Tham số số sẽ nhận một truyện tranh cụ thể, và "latest" sẽ nhận bức tranh mới nhất.
 xpadd:
   args:
     - 100 @Someone
   desc: >-
-    Adds xp to a user on the server. This does not affect their global ranking.
-    You can use negative values.
+    Thêm xp cho một người dùng trên server. Điều này không ảnh hưởng đến xếp hạng toàn cầu của họ. Bạn có thể sử dụng giá trị âm.
 xpcurreward:
   args:
     - 3 50
   desc: >-
-    Sets a currency reward on a specified level. Provide no amount in order to
-    remove the reward.
+    Đặt phần thưởng tiền tệ cho một cấp độ cụ thể. Không cung cấp số tiền để loại bỏ phần thưởng.
 xpexclude:
   args:
     - Role Excluded-Role
     - Server
-  desc: Exclude a channel, role or current server from the xp system.
+  desc: Loại trừ một kênh, vai trò hoặc server hiện tại khỏi hệ thống xp.
 xpexclusionlist:
   args:
     - ''
   desc: >-
-    Shows the roles and channels excluded from the XP system on this server, as
-    well as whether the whole server is excluded.
+    Hiển thị các vai trò và kênh được loại trừ khỏi hệ thống XP trên server này, cũng như xem liệu cả server có được loại trừ hay không.
 xpgleaderboard:
   args:
     - ''
-  desc: Shows the global xp leaderboard.
+  desc: Hiển thị bảng xếp hạng xp toàn cầu.
 xpleaderboard:
   args:
     - ''
-  desc: Shows current server's xp leaderboard.
+  desc: Hiển thị bảng xếp hạng xp của server hiện tại.
 xplvluprewards:
   args:
     - ''
-  desc: Shows currently set level up rewards.
+  desc: Hiển thị phần thưởng cấp độ hiện tại được đặt.
 xpnotify:
   args:
     - global dm
     - server channel
   desc: >-
-    Sets how the bot should notify you when you get a `server` or `global`
-    level. This is a personal setting and affects only how you receive Global or
-    Server level-up notifications. You can set `dm` (for the bot to send you a
-    direct message), `channel` (to get notified in the channel you sent the last
-    message in) or `none` to disable.
+    Đặt cách bot sẽ thông báo cho bạn khi bạn đạt được cấp `server` hoặc `global`. Đây là một cài đặt cá nhân và chỉ ảnh hưởng đến cách bạn nhận thông báo Level-up Toàn cầu hoặc Server. Bạn có thể đặt `dm` (để bot gửi tin nhắn trực tiếp cho bạn), `channel` (để được thông báo trong kênh bạn gửi tin nhắn cuối cùng) hoặc `none` để tắt.
 xpreset:
   args:
     - '@Someone'
     - ''
   desc: >-
-    Resets specified user's XP, or the XP of all users in the server. You can't
-    reverse this action.
+    Đặt lại XP của người dùng cụ thể hoặc của tất cả người dùng trong server. Bạn không thể hoàn tác hành động này.
 xprolereward:
   args:
     - 3 Social
   desc: >-
-    Sets a role reward on a specified level. Provide no role name in order to
-    remove the role reward.
+    Đặt phần thưởng vai trò cho một cấp độ cụ thể. Không cung cấp tên vai trò để loại bỏ phần thưởng vai trò.
 xpsetting:
   args:
     - ''
     - xptextrate 4
     - xptextrate
   desc: >-
-    Allows you to change server xp settings. Provide no paramters to view
-    current settings. Provide no parameters on a setting to reset it to its
-    default.
+    Cho phép bạn thay đổi cài đặt xp của server. Không cung cấp tham số nào để xem cài đặt hiện tại. Không cung cấp tham số nào trên một cài đặt để đặt lại nó về giá trị mặc định.
 
-    Settings and what they do:
+    Các cài đặt và chúng thực hiện những gì:
 
 
-    `xptextrate`: Alows you to set the xp per message rate.
+    `xptextrate`: Cho phép bạn đặt tỷ lệ xp mỗi tin nhắn.
 
-    `txtxptimeout`: Allows you to set after how many minutes xp is given so
-    users cant spam for xp.
+    `txtxptimeout`: Cho phép bạn đặt sau bao nhiêu phút xp được cung cấp để người dùng không thể spam để nhận xp.
 
-    `xpvoicerate`: Allows you to set how much xp a person gets in vc per minute.
+    `xpvoicerate`: Cho phép bạn đặt số xp mà một người nhận được trong vc mỗi phút.
 
-    `voiceminutestimeout`: Allows you to set the maximum time a user can remain
-    in vc while gaining xp.
+    `voiceminutestimeout`: Cho phép bạn đặt thời gian tối đa mà một người dùng có thể ở trong vc trong khi nhận xp.
 xptempreload:
   args:
     - ''
   desc: >-
-    Reloads the xp template file. Xp template file allows you to customize the
-    position and color of elements on the `{0}xp` card.
+    Tải lại tệp mẫu xp. Tệp mẫu xp cho phép bạn tùy chỉnh vị trí và màu sắc của các yếu tố trên thẻ `{0}xp`.
 yandere:
   args:
     - tag1+tag2
   desc: >-
-    Shows a random image from yandere with a given tag. Tag is optional but
-    preferred. (multiple tags are appended with +)
+    Hiển thị một hình ảnh ngẫu nhiên từ yandere với một tag cụ thể. Tag là tùy chọn nhưng được ưa chuộng. (nhiều tag được nối với nhau bằng +)
 yomama:
   args:
     - ''
-  desc: Shows a random joke from <https://api.yomomma.info/>
+  desc: Hiển thị một câu đùa ngẫu nhiên từ <https://api.yomomma.info/>
 youtube:
   args:
     - query
-  desc: Searches youtubes and shows the first result
+  desc: Tìm kiếm trên YouTube và hiển thị kết quả đầu tiên.
 renamechannel:
   args:
     - \#general cute-cat-chat
   desc: >-
-    Renames a channel.
+    Đổi tên một kênh.
 chattriggerscrosspostwebhook:
   args:
     - 1234 https://discord.com/...
   desc: >-
-    Sends chat triggers messages to a webhook, in addition to the normal response 
-    location. This will delete a crossposting channel set with `{0}ctcpsetchannel`
+    Gửi các tin nhắn kích hoạt trò chuyện đến một webhook, ngoài vị trí phản hồi bình thường. Điều này sẽ xóa một kênh chuyển đăng được đặt với `{0}ctcpsetchannel`.
 chattriggerscrosspostchannel:
   args:
     - 1234 \#mod-logs
   desc: >-
-    Sends chat triggers messages to a channel, in addition to the normal response 
-    location. This will delete a crossposting webhook set with `{0}ctcpsetwebhook`
+    Gửi các tin nhắn kích hoạt trò chuyện đến một kênh, ngoài vị trí phản hồi bình thường. Điều này sẽ xóa một webhook chuyển đăng được đặt với `{0}ctcpsetwebhook`.
 setctintertype:
   args:
     - None
@@ -4059,9 +3904,7 @@ setctintertype:
     - Message
     - User
   desc: >-
-    Sets the type of a chat triggers application commands, slash commands are shown when 
-    a user types `/`, Message commands are shown when a user right-clicks or long-taps 
-    a message, and user commands are when when a user right-clicks or long-taps a user.
+    Đặt loại của một ứng dụng lệnh kích hoạt trò chuyện, lệnh gạch được hiển thị khi người dùng gõ `/`, lệnh tin nhắn được hiển thị khi người dùng nhấp chuột phải hoặc nhấn và giữ một tin nhắn, và lệnh người dùng là khi người dùng nhấp chuột phải hoặc nhấn và giữ một người dùng.
 setctintername:
   args:
     - 1234 roles cat-lover
@@ -4069,7 +3912,7 @@ setctintername:
     - 1234 cats are cute
     - 1234 tag no-arch-btw
   desc: >-
-    sets the name of a chat trigger application command.
+    đặt tên cho một ứng dụng lệnh kích hoạt trò chuyện.
 setctinterdesc:
   args:
     - 1234 Gives you the cat lover role.
@@ -4077,61 +3920,61 @@ setctinterdesc:
     - 1234 your a cool cat
     - 1234 why the spam???? why????????
   desc: >-
-    sets the description of a chat trigger application command.
+    đặt mô tả cho một ứng dụng lệnh kích hoạt trò chuyện.
 ctintererrors:
   args:
     - ' '
   desc: >-
-    Shows common errors in chat trigger application commands.
+    Hiển thị các lỗi phổ biến trong các lệnh ứng dụng kích hoạt trò chuyện.
 chattriggervalidtype:
   args:
     - 1234 Message true
     - 1234 Interaction false
     - 1234 Button true
-  desc: >- 
-    Enables or disables triggers used in the specified context.
+  desc: >-
+    Bật hoặc tắt kích hoạt được sử dụng trong ngữ cảnh được chỉ định.
 ctinterephemeral:
   args:
     - 1234 true
     - 1234 false
   desc: >-
-    Makes chat triggers from buttons or application commands use an ephemeral message.
+    Làm cho các kích hoạt trò chuyện từ nút hoặc lệnh ứng dụng sử dụng một tin nhắn phù du.
 votechannel:
   args:
     - ""
-  desc: "Set the channel where vote messages appear."
+  desc: "Đặt kênh nơi thông báo vote."
 votemessage:
   args:
     - "embedcode"
-  desc: "Set the vote embed, or view the current one, Set to `-` to set it to default."
+  desc: "Đặt mẫu nhúng vote hoặc xem mẫu hiện tại. Đặt là `-` để đặt lại mặc định."
 voteroleadd:
   args:
     - "role 2m5s"
     - "role"
-  desc: "Add a role thats given when a user has voted along with the time its present. Set no time for it to be permanent."
+  desc: "Thêm một vai trò được cung cấp khi người dùng đã vote cùng với thời gian hiện có của nó. Không đặt thời gian để làm cho nó trở nên vĩnh viễn."
 voteroleedit:
   args:
     - "role 2m5s"
-  desc: "Edit an existing vote role. Set no time to make it permanent."
+  desc: "Chỉnh sửa một vai trò vote hiện có. Không đặt thời gian để làm cho nó trở nên vĩnh viễn."
 votes:
   args:
     - ""
     - "@user"
-  desc: "Gets your or another users vote stats."
+  desc: "Nhận thông tin về số phiếu bình chọn của bạn hoặc người dùng khác."
 votesleaderboard:
   args:
     - "true"
     - ""
-  desc: "Show the current votes leaderboard. Run with true as a parameter to show the monthly vote leaderboard."
+  desc: "Hiển thị bảng xếp hạng phiếu bình chọn hiện tại. Chạy với true làm tham số để hiển thị bảng xếp hạng phiếu bình chọn hàng tháng."
 votepassword:
   args:
     - ""
-  desc: "Pops a modal up to set the password used to authenticate votes. ***Do not share with anyone, we are not responsible if you leak it.***"
+  desc: "Mở hộp thoại để đặt mật khẩu được sử dụng để xác thực phiếu bình chọn. ***Không chia sẻ với bất kỳ ai, chúng tôi không chịu trách nhiệm nếu bạn rò rỉ.***"
 handhold:
   args:
     - "@user"
-  desc: "... Lewd."
+  desc: "... Nghệ thuật."
 punch:
   args:
     - ""
-  desc: "... Violent!"
+  desc: "... Bạo lực!"
