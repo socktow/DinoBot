@@ -742,7 +742,7 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
     public async Task Vote() =>
         await ctx.Channel.EmbedAsync(new EmbedBuilder().WithOkColor()
                                                        .WithDescription(
-                                                           "Vote here for Mewdeko!\n[Vote Link](https://top.gg/bot/701019662795800606)\nMake sure to join the support server! \n[Link](https://mewdeko.tech/support)")).ConfigureAwait(false);
+                                                           "Vote here for Dino!\n[Vote Link](https://top.gg/bot/701019662795800606)\nMake sure to join the support server! \n[Link](https://discord.gg/dinogaming)")).ConfigureAwait(false);
 
     [Cmd, Aliases, RequireContext(ContextType.Guild)]
     public async Task InRole([Remainder] IRole role)

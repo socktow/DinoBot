@@ -183,9 +183,9 @@ public class Help : MewdekoModuleBase<HelpService>
     }
 
     [Cmd, Aliases]
-    public async Task Guide() => await ctx.Channel.SendConfirmAsync("You can find the website at https://mewdeko.tech").ConfigureAwait(false);
+    public async Task Guide() => await ctx.Channel.SendConfirmAsync("You can find the website at https://chuchudayne.com").ConfigureAwait(false);
     [Cmd, Aliases]
-    public async Task Source() => await ctx.Channel.SendConfirmAsync("https://github.com/Sylveon76/Mewdeko").ConfigureAwait(false);
+    public async Task Source() => await ctx.Channel.SendConfirmAsync("https://chuchudayne.com/source").ConfigureAwait(false);
 }
 
 public class CommandTextEqualityComparer : IEqualityComparer<CommandInfo>
