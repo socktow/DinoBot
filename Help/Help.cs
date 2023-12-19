@@ -18,6 +18,7 @@ public class Help : MewdekoModuleBase<HelpService>
     private readonly IServiceProvider _services;
     private readonly IBotStrings _strings;
     private readonly GuildSettingsService _guildSettings;
+    
 
     public Help(GlobalPermissionService perms, CommandService cmds,
         IServiceProvider services, IBotStrings strings,
@@ -186,8 +187,32 @@ public class Help : MewdekoModuleBase<HelpService>
     public async Task Guide() => await ctx.Channel.SendConfirmAsync("You can find the website at https://chuchudayne.com").ConfigureAwait(false);
     [Cmd, Aliases]
     public async Task Source() => await ctx.Channel.SendConfirmAsync("https://chuchudayne.com/source").ConfigureAwait(false);
-}
 
+///bầu cua ei
+    [Cmd, Aliases]
+    public async Task Baucua()
+    {
+        var emojiMap = new Dictionary<string, string>
+        {
+            { "cá", "<:ca:878997284669505556>" },
+            { "bầu", "<:bau:878997284476567703>" },
+            { "cua", "<:cua:878997284686270465>" },
+            { "nai", "<:nai:878997284312977509>" },
+            { "tôm", "<:tom:878997284480770098>" },
+            { "gà", "<:ga:878997284661108737>" }
+        };
+        var random = new Random();
+        var randomEmojis = emojiMap.Keys.OrderBy(x => random.Next()).Take(3).ToList();
+        var resultEmojis = randomEmojis.Select(emoji => new Emoji(emojiMap[emoji])).ToList();
+        var resultValues = randomEmojis.Select(emoji => emoji).ToList();
+        var randomMessage = await ctx.Channel.SendMessageAsync("Đang lắc bầu cua <a:z1:879671558749167626> <a:z1:879671558749167626> <a:z1:879671558749167626>").ConfigureAwait(false);
+        await Task.Delay(5000); // Chờ 5 giây
+        await randomMessage.ModifyAsync(x => x.Content = $"**{Context.User.Username}** lắc ra : **{string.Join(" ", resultEmojis)}**").ConfigureAwait(false);
+        await Task.Delay(1000);
+        var secondMessage = await ctx.Channel.SendMessageAsync($"Kết Quả : **{string.Join("-", resultValues)}**").ConfigureAwait(false);
+    }
+
+}
 public class CommandTextEqualityComparer : IEqualityComparer<CommandInfo>
 {
     public bool Equals(CommandInfo? x, CommandInfo? y) => x.Aliases[0] == y.Aliases[0];
