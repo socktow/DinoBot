@@ -211,6 +211,21 @@ public class Help : MewdekoModuleBase<HelpService>
         await Task.Delay(1000);
         var secondMessage = await ctx.Channel.SendMessageAsync($"Kết Quả : **{string.Join("-", resultValues)}**").ConfigureAwait(false);
     }
+    [Cmd, Aliases]
+    public async Task Taixiu() => await ctx.Channel.SendConfirmAsync(" Đang xây dựng").ConfigureAwait(false);
+
+    [Cmd, Aliases]
+    public async Task Random([Remainder] string args = null)
+    {
+        if (string.IsNullOrWhiteSpace(args) || !int.TryParse(args, out int parsedLimit) || parsedLimit <= 0)
+        {
+            await ctx.Channel.SendMessageAsync("Phải nhập một số tự nhiên lớn hơn 0.");
+            return;
+        }
+        int limit = parsedLimit;
+        int randomNumber = new Random().Next(limit + 1);
+        await ctx.Channel.SendMessageAsync($"Số ngẫu nhiên: **{randomNumber}**");
+    }
 
 }
 public class CommandTextEqualityComparer : IEqualityComparer<CommandInfo>
