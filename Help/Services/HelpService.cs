@@ -117,7 +117,7 @@ public class HelpService : ILateExecutor, INService
         if (guildId is null)
             return "✅";
         var pc = await _nPerms.GetCacheFor(guildId.Value);
-        if (_perms.BlockedModules.Contains(moduleName.ToLower())) return "🌐❌";
+        if (_perms.BlockedModules.Contains(moduleName.ToLower())) return "<a:pickno:1183894770834223164> ";
         return !pc.Permissions.CheckSlashPermissions(moduleName, "none", user, channel, out _) ? "<a:pickno:1183894770834223164>" : "<a:pickyes:1183894766648295476>";
     }
 

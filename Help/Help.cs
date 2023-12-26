@@ -205,14 +205,12 @@ public class Help : MewdekoModuleBase<HelpService>
         var randomEmojis = emojiMap.Keys.OrderBy(x => random.Next()).Take(3).ToList();
         var resultEmojis = randomEmojis.Select(emoji => new Emoji(emojiMap[emoji])).ToList();
         var resultValues = randomEmojis.Select(emoji => emoji).ToList();
-        var randomMessage = await ctx.Channel.SendMessageAsync("Đang lắc bầu cua <a:z1:879671558749167626> <a:z1:879671558749167626> <a:z1:879671558749167626>").ConfigureAwait(false);
+        var randomMessage = await ctx.Channel.SendMessageAsync("<a:z1:879671558749167626> <a:z1:879671558749167626> <a:z1:879671558749167626>").ConfigureAwait(false);
         await Task.Delay(5000); // Chờ 5 giây
         await randomMessage.ModifyAsync(x => x.Content = $"**{Context.User.Username}** lắc ra : **{string.Join(" ", resultEmojis)}**").ConfigureAwait(false);
         await Task.Delay(1000);
-        var secondMessage = await ctx.Channel.SendMessageAsync($"Kết Quả : **{string.Join("-", resultValues)}**").ConfigureAwait(false);
+        var secondMessage = await ctx.Channel.SendMessageAsync($"Kết Quả : **{string.Join("<a:TT24:1184913707101339688>", resultValues)}**").ConfigureAwait(false);
     }
-    [Cmd, Aliases]
-    public async Task Taixiu() => await ctx.Channel.SendConfirmAsync(" Đang xây dựng").ConfigureAwait(false);
 
     [Cmd, Aliases]
     public async Task Random([Remainder] string args = null)
@@ -226,6 +224,41 @@ public class Help : MewdekoModuleBase<HelpService>
         int randomNumber = new Random().Next(limit + 1);
         await ctx.Channel.SendMessageAsync($"Số ngẫu nhiên: **{randomNumber}**");
     }
+    [Cmd, Aliases]
+    public async Task Taixiu([Remainder] string args = null)
+    {
+        int numberOfValuesToChoose = 3;
+        int[] diceValues = { 1, 2, 3, 4, 5, 6 };
+
+        Dictionary<int, string> emojiMap = new Dictionary<int, string>
+        {
+            { 1, "<:1:879665246556545086>" },
+            { 2, "<:2:879665246808191016>" },
+            { 3, "<:3:879665246506205186>" },
+            { 4, "<:4:879665246569115649>" },
+            { 5, "<:5:879665246686568469>" },
+            { 6, "<:6:879665246376185887>" }
+        };
+
+        List<int> chosenValues = diceValues.OrderBy(x => new Random().Next()).Take(numberOfValuesToChoose).ToList();
+
+        var firstMessage = await ctx.Channel.SendMessageAsync($"{string.Join("", Enumerable.Repeat("<a:lac:738858292343996526>", numberOfValuesToChoose))}");
+
+        await Task.Delay(2000);
+
+        List<string> currentEmojis = Enumerable.Repeat("<a:lac:738858292343996526>", numberOfValuesToChoose).ToList();
+
+        for (int i = 0; i < numberOfValuesToChoose; i++)
+        {
+            currentEmojis[i] = emojiMap[chosenValues[i]];
+            await firstMessage.ModifyAsync(x => x.Content = $"{string.Join("", currentEmojis)}");
+            await Task.Delay(2000);
+        }
+
+        int total = chosenValues.Sum();
+        string result = total > 10 ? "Tài" : "Xỉu";
+        await ctx.Channel.SendMessageAsync($"Kết Quả : **{string.Join("<a:TT24:1184913707101339688>", chosenValues)} = {total}, {result}**");
+    }
 
 }
 public class CommandTextEqualityComparer : IEqualityComparer<CommandInfo>
@@ -234,4 +267,3 @@ public class CommandTextEqualityComparer : IEqualityComparer<CommandInfo>
 
     public int GetHashCode(CommandInfo obj) => obj.Aliases[0].GetHashCode(StringComparison.InvariantCulture);
 }
-
