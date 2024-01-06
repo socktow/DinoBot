@@ -900,8 +900,8 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
         var user = await _client.Rest.GetUserAsync(327410729466724352).ConfigureAwait(false);
         await ctx.Channel.EmbedAsync(
                      new EmbedBuilder().WithOkColor()
-                                       .WithAuthor(eab => eab.WithName($"{_client.CurrentUser.Username} v1.0.2-BETA")
-                                                             .WithUrl("https://discord.gg/C3yyk7ebEz")
+                                       .WithAuthor(eab => eab.WithName($"{_client.CurrentUser.Username} - 3.7.2 - APIv9")
+                                                             .WithUrl("https://discord.gg/dinogaming")
                                                              .WithIconUrl(_client.CurrentUser.GetAvatarUrl()))
                                        .AddField(efb =>
                                            efb.WithName(GetText("author")).WithValue($"{user.Username}#{user.Discriminator}")

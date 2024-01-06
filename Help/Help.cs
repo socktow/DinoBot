@@ -7,7 +7,6 @@ using Mewdeko.Modules.Permissions.Services;
 using Mewdeko.Services.strings;
 using Swan;
 using System.Threading.Tasks;
-
 namespace Mewdeko.Modules.Help;
 
 public class Help : MewdekoModuleBase<HelpService>
@@ -32,6 +31,8 @@ public class Help : MewdekoModuleBase<HelpService>
         _services = services;
         _strings = strings;
     }
+
+    
 
     [Cmd, Aliases]
     public async Task SearchCommand(string commandname)
@@ -70,7 +71,7 @@ public class Help : MewdekoModuleBase<HelpService>
     [Cmd, Aliases]
     public async Task Donate() =>
         await ctx.Channel.SendConfirmAsync(
-            "If you would like to support the project, here's how:\nKo-Fi: https://playerduo.net/dcschuchu\nI appreciate any donations as they will help improve Mewdeko for the better!").ConfigureAwait(false);
+            "If you would like to support the project, here's how:\nKo-Fi: https://playerduo.net/dcschuchu\nI appreciate any donations as they will help improve Dino for the better!").ConfigureAwait(false);
 
     [Cmd, Aliases]
     public async Task Commands([Remainder] string? module = null)
@@ -259,7 +260,6 @@ public class Help : MewdekoModuleBase<HelpService>
         string result = total > 10 ? "Tài" : "Xỉu";
         await ctx.Channel.SendMessageAsync($"Kết Quả : **{string.Join("<a:TT24:1184913707101339688>", chosenValues)} = {total}, {result}**");
     }
-
 }
 public class CommandTextEqualityComparer : IEqualityComparer<CommandInfo>
 {

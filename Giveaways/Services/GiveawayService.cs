@@ -111,9 +111,9 @@ public class GiveawayService : INService, IReadyExecutor
             Color = Mewdeko.OkColor,
             Title = item,
             Description =
-                $"Thả emote {emote} để tham gia !\nTổ chức bởi {hostuser.Mention}\nKết Thúc: <t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}:R> (<t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}>)\n",
+                $"React emote {emote} để tham gia GiveAways!\nTổ chức bởi {hostuser.Mention}\nKết Thúc: <t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}:R> (<t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}>)\n",
             Footer = new EmbedFooterBuilder()
-                .WithText($"{winners} Winners | Dino Giveaways")
+                .WithText($"{winners} người trúng thưởng | Dino Giveaways"),
         };
         if (!string.IsNullOrEmpty(reqroles))
         {
