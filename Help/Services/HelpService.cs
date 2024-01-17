@@ -74,7 +74,7 @@ public class HelpService : ILateExecutor, INService
         compBuilder.WithButton("Nhấn xem chi tiết", $"toggle-descriptions:{descriptions},{user.Id}");
         compBuilder.WithButton("Mời Bot!", style: ButtonStyle.Link,
             url: "https://discord.com/oauth2/authorize?client_id=701019662795800606&scope=bot&permissions=66186303&scope=bot%20applications.commands");
-        compBuilder.WithButton("Ủng hộ duy trì!", style: ButtonStyle.Link, url: "https://playerduo.net/dcschuchu");
+        compBuilder.WithButton("Fanpage !", style: ButtonStyle.Link, url: "https://www.facebook.com/dinostarvn");
         compBuilder.WithSelectMenu(selMenu);
         return compBuilder;
     }
@@ -85,12 +85,12 @@ public class HelpService : ILateExecutor, INService
         embed.WithTitle($"{_client.CurrentUser.Username} - Bảng Hỗ trợ");
         embed.WithOkColor();
         embed.WithCurrentTimestamp();
+        embed.WithImageUrl("https://media.discordapp.net/attachments/1120911575650422825/1193943194702983299/image.png?ex=65ae8d40&is=659c1840&hm=69559c8743e9b9a8e58538f10a76dad1ed904f050a03002cd348179d2c327712&=&format=webp&quality=lossless&width=1095&height=617");
         embed.WithDescription(
             $"\nNhập `{await _guildSettings.GetPrefix(guild)}help command`  để xem mô tả của 1 lệnh mà bạn cần tìm!" +
             $"\nNhập `{await _guildSettings.GetPrefix(guild)}cmds category` để xem các lệnh trong modules." +
-            $"\nSử dụng tính tăng embed và Chattrigger tại : Http://chuchudayne.com/embed và Https://chuchudayne.com/chattrigger"+
-            "\n\n**Bắt đầu**\nhttps://dinostar.vn\n\n**URL**\n" +
-            $"[Documentation](https://chuchudayne.com) | [Support Server](https://discord.gg/dinogaming) | [Invite Me](https://discord.com/oauth2/authorize?client_id={_bot.Client.CurrentUser.Id}&scope=bot&permissions=66186303&scope=bot%20applications.commands) | [Top.gg Listing](https://top.gg/bot/701019662795800606) | [Donate!](https://playerduo.net/dcschuchu)");
+            $"\n**Bắt đầu**\nhttps://dinostar.vn\n\n**URL**\n" +
+            $"[Support Server](https://discord.gg/dinogaming) | [Invite Me](https://discord.com/oauth2/authorize?client_id={_bot.Client.CurrentUser.Id}&scope=bot&permissions=66186303&scope=bot%20applications.commands) | [Top.gg](https://top.gg/bot/701019662795800606) ");
         var modules = _cmds.Commands.Select(x => x.Module).Where(x => !x.IsSubmodule && !x.Attributes.Any(attribute => attribute is HelpDisabled)).Distinct();
         var count = 0;
         if (description)

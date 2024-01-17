@@ -106,9 +106,11 @@ public class GiveawayService : INService, IReadyExecutor
     {
         var hostuser = await guild.GetUserAsync(host).ConfigureAwait(false);
         var emote = (await GetGiveawayEmote(guild.Id)).ToIEmote();
+        var hostuserAvatarUrl = hostuser.GetAvatarUrl();
         var eb = new EmbedBuilder
         {
             Color = Mewdeko.OkColor,
+            ThumbnailUrl = hostuserAvatarUrl,
             Title = item,
             Description =
                 $"React emote {emote} để tham gia GiveAways!\nTổ chức bởi {hostuser.Mention}\nKết Thúc: <t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}:R> (<t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}>)\n",
@@ -135,6 +137,7 @@ public class GiveawayService : INService, IReadyExecutor
             {
                 eb.WithDescription(
                     $"Thả emote {emote} để tham gia !\nTổ chức bởi {hostuser.Mention}\nYêu cầu role tham gia : {string.Join("\n", reqrolesparsed.Select(x => x.Mention))}\nKết Thúc: <t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}:R> (<t:{DateTime.UtcNow.Add(ts).ToUnixEpochDate()}>)\n");
+                eb.WithThumbnailUrl(hostuserAvatarUrl);
             }
         }
         var msg = await chan.SendMessageAsync(embed: eb.Build()).ConfigureAwait(false);

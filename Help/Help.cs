@@ -8,6 +8,10 @@ using Mewdeko.Services.strings;
 using Swan;
 using System.Threading.Tasks;
 namespace Mewdeko.Modules.Help;
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
 
 public class Help : MewdekoModuleBase<HelpService>
 {
@@ -17,7 +21,7 @@ public class Help : MewdekoModuleBase<HelpService>
     private readonly IServiceProvider _services;
     private readonly IBotStrings _strings;
     private readonly GuildSettingsService _guildSettings;
-    
+
 
     public Help(GlobalPermissionService perms, CommandService cmds,
         IServiceProvider services, IBotStrings strings,
@@ -32,7 +36,7 @@ public class Help : MewdekoModuleBase<HelpService>
         _strings = strings;
     }
 
-    
+
 
     [Cmd, Aliases]
     public async Task SearchCommand(string commandname)
@@ -148,6 +152,7 @@ public class Help : MewdekoModuleBase<HelpService>
             return new PageBuilder()
                 .AddField(groups.Select(x => x.ElementAt(page).Key).FirstOrDefault(),
                     $"```css\n{string.Join("\n", transformed)}\n```")
+                .WithImageUrl("https://media.discordapp.net/attachments/1120911575650422825/1193943194702983299/image.png?ex=65ae8d40&is=659c1840&hm=69559c8743e9b9a8e58538f10a76dad1ed904f050a03002cd348179d2c327712&=&format=webp&quality=lossless&width=1095&height=617")
                 .WithDescription(
                     $"<a:pickyes:1183894766648295476>: Bạn có thể dùng lệnh này .\n<a:pickno:1183894770834223164>: Bạn không thể dùng lệnh này .\n<a:loading:1182337910998052946>: Nếu bạn cần giúp đỡ bất cứ điều gì [The Support Server](https://discord.gg/C3yyk7ebEz)\nNhập `{prefix}h commandname` để xem thông tin lệnh")
                 .WithOkColor();
@@ -189,7 +194,7 @@ public class Help : MewdekoModuleBase<HelpService>
     [Cmd, Aliases]
     public async Task Source() => await ctx.Channel.SendConfirmAsync("https://chuchudayne.com/source").ConfigureAwait(false);
 
-///bầu cua ei
+    ///bầu cua ei
     [Cmd, Aliases]
     public async Task Baucua()
     {
@@ -225,8 +230,10 @@ public class Help : MewdekoModuleBase<HelpService>
         int randomNumber = new Random().Next(limit + 1);
         await ctx.Channel.SendMessageAsync($"Số ngẫu nhiên: **{randomNumber}**");
     }
+
     [Cmd, Aliases]
     public async Task Taixiu([Remainder] string args = null)
+
     {
         int numberOfValuesToChoose = 3;
         int[] diceValues = { 1, 2, 3, 4, 5, 6 };
@@ -260,6 +267,135 @@ public class Help : MewdekoModuleBase<HelpService>
         string result = total > 10 ? "Tài" : "Xỉu";
         await ctx.Channel.SendMessageAsync($"Kết Quả : **{string.Join("<a:TT24:1184913707101339688>", chosenValues)} = {total}, {result}**");
     }
+
+    // owo team fight 
+    [Cmd, Aliases]
+    public async Task otf([Remainder] string args = null)
+    {
+        // Replace the URL below with your Google Sheets URL
+        string googleSheetsUrl = "https://script.googleusercontent.com/macros/echo?user_content_key=2K6GHKps6coFjjzwhOScv2__QEeGjFPUPebGQpYF3B0x695WpzsTMMgTbZTgwHRHz0MQAUEQxfJKFDWwEICBLZTy-6aGRHRFm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnO0fQ4oWfh7p_FuO77TjOPGmfqULO6WNZuyr1kH4p2VD9EBEE1Wi5kSTT-mi29ltdw5hsE1PNZFtfsbVjmZGEBpZX2_FaERDh9z9Jw9Md8uu&lib=M3LFZastUMrE8dl9YRUMQImdXj4fTT6Zh";
+
+        // Send "Đang load dữ liệu" message
+        var loadingMessage = await ReplyAsync(" <a:loading:1182337910998052946> Đang load dữ liệu...");
+
+        // Delay for 3 seconds
+        await Task.Delay(5000);
+
+        // Delete the "Đang load dữ liệu" message
+        await loadingMessage.DeleteAsync();
+        // Get the user ID of the command sender
+        ulong userId = (ulong)Context.User.Id;
+
+        // Use HttpClient to send a GET request to the Google Sheets URL
+        using (HttpClient client = new HttpClient())
+        {
+            try
+            {
+                string responseData = await client.GetStringAsync(googleSheetsUrl);
+
+                // Parse the JSON data received from Google Sheets
+                JArray data = JArray.Parse(responseData);
+
+                // Find the row corresponding to the user ID
+                var userRow = data.Skip(1).FirstOrDefault(row => row[1].ToString() == userId.ToString());
+
+                // Check if the user is in any team
+                if (userRow != null)
+                {
+                    // Extract team name from the user row
+                    string teamName = userRow[0].ToString();
+
+                    // Filter data to include only the user's team
+                    var teamData = data.Where(row => row[0].ToString() == teamName);
+
+                    // Create an EmbedBuilder to build the embed message
+                    var embedBuilder = new EmbedBuilder
+                    {
+                        Title = $"Thông Tin : {teamName}",
+                        Color = Color.Green,
+                        Description = string.Empty
+                    };
+
+                    // Append rows to the embed description
+                    foreach (var row in teamData)
+                    {
+                        // Append each value with a label and a new line
+                        embedBuilder.Description += $"**Team:** {row[0]}\n";
+                        embedBuilder.Description += $"**Thành Viên 1:** <@{row[1]}> | {row[1]}\n";
+                        embedBuilder.Description += $"**Thành Viên 2:** <@{row[2]}> | {row[2]}\n";
+                        embedBuilder.Description += $"**Thành Viên 3:** <@{row[3]}> | {row[3]}\n";
+                        embedBuilder.Description += $"**Điểm: {row[4]}** <a:eo:1183879464891994153>\n";
+                        embedBuilder.Description += $"**Xếp Hạng: #{row[5]}\n**";
+                    }
+
+                    // Build the embed
+                    var embed = embedBuilder.Build();
+
+                    // Send the embed message to the Discord channel
+                    await ReplyAsync(embed: embed);
+                }
+                else
+                {
+                    // User is not in any team
+                    await ReplyAsync("Bạn không thuộc team OWO.");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions, such as network errors or invalid JSON format
+                await ReplyAsync($"An error occurred: {ex.Message}");
+            }
+        }
+    }
+
+    [Cmd, Aliases]
+    public async Task otflb()
+    {
+        // Replace the URL below with your Google Sheets URL
+        string googleSheetsUrl = "https://script.googleusercontent.com/macros/echo?user_content_key=2K6GHKps6coFjjzwhOScv2__QEeGjFPUPebGQpYF3B0x695WpzsTMMgTbZTgwHRHz0MQAUEQxfJKFDWwEICBLZTy-6aGRHRFm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnO0fQ4oWfh7p_FuO77TjOPGmfqULO6WNZuyr1kH4p2VD9EBEE1Wi5kSTT-mi29ltdw5hsE1PNZFtfsbVjmZGEBpZX2_FaERDh9z9Jw9Md8uu&lib=M3LFZastUMrE8dl9YRUMQImdXj4fTT6Zh";
+
+        // Use HttpClient to send a GET request to the Google Sheets URL
+        using (HttpClient client = new HttpClient())
+        {
+            try
+            {
+                string responseData = await client.GetStringAsync(googleSheetsUrl);
+
+                // Parse the JSON data received from Google Sheets
+                JArray data = JArray.Parse(responseData);
+
+                // Get the top 4 teams based on points (row 4) and team names (row 0)
+                var topTeams = data.Skip(1) // Skip the header row
+                                   .Select(row => new
+                                   {
+                                       TeamName = row[0].ToString(),
+                                       Points = int.Parse(row[4].ToString())
+                                   })
+                                   .OrderByDescending(team => team.Points)
+                                   .Take(4);
+
+                // Create an embed to display the top teams
+                var embedBuilder = new EmbedBuilder
+                {
+                    Title = "Top 4 Teams",
+                    Color = new Color(0, 255, 0) // Green color
+                };
+
+                foreach (var team in topTeams)
+                {
+                    embedBuilder.Description += $"**Team: {team.TeamName} | Points: {team.Points.ToString("#,0")}** <a:eo:1183879464891994153>\n";
+                }
+
+                await ReplyAsync("", false, embedBuilder.Build());
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions, such as network errors or invalid JSON format
+                await ReplyAsync($"An error occurred: {ex.Message}");
+            }
+        }
+    }
+
 }
 public class CommandTextEqualityComparer : IEqualityComparer<CommandInfo>
 {
