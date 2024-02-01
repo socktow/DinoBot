@@ -85,7 +85,7 @@ public class HelpService : ILateExecutor, INService
         embed.WithTitle($"{_client.CurrentUser.Username} - Bảng Hỗ trợ");
         embed.WithOkColor();
         embed.WithCurrentTimestamp();
-        embed.WithImageUrl("https://media.discordapp.net/attachments/1120911575650422825/1193943194702983299/image.png?ex=65ae8d40&is=659c1840&hm=69559c8743e9b9a8e58538f10a76dad1ed904f050a03002cd348179d2c327712&=&format=webp&quality=lossless&width=1095&height=617");
+        embed.WithImageUrl("https://media.discordapp.net/attachments/1197793343258759168/1197908774703353997/image.png?ex=65bcfa7b&is=65aa857b&hm=3df808130e4eb134b72ea2017478fbac1bed9d1ac2fa35bad8e8a25f58fb1856&=&format=webp&quality=lossless&width=1213&height=683");
         embed.WithDescription(
             $"\nNhập `{await _guildSettings.GetPrefix(guild)}help command`  để xem mô tả của 1 lệnh mà bạn cần tìm!" +
             $"\nNhập `{await _guildSettings.GetPrefix(guild)}cmds category` để xem các lệnh trong modules." +

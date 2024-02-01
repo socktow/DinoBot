@@ -133,7 +133,7 @@ public class HelpSlashCommand : MewdekoSlashModuleBase<HelpService>
                     $"```css\n{string.Join("\n", transformed)}\n```")
                 .WithDescription(
                     $"<:6891gwenlol:1182004603055779842>: Lệnh hiện tại của bạn là  {Format.Code(prefix)}\n <a:pickyes:1183894766648295476> : lệnh bạn có thể dùng .\n<a:pickno:1183894770834223164>: Bạn không thể dùng lệnh này .\n<:neko_holy:1182004479466422382>: Nếu bạn cần giúp đỡ bất cứ điều gì [The Support Server](https://discord.gg/C3yyk7ebEz)\nNhập `{prefix}h commandname` để xem thông tin lệnh")
-                .WithImageUrl("https://media.discordapp.net/attachments/1120911575650422825/1193943194702983299/image.png?ex=65ae8d40&is=659c1840&hm=69559c8743e9b9a8e58538f10a76dad1ed904f050a03002cd348179d2c327712&=&format=webp&quality=lossless&width=1095&height=617")
+                .WithImageUrl("https://media.discordapp.net/attachments/1197793343258759168/1197908774703353997/image.png?ex=65bcfa7b&is=65aa857b&hm=3df808130e4eb134b72ea2017478fbac1bed9d1ac2fa35bad8e8a25f58fb1856&=&format=webp&quality=lossless&width=1213&height=683")
                 .WithOkColor();
         }
     }
@@ -145,7 +145,7 @@ public class HelpSlashCommand : MewdekoSlashModuleBase<HelpService>
                 "[Click Here](https://discord.com/oauth2/authorize?client_id=701019662795800606&scope=bot&permissions=66186303&scope=bot%20applications.commands)")
             .AddField("Website/Docs", "https://dinostar.vn")
             .AddField("Support Server", "https://discord.gg/dinogaming")
-            .WithImageUrl("https://media.discordapp.net/attachments/1120911575650422825/1193943194702983299/image.png?ex=65ae8d40&is=659c1840&hm=69559c8743e9b9a8e58538f10a76dad1ed904f050a03002cd348179d2c327712&=&format=webp&quality=lossless&width=1095&height=617")
+            .WithImageUrl("https://media.discordapp.net/attachments/1197793343258759168/1197908774703353997/image.png?ex=65bcfa7b&is=65aa857b&hm=3df808130e4eb134b72ea2017478fbac1bed9d1ac2fa35bad8e8a25f58fb1856&=&format=webp&quality=lossless&width=1213&height=683")
             .WithOkColor();
         await ctx.Interaction.RespondAsync(embed: eb.Build()).ConfigureAwait(false);
     }

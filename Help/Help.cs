@@ -6,12 +6,13 @@ using Mewdeko.Modules.Help.Services;
 using Mewdeko.Modules.Permissions.Services;
 using Mewdeko.Services.strings;
 using Swan;
-using System.Threading.Tasks;
-namespace Mewdeko.Modules.Help;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
+using Discord.Audio;
+using Discord.WebSocket;
+namespace Mewdeko.Modules.Help;
 
 public class Help : MewdekoModuleBase<HelpService>
 {
@@ -270,56 +271,36 @@ public class Help : MewdekoModuleBase<HelpService>
 
     // owo team fight 
     [Cmd, Aliases]
-    public async Task otf([Remainder] string args = null)
+    public async Task Otf([Remainder] string args = null)
     {
-        // Replace the URL below with your Google Sheets URL
-        string googleSheetsUrl = "https://script.googleusercontent.com/macros/echo?user_content_key=2K6GHKps6coFjjzwhOScv2__QEeGjFPUPebGQpYF3B0x695WpzsTMMgTbZTgwHRHz0MQAUEQxfJKFDWwEICBLZTy-6aGRHRFm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnO0fQ4oWfh7p_FuO77TjOPGmfqULO6WNZuyr1kH4p2VD9EBEE1Wi5kSTT-mi29ltdw5hsE1PNZFtfsbVjmZGEBpZX2_FaERDh9z9Jw9Md8uu&lib=M3LFZastUMrE8dl9YRUMQImdXj4fTT6Zh";
-
-        // Send "Đang load dữ liệu" message
+        string googleSheetsUrl = "https://script.googleusercontent.com/macros/echo?user_content_key=7WOoM3O3RfGkthJCGJ1yAw7436bcPxD0-BnuQshGutkICl3QD8ZBrINNDLPPEM14JNSiWfLL5Du1mT3bKE6dwWDPjIHMdAvim5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnExErd5ktE0za0PIYDLzZaSUuIouoRE0Nl-LRIFvhbYG2d3BGwppy5BCzANynP0C099QYMelbL-nq6jaQ_dghIuA0DGItUQ5ytz9Jw9Md8uu&lib=M3LFZastUMrE8dl9YRUMQImdXj4fTT6Zh";
         var loadingMessage = await ReplyAsync(" <a:loading:1182337910998052946> Đang load dữ liệu...");
-
-        // Delay for 3 seconds
-        await Task.Delay(5000);
-
-        // Delete the "Đang load dữ liệu" message
+        await Task.Delay(3000);
         await loadingMessage.DeleteAsync();
-        // Get the user ID of the command sender
-        ulong userId = (ulong)Context.User.Id;
-
-        // Use HttpClient to send a GET request to the Google Sheets URL
+        ulong userId = Context.User.Id;
         using (HttpClient client = new HttpClient())
         {
             try
             {
                 string responseData = await client.GetStringAsync(googleSheetsUrl);
-
-                // Parse the JSON data received from Google Sheets
                 JArray data = JArray.Parse(responseData);
-
-                // Find the row corresponding to the user ID
-                var userRow = data.Skip(1).FirstOrDefault(row => row[1].ToString() == userId.ToString());
-
-                // Check if the user is in any team
+                var userRow = data.Skip(1)
+                    .FirstOrDefault(row =>
+                        row[1].ToString() == userId.ToString() ||
+                        row[2].ToString() == userId.ToString() ||
+                        row[3].ToString() == userId.ToString());
                 if (userRow != null)
                 {
-                    // Extract team name from the user row
                     string teamName = userRow[0].ToString();
-
-                    // Filter data to include only the user's team
                     var teamData = data.Where(row => row[0].ToString() == teamName);
-
-                    // Create an EmbedBuilder to build the embed message
                     var embedBuilder = new EmbedBuilder
                     {
                         Title = $"Thông Tin : {teamName}",
                         Color = Color.Green,
                         Description = string.Empty
                     };
-
-                    // Append rows to the embed description
                     foreach (var row in teamData)
                     {
-                        // Append each value with a label and a new line
                         embedBuilder.Description += $"**Team:** {row[0]}\n";
                         embedBuilder.Description += $"**Thành Viên 1:** <@{row[1]}> | {row[1]}\n";
                         embedBuilder.Description += $"**Thành Viên 2:** <@{row[2]}> | {row[2]}\n";
@@ -327,11 +308,7 @@ public class Help : MewdekoModuleBase<HelpService>
                         embedBuilder.Description += $"**Điểm: {row[4]}** <a:eo:1183879464891994153>\n";
                         embedBuilder.Description += $"**Xếp Hạng: #{row[5]}\n**";
                     }
-
-                    // Build the embed
                     var embed = embedBuilder.Build();
-
-                    // Send the embed message to the Discord channel
                     await ReplyAsync(embed: embed);
                 }
                 else
@@ -348,11 +325,12 @@ public class Help : MewdekoModuleBase<HelpService>
         }
     }
 
+
     [Cmd, Aliases]
-    public async Task otflb()
+    public async Task Otflb()
     {
         // Replace the URL below with your Google Sheets URL
-        string googleSheetsUrl = "https://script.googleusercontent.com/macros/echo?user_content_key=2K6GHKps6coFjjzwhOScv2__QEeGjFPUPebGQpYF3B0x695WpzsTMMgTbZTgwHRHz0MQAUEQxfJKFDWwEICBLZTy-6aGRHRFm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnO0fQ4oWfh7p_FuO77TjOPGmfqULO6WNZuyr1kH4p2VD9EBEE1Wi5kSTT-mi29ltdw5hsE1PNZFtfsbVjmZGEBpZX2_FaERDh9z9Jw9Md8uu&lib=M3LFZastUMrE8dl9YRUMQImdXj4fTT6Zh";
+        string googleSheetsUrl = "https://script.googleusercontent.com/macros/echo?user_content_key=7WOoM3O3RfGkthJCGJ1yAw7436bcPxD0-BnuQshGutkICl3QD8ZBrINNDLPPEM14JNSiWfLL5Du1mT3bKE6dwWDPjIHMdAvim5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnExErd5ktE0za0PIYDLzZaSUuIouoRE0Nl-LRIFvhbYG2d3BGwppy5BCzANynP0C099QYMelbL-nq6jaQ_dghIuA0DGItUQ5ytz9Jw9Md8uu&lib=M3LFZastUMrE8dl9YRUMQImdXj4fTT6Zh";
 
         // Use HttpClient to send a GET request to the Google Sheets URL
         using (HttpClient client = new HttpClient())
@@ -396,6 +374,7 @@ public class Help : MewdekoModuleBase<HelpService>
         }
     }
 
+
 }
 public class CommandTextEqualityComparer : IEqualityComparer<CommandInfo>
 {
@@ -403,3 +382,4 @@ public class CommandTextEqualityComparer : IEqualityComparer<CommandInfo>
 
     public int GetHashCode(CommandInfo obj) => obj.Aliases[0].GetHashCode(StringComparison.InvariantCulture);
 }
+

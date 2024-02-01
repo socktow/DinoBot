@@ -33,12 +33,12 @@ public partial class ServerManagement
                 }
 
                 await msg.ModifyAsync(x => x.Content =
-                    "<a:checkfragutil:900381771881922602> Roles checked! You may now run the lockdown command.").ConfigureAwait(false);
+                    "<a:hgtt_tick1:1182341144550580245> Roles checked! You may now run the lockdown command.").ConfigureAwait(false);
             }
             else
             {
                 await msg.ModifyAsync(x => x.Content =
-                    "<a:checkfragutil:900381771881922602> Roles checked! No roles are in the way of the lockdown command.").ConfigureAwait(false);
+                    "<a:hgtt_tick1:1182341144550580245> Roles checked! No roles are in the way of the lockdown command.").ConfigureAwait(false);
             }
         }
 
@@ -77,7 +77,7 @@ public partial class ServerManagement
             if (use.VoiceChannel == null)
             {
                 await ctx.Channel.SendErrorAsync(
-                    "<a:checkfragutil:900381771881922602> You need to be in a voice channel for this!").ConfigureAwait(false);
+                    "<a:hgtt_tick1:1182341144550580245> You need to be in a voice channel for this!").ConfigureAwait(false);
                 return;
             }
 
@@ -191,7 +191,7 @@ public partial class ServerManagement
                                    new OverwritePermissions();
                 await tch.AddPermissionOverwriteAsync(ctx.Guild.EveryoneRole,
                     currentPerms.Modify(sendMessages: PermValue.Deny)).ConfigureAwait(false);
-                await ctx.Channel.SendMessageAsync($"<a:checkfragutil:900381771881922602> Locked down {tch.Mention}").ConfigureAwait(false);
+                await ctx.Channel.SendMessageAsync($"<a:hgtt_tick1:1182341144550580245> Locked down {tch.Mention}").ConfigureAwait(false);
             }
             else
             {
@@ -200,7 +200,7 @@ public partial class ServerManagement
                 await channel.AddPermissionOverwriteAsync(ctx.Guild.EveryoneRole,
                     currentPerms.Modify(sendMessages: PermValue.Deny)).ConfigureAwait(false);
                 await ctx.Channel.SendMessageAsync(
-                    $"<a:checkfragutil:900381771881922602> Locked down {channel.Mention}").ConfigureAwait(false);
+                    $"<a:hgtt_tick1:1182341144550580245> Locked down {channel.Mention}").ConfigureAwait(false);
             }
         }
 
@@ -282,7 +282,7 @@ public partial class ServerManagement
                                    new OverwritePermissions();
                 await tch.AddPermissionOverwriteAsync(ctx.Guild.EveryoneRole,
                     currentPerms.Modify(sendMessages: PermValue.Inherit)).ConfigureAwait(false);
-                await ctx.Channel.SendMessageAsync($"<a:checkfragutil:900381771881922602> Unlocked {tch.Mention}").ConfigureAwait(false);
+                await ctx.Channel.SendMessageAsync($"<a:hgtt_tick1:1182341144550580245> Unlocked {tch.Mention}").ConfigureAwait(false);
             }
             else
             {
@@ -290,7 +290,7 @@ public partial class ServerManagement
                                    new OverwritePermissions();
                 await channel.AddPermissionOverwriteAsync(ctx.Guild.EveryoneRole,
                     currentPerms.Modify(sendMessages: PermValue.Inherit)).ConfigureAwait(false);
-                await ctx.Channel.SendMessageAsync($"<a:checkfragutil:900381771881922602> Unlocked {channel.Mention}").ConfigureAwait(false);
+                await ctx.Channel.SendMessageAsync($"<a:hgtt_tick1:1182341144550580245> Unlocked {channel.Mention}").ConfigureAwait(false);
             }
         }
 

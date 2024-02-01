@@ -688,34 +688,32 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
     }
 
     [Cmd, Aliases, RequireContext(ContextType.Guild)]
-    public async Task WhosPlaying([Remainder] string? game)
+public async Task WhosPlaying([Remainder] string? game)
+{
+    game = game?.Trim()?.ToUpperInvariant();
+    if (string.IsNullOrWhiteSpace(game))
+        return;
+
+    if (ctx.Guild is not SocketGuild socketGuild)
     {
-        game = game?.Trim().ToUpperInvariant();
-        if (string.IsNullOrWhiteSpace(game))
-            return;
+        Log.Warning("Can't cast guild to socket guild.");
+        return;
+    }
 
-        if (ctx.Guild is not SocketGuild socketGuild)
-        {
-            Log.Warning("Can't cast guild to socket guild.");
-            return;
-        }
+    var rng = new MewdekoRandom();
+    var arr = await Task.Run(() => socketGuild.Users
+                                          .Where(x => x.Activities.Any())
+                                          .Where(u => u.Activities.FirstOrDefault()?.Name.ToUpperInvariant().Contains(game) ?? false)
+                                          .OrderBy(_ => rng.Next())
+                                          .ToArray()).ConfigureAwait(false);
 
-        var rng = new MewdekoRandom();
-        var arr = await Task.Run(() => socketGuild.Users
-                                                  .Where(x => x.Activities.Any())
-                                                  .Where(u =>  u.Activities.FirstOrDefault().Name.ToUpperInvariant().Contains(game))
-                                                  .OrderBy(_ => rng.Next())
-                                                  .ToArray()).ConfigureAwait(false);
-
-        var i = 0;
-        if (arr.Length == 0)
-        {
-            await ReplyErrorLocalizedAsync("nobody_playing_game").ConfigureAwait(false);
-        }
-        else
-        {
-            
-            var paginator = new LazyPaginatorBuilder()
+    if (arr.Length == 0)
+    {
+        await ReplyErrorLocalizedAsync("nobody_playing_game").ConfigureAwait(false);
+    }
+    else
+    {
+        var paginator = new LazyPaginatorBuilder()
                             .AddUser(ctx.User)
                             .WithPageFactory(PageFactory)
                             .WithFooter(PaginatorFooter.PageNumber | PaginatorFooter.Users)
@@ -723,20 +721,18 @@ public partial class Utility : MewdekoModuleBase<UtilityService>
                             .WithDefaultEmotes()
                             .WithActionOnCancellation(ActionOnStop.DeleteMessage)
                             .Build();
-            
-            await _interactivity.SendPaginatorAsync(paginator, Context.Channel,
-                TimeSpan.FromMinutes(60)).ConfigureAwait(false);
-            
-            async Task<PageBuilder> PageFactory(int page)
-            {
-                await Task.CompletedTask.ConfigureAwait(false);
-                var pagebuilder = new PageBuilder().WithOkColor()
-                                            .WithDescription(string.Join("\n", arr.Skip(page * 20).Take(20).Select(x => $"{(i++)+1}. {x.Username}#{x.Discriminator} `{x.Id}`: `{(x.Activities.FirstOrDefault() is CustomStatusGame cs ? cs.State : x.Activities.FirstOrDefault().Name)}`")));
-                return pagebuilder;
-            }
-                
+        
+        await _interactivity.SendPaginatorAsync(paginator, Context.Channel, TimeSpan.FromMinutes(60)).ConfigureAwait(false);
+        
+        async Task<PageBuilder> PageFactory(int page)
+        {
+            await Task.CompletedTask.ConfigureAwait(false);
+            var pagebuilder = new PageBuilder().WithOkColor()
+                                              .WithDescription(string.Join("\n", arr.Skip(page * 20).Take(20).Select((x, index) => $"{index + 1}. {x.Username}#{x.Discriminator} `{x.Id}`: `{(x.Activities.FirstOrDefault() is CustomStatusGame cs ? cs.State : x.Activities.FirstOrDefault()?.Name)}`")));
+            return pagebuilder;
         }
     }
+}
 
     [Cmd, Aliases, RequireContext(ContextType.Guild)]
     public async Task Vote() =>
